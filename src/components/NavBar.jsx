@@ -4,18 +4,18 @@ import "../css/navbar.css";
 export default function NavBar() {
   return (
     <header className="nav-container">
+      <NavLink to="/">
+        <img src="/M.svg" alt="logo" className="logo" />
+      </NavLink>
       <nav className="nav">
-        <NavLink to="/" className="link">
-          Homepage
-        </NavLink>
         <NavLink to="/projekter" className="link">
           Projekter
         </NavLink>
-        <NavLink to="/kontakt mig" className="link">
-          Kontakt mig
-        </NavLink>
         <NavLink to="/om mig" className="link">
           Om mig
+        </NavLink>
+        <NavLink to="/kontakt mig" className="link">
+          Kontakt mig
         </NavLink>
       </nav>
     </header>
