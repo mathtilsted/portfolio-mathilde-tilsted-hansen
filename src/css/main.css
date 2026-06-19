@@ -7,8 +7,11 @@
   --text: #000000;
 
   /*font*/
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  --font-primary: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-size-body: 1rem;
+  --font-weight: 400;
+  --spacing: 0.1em;
+
   min-height: 100%;
   line-height: 1.5;
 }

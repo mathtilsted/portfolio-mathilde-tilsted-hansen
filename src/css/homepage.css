@@ -1,0 +1,15 @@
+.forside-animation {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.under-titel {
+  color: var(--text);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight);
+  font-size: rem;
+  letter-spacing: var(--spacing);
+  display: flex;
+  justify-content: center;
+}
