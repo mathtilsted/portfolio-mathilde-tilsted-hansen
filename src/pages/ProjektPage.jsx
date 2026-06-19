@@ -1,4 +1,4 @@
-//de projekter jeg gerne vil udstille
+import "../css/main.css";
 
 export default function ProjektPage() {
   <div>

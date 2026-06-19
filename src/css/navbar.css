@@ -1,0 +1,32 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  gap: 48px;
+}
+
+.link {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em;
+  border-radius: 8px;
+  transition: 0.5s;
+  margin-top: 40px;
+}
+
+.link:hover,
+.link.active {
+  background-color: var(--secondary);
+  color: var(--text);
+}
