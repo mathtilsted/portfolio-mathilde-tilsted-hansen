@@ -12,8 +12,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projekter" element={<ProjektPage />} />
-        <Route path="/kontakt mig" element={<KontaktPage />} />
-        <Route path="/om mig" element={<OmPage />} />
+        <Route path="/kontakt-mig" element={<KontaktPage />} />
+        <Route path="/om-mig" element={<OmPage />} />
       </Routes>
     </BrowserRouter>
   );

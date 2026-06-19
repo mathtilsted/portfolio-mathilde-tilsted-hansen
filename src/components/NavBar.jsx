@@ -11,10 +11,10 @@ export default function NavBar() {
         <NavLink to="/projekter" className="link">
           Projekter
         </NavLink>
-        <NavLink to="/om mig" className="link">
+        <NavLink to="/om-mig" className="link">
           Om mig
         </NavLink>
-        <NavLink to="/kontakt mig" className="link">
+        <NavLink to="/kontakt-mig" className="link">
           Kontakt mig
         </NavLink>
       </nav>
