@@ -1,5 +1,6 @@
 :root {
   color: var(--text);
+  background-color: var(--primary);
 
   /*farver*/
   --primary: #ffffff;

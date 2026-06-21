@@ -1,4 +1,4 @@
-.forside-animation {
+.navne-animation {
   width: 1000px;
   margin: 0 auto;
   margin-top: 80px;
@@ -8,7 +8,7 @@
   color: var(--text);
   font-family: var(--font-primary);
   font-weight: var(--font-weight);
-  font-size: rem;
+  font-size: 1.8rem;
   letter-spacing: var(--spacing);
   display: flex;
   justify-content: center;

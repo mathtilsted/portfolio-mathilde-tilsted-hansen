@@ -16,14 +16,14 @@
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 8px 8px;
+  padding: 8px 16px;
   text-decoration: none;
   letter-spacing: var(--spacing);
   text-transform: uppercase;
   font-family: var(--font-primary);
   font-weight: var(--font-weight);
   font-size: var(--font-size-body);
-  border-radius: 8px;
+  border-radius: 16px;
   transition: 0.5s;
   margin-top: 40px;
 }
