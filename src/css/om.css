@@ -1,0 +1,21 @@
+.om-mig-sektion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titel {
+  color: var(--secondary);
+  font-family: var(--font-titel);
+  font-weight: 100;
+  font-size: 8rem;
+  letter-spacing: var(--spacing);
+}
+
+.tekst {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  width: 800px;
+  text-align: center;
+}

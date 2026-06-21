@@ -1,9 +1,10 @@
 import "../css/main.css";
+import Projekter from "../components/Projekter";
 
 export default function ProjektPage() {
   return (
     <div>
-      <h1>projektsiden</h1>
+      <Projekter />
     </div>
   );
 }

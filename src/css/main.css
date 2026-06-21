@@ -1,3 +1,6 @@
+/* Aleo typografi import */
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@400;500;600;700&display=swap");
+
 :root {
   color: var(--text);
   background-color: var(--primary);
@@ -8,8 +11,8 @@
   --text: #000000;
 
   /*font*/
-  --font-primary: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --font-size-body: 1rem;
+  --font-titel: "Aleo", serif;
+  --font-body: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-weight: 400;
   --spacing: 0.1em;
 
