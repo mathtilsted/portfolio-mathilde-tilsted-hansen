@@ -1,0 +1,9 @@
+.titel {
+  color: var(--secondary);
+  font-family: var(--font-titel);
+  font-weight: 100;
+  font-size: 6rem;
+  letter-spacing: var(--spacing);
+  display: flex;
+  justify-content: center;
+}
