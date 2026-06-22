@@ -1,16 +1,18 @@
+/* css for ProjektPage.jsx og Projekter.jsx */
+
 .projekt-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  width: 100%;
 }
 
 .knapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 100px;
-  margin-bottom: 64px;
 }
 
 .knap {
@@ -48,4 +50,25 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
+}
+
+/* container på ProjektPage siden */
+.container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* container på ProjektPage siden */
+.projekt-titler {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  width: 100%;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--spacing);
+  font-size: 1.2rem;
 }

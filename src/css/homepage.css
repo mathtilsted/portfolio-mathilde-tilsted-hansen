@@ -1,7 +1,13 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
 .navne-animation {
   width: 1000px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 8rem;
 }
 
 .under-titel {
@@ -12,4 +18,19 @@
   letter-spacing: var(--spacing);
   display: flex;
   justify-content: center;
+}
+
+.projekt-sektion {
+  background-color: #b2c2783f;
+  height: 800px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.kompetence-sektion {
+  height: 200px;
+  width: auto;
 }

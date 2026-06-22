@@ -10,10 +10,14 @@ export default function HomePage() {
     <div className="homepage-container">
       <div className="navne-animation">
         <Lottie animationData={BogstavAnimation} loop={false} />
+        <h1 className="under-titel">Multimediedesign studerende</h1>
       </div>
-      <h1 className="under-titel">Multimediedesign studerende</h1>
-      <Projekter />
-      <div>
+      <div className="projekt-sektion">
+        <p className="under-titel">Projekter</p>
+        <Projekter />
+      </div>
+      <div className="kompetence-sektion">
+        <p className="under-titel">Kompetencer</p>
         <Lottie animationData={KompetenceAnimation} loop={true} />
       </div>
     </div>

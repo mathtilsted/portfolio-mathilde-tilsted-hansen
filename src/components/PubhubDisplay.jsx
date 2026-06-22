@@ -1,8 +1,10 @@
+import "../css/pubhub.css";
+
 export default function Pubhub() {
   return (
     <>
-      <div>
-        <h1>hvad sker der hvis jeg laver en overskrift</h1>
+      <div className="container">
+        <p className="titel">PubHub 2026</p>
       </div>
     </>
   );
