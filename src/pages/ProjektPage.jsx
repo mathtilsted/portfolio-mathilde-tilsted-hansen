@@ -1,5 +1,5 @@
 import "../css/projektpage.css";
-import Projekter from "../components/Projekt";
+import Projekter from "../components/Projekter";
 
 export default function ProjektPage() {
   return (
