@@ -1,0 +1,51 @@
+.projekt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.knapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 64px;
+}
+
+.knap {
+  width: 300px;
+  height: 300px;
+  border-radius: 64px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.knap img {
+  width: 300px;
+  height: 300px;
+  border-radius: 64px;
+  border: none;
+}
+
+.knap:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--primary);
+  z-index: 1000;
+  padding: 4rem;
+  overflow-y: auto;
+}
+
+.luk-knap {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}

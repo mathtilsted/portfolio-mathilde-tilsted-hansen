@@ -1,7 +1,10 @@
 import { useState } from "react";
-import "../css/projekt.css";
+import "../css/projekter.css";
 import PubhubLogo from "../assets/pubhub-ikon.svg";
+import AkvarieLogo from "../assets/akvarie-ikon.svg";
+import LegepladsLogo from "../assets/legeplads-ikon.svg";
 
+/* display imports */
 import PubhubDisplay from "./PubhubDisplay";
 import AkvarieDisplay from "./AkvarieDisplay";
 import LegepladsDisplay from "./LegepladsDisplay";
@@ -17,11 +20,11 @@ export default function Projekter() {
         </button>
 
         <button className="knap" onClick={() => setActiveProject("Akvarie")}>
-          Projekt 2
+          <img src={AkvarieLogo} alt="grøn fisk" />
         </button>
 
         <button className="knap" onClick={() => setActiveProject("Legeplads")}>
-          Projekt 3
+          <img src={LegepladsLogo} alt="græskar mand i overalls" />
         </button>
       </div>
 
