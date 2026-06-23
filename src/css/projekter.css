@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.knapper {
+.knap-sektion {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,6 +16,7 @@
 }
 
 .knap {
+  background-color: var(--secondary);
   width: 300px;
   height: 300px;
   border-radius: 64px;
@@ -27,9 +28,8 @@
 }
 
 .knap img {
-  width: 300px;
-  height: 300px;
-  border-radius: 64px;
+  width: 200px;
+  height: 200px;
   border: none;
 }
 
@@ -52,23 +52,22 @@
   right: 2rem;
 }
 
-/* container på ProjektPage siden */
+/* container på ProjektPage siden 
+ sørger for at projekterne står i midten af siden */
 .container {
   margin-top: 10rem;
   display: flex;
   flex-direction: column;
 }
 
-/* container på ProjektPage siden */
-.projekt-titler {
+/* centrere knapperne og deres tekst med hinanden */
+.knap-tekst-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 8rem;
-  width: 100%;
+  align-items: center;
   font-family: var(--font-body);
   font-weight: var(--font-weight);
   letter-spacing: var(--spacing);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }

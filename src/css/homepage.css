@@ -10,20 +10,9 @@
   margin-top: 8rem;
 }
 
-.under-titel {
-  color: var(--text);
-  font-family: var(--font-body);
-  font-weight: var(--font-weight);
-  font-size: 1.8rem;
-  letter-spacing: var(--spacing);
-  display: flex;
-  justify-content: center;
-}
-
 .projekt-sektion {
-  background-color: #b2c2783f;
   height: 800px;
-  width: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
