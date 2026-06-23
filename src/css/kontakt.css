@@ -1,0 +1,35 @@
+.kontakt-knapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.kontakt-knap {
+  cursor: pointer;
+  background-color: var(--secondary);
+  width: auto;
+  height: 48px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  letter-spacing: var(--spacing);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.kontakt-knap:hover {
+  transform: scale(1.05);
+}
+
+.kontakt-tekst {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+}

@@ -38,3 +38,10 @@
   display: flex;
   justify-content: center;
 }
+
+.sektion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

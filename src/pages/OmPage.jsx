@@ -3,7 +3,7 @@ import "../css/om.css";
 export default function OmPage() {
   return (
     <>
-      <div className="om-mig-sektion">
+      <div className="sektion">
         <div className="titel">
           <p>Hvem er jeg?</p>
         </div>
