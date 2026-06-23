@@ -1,13 +1,13 @@
 .homepage-container {
   display: flex;
   flex-direction: column;
-  gap: 12rem;
 }
 
-.navne-animation {
+.hero-sektion {
   width: 1000px;
   margin: 0 auto;
-  margin-top: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
 .projekt-sektion {
@@ -19,7 +19,7 @@
   flex-direction: column;
 }
 
-.kompetence-sektion {
-  height: 200px;
-  width: auto;
+.kompetencer {
+  height: 120px;
+  width: 100%;
 }

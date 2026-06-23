@@ -8,16 +8,17 @@ export default function HomePage() {
   const Lottie = LottieModule.default;
   return (
     <div className="homepage-container">
-      <div className="navne-animation">
+      <div className="hero-sektion">
         <Lottie animationData={BogstavAnimation} loop={false} />
         <h1 className="under-titel">Multimediedesign studerende</h1>
       </div>
+      <div className="kompetencer">
+        <Lottie animationData={KompetenceAnimation} loop={true} />
+      </div>
+
       <div className="projekt-sektion">
         <p className="titel">Mine projekter</p>
         <Projekter />
-      </div>
-      <div className="kompetence-sektion">
-        <Lottie animationData={KompetenceAnimation} loop={true} />
       </div>
     </div>
   );
