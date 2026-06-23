@@ -1,15 +1,10 @@
-import "../css/main.css";
 import "../css/kontakt.css";
 
 export default function KontaktPage() {
   return (
     <div className="sektion">
       <p className="titel">Vil du vide mere?</p>
-      <p className="kontakt-tekst">
-        Hvis du mangler information eller er nysgerrig på noget fra denne
-        portfolio, så tøv ikke med at ringe eller skrive til mig! Vi tales
-        ved!{" "}
-      </p>
+
       <div className="kontakt-knapper">
         <a
           className="kontakt-knap"

@@ -11,7 +11,7 @@
   background-color: var(--secondary);
   width: auto;
   height: 48px;
-  padding: 8px 16px;
+  padding: 8px 24px;
   border-radius: 16px;
   border: none;
   display: flex;
@@ -27,9 +27,4 @@
 
 .kontakt-knap:hover {
   transform: scale(1.05);
-}
-
-.kontakt-tekst {
-  font-family: var(--font-body);
-  font-size: 1.2rem;
 }
