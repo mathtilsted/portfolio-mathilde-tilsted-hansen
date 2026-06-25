@@ -2,7 +2,6 @@ import "../css/homepage.css";
 import LottieModule from "lottie-react";
 import BogstavAnimation from "../animationer/bogstav-anim.json";
 import KompetenceAnimation from "../animationer/kompetencer-anim.json";
-import Projekter from "../components/Projekter";
 
 export default function HomePage() {
   const Lottie = LottieModule.default;
@@ -14,11 +13,6 @@ export default function HomePage() {
       </div>
       <div className="kompetencer">
         <Lottie animationData={KompetenceAnimation} loop={true} />
-      </div>
-
-      <div className="projekt-sektion">
-        <p className="titel">Mine projekter</p>
-        <Projekter />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import "../css/pubhub.css";
+import "../css/pubhub-display.css";
 
 export default function Pubhub() {
   return (

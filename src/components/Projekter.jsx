@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../css/projekter.css";
 import PubhubLogo from "../assets/pubhub-ikon.svg";
-import AkvarieLogo from "../assets/akvarie-ikon.svg";
+import AkvarieLogo from "../assets/akvarie-display/akvarie-ikon.svg";
 import LegepladsLogo from "../assets/legeplads-ikon.svg";
 
 /* display imports */
@@ -19,7 +19,7 @@ export default function Projekter() {
           <button className="knap" onClick={() => setActiveProject("Akvarie")}>
             <img src={AkvarieLogo} alt="grøn fisk" />
           </button>
-          <p>Storcenter Nord spildesign 2026</p>
+          <p>Storcenter Nord spildesign 2025</p>
         </div>
 
         <div className="knap-tekst-container">
@@ -43,7 +43,7 @@ export default function Projekter() {
       {activeProject && (
         <div className="overlay">
           <button className="luk-knap" onClick={() => setActiveProject(null)}>
-            ✕
+            <p className="luk-knap-x">X</p>
           </button>
 
           {activeProject === "Pubhub" && <PubhubDisplay />}

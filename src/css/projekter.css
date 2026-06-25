@@ -40,16 +40,22 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: var(--primary);
+  background: var(--secondary);
   z-index: 1000;
-  padding: 4rem;
   overflow-y: auto;
 }
 
 .luk-knap {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 2.5rem;
+  border: none;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.luk-knap-x {
+  font-size: 2rem;
 }
 
 /* container på ProjektPage siden 

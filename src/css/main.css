@@ -1,6 +1,14 @@
 /* Aleo typografi import */
 @import url("https://fonts.googleapis.com/css2?family=Aleo:wght@400;500;600;700&display=swap");
 
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 :root {
   color: var(--text);
   background-color: var(--primary);
@@ -8,6 +16,7 @@
   /*farver*/
   --primary: #ffffff;
   --secondary: #b2c278;
+  --secondary-dark: #84944a;
   --text: #000000;
 
   /*font*/
