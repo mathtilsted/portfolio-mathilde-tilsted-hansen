@@ -8,7 +8,7 @@ export default function Pubhub() {
   return (
     <>
       <div className="top-container">
-        <p className="overlay-titel">PubHub appkoncept 2026</p>
+        <p className="overlay-titel">PubHub app-koncept 2026</p>
         <a
           className="display-knap"
           href="https://eaa25mtha.github.io/webapp-eksamen/"

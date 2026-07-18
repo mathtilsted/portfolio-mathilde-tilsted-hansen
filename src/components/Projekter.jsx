@@ -16,13 +16,6 @@ export default function Projekter() {
     <div className="projekt-container">
       <div className="knap-sektion">
         <div className="knap-tekst-container">
-          <button className="knap" onClick={() => setActiveProject("Akvarie")}>
-            <img src={AkvarieLogo} alt="Storcenter Nords logo" />
-          </button>
-          <p>Storcenter Nord spildesign 2025</p>
-        </div>
-
-        <div className="knap-tekst-container">
           <button className="knap" onClick={() => setActiveProject("Pubhub")}>
             <img src={PubhubLogo} alt="Pubhub projekt logo" />
           </button>
@@ -30,8 +23,15 @@ export default function Projekter() {
         </div>
 
         <div className="knap-tekst-container">
+          <button className="knap" onClick={() => setActiveProject("Akvarie")}>
+            <img src={AkvarieLogo} alt="Storcenter Nords logo" />
+          </button>
+          <p>Storcenter Nord spildesign 2025</p>
+        </div>
+
+        <div className="knap-tekst-container">
           <button className="knap" onClick={() => setActiveProject("Blandet")}>
-            <img src={BlandetLogo} alt="græskar mand i overalls" />
+            <img src={BlandetLogo} alt="spørgsmålstegn" />
           </button>
           <p>Blandede projekter</p>
         </div>

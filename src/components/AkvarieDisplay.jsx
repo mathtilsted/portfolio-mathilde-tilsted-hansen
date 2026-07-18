@@ -37,6 +37,7 @@ export default function Akvarie() {
         <img src={AkvarieProto1} alt="første prototype skærm" />
         <img src={AkvarieProto2} alt="anden prototype skærm" />
       </div>
+      <div>{/* klik videre til næste projekt */}</div>
     </>
   );
 }
