@@ -48,14 +48,15 @@
 .luk-knap {
   position: absolute;
   top: 1rem;
-  right: 2.5rem;
+  right: 2rem;
   border: none;
-  background-color: var(--secondary);
   cursor: pointer;
+  background-color: var(--primary);
 }
 
 .luk-knap-x {
   font-size: 2rem;
+  font-family: var(--font-titel);
 }
 
 /* container på ProjektPage siden 

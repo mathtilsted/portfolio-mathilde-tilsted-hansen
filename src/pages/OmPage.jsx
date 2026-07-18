@@ -7,7 +7,7 @@ export default function OmPage() {
         <div className="titel">
           <p>Hvem er jeg?</p>
         </div>
-        <div className="tekst">
+        <div className="om-tekst">
           <p>Hej! Jeg hedder Mathilde</p>
           <p>
             Jeg er selvfølgelig multimediedesign studerende. Men jeg laver mange

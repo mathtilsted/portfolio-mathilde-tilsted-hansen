@@ -1,5 +1,4 @@
-/* generel display css */
-.top {
+.top-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,16 +9,19 @@
 /* fører til akvarie spillet */
 .akvarie-knap {
   text-decoration: none;
-  font-family: var(--text-body);
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: var(--font-weight);
-  letter-spacing: var(--spacing);
   color: var(--text);
   border-radius: 16px;
   background-color: var(--secondary);
   padding: 8px 16px;
   margin-bottom: 32px;
   cursor: pointer;
+}
+
+.akvarie-knap:hover {
+  transform: scale(1.05);
 }
 
 .overlay-titel {
@@ -32,14 +34,23 @@
   margin-top: 2rem;
 }
 
-.midte {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px;
+.midt-container {
+  padding: 2rem;
 }
 
-.bund {
-  width: 100%;
+.display-tekst {
+  border-radius: 32px;
+  background-color: var(--secondary);
+  padding: 2.5rem;
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+}
+
+.bund-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
