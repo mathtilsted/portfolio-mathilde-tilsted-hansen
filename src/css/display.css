@@ -6,22 +6,23 @@
   margin-bottom: 2rem;
 }
 
-/* fører til akvarie spillet */
-.akvarie-knap {
+/* fører til akvarie spillet og pubhub appen */
+.display-knap {
   text-decoration: none;
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: var(--font-weight);
-  color: var(--text);
+  color: var(--primary);
   border-radius: 16px;
-  background-color: var(--secondary);
+  background-color: var(--secondary-dark);
   padding: 8px 16px;
   margin-bottom: 32px;
   cursor: pointer;
+  transition: ease 0.2s;
 }
 
-.akvarie-knap:hover {
-  transform: scale(1.05);
+.display-knap:hover {
+  transform: scale(1.08);
 }
 
 .overlay-titel {
@@ -35,7 +36,7 @@
 }
 
 .midt-container {
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .display-tekst {
@@ -44,6 +45,7 @@
   padding: 2.5rem;
   font-size: 1.1rem;
   font-family: var(--font-body);
+  line-height: 2;
 }
 
 .bund-container {

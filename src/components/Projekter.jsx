@@ -2,12 +2,12 @@ import { useState } from "react";
 import "../css/projekter.css";
 import PubhubLogo from "../assets/pubhub-ikon.svg";
 import AkvarieLogo from "../assets/storcenternord-ikon.svg";
-import LegepladsLogo from "../assets/blandede-projekter-ikon.svg";
+import BlandetLogo from "../assets/blandede-projekter-ikon.svg";
 
 /* display imports */
 import PubhubDisplay from "./PubhubDisplay";
 import AkvarieDisplay from "./AkvarieDisplay";
-import LegepladsDisplay from "./LegepladsDisplay";
+import BlandetDisplay from "./BlandetDisplay";
 
 export default function Projekter() {
   const [activeProject, setActiveProject] = useState(null);
@@ -30,11 +30,8 @@ export default function Projekter() {
         </div>
 
         <div className="knap-tekst-container">
-          <button
-            className="knap"
-            onClick={() => setActiveProject("Legeplads")}
-          >
-            <img src={LegepladsLogo} alt="græskar mand i overalls" />
+          <button className="knap" onClick={() => setActiveProject("Blandet")}>
+            <img src={BlandetLogo} alt="græskar mand i overalls" />
           </button>
           <p>Blandede projekter</p>
         </div>
@@ -48,7 +45,7 @@ export default function Projekter() {
 
           {activeProject === "Pubhub" && <PubhubDisplay />}
           {activeProject === "Akvarie" && <AkvarieDisplay />}
-          {activeProject === "Legeplads" && <LegepladsDisplay />}
+          {activeProject === "Blandet" && <BlandetDisplay />}
         </div>
       )}
     </div>

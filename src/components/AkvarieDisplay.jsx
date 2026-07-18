@@ -1,14 +1,14 @@
 import AkvarieProto1 from "../assets/akvarie-proto-1.svg";
 import AkvarieProto2 from "../assets/akvarie-proto-2.svg";
-import "../css/akvarie-display.css";
+import "../css/display.css";
 
 export default function Akvarie() {
   return (
-    <div>
+    <>
       <div className="top-container">
         <p className="overlay-titel">Storcenter Nord case 2025</p>
         <a
-          className="akvarie-knap"
+          className="display-knap"
           href="https://eaa25mtha.github.io/eksamens-projekt-mathilde/"
           target="_blank"
           rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export default function Akvarie() {
       <div className="midt-container">
         <p className="display-tekst">
           I denne case arbejdede vi med spildesign til børn der leger ved
-          akvariet i bunden af StorcenterNord. Vi arbejdede innovativt og
+          akvariet i bunden af Storcenter Nord. Vi arbejdede innovativt og
           legende, da spillene skulle fange børnenes opmærksomhed, samtidig med
           at de formidlede viden om havet til børnene. <br />
           <br />I mit spil tog jeg udgangspunkt i børn i aldersgruppen 2-3 år.
@@ -37,6 +37,6 @@ export default function Akvarie() {
         <img src={AkvarieProto1} alt="første prototype skærm" />
         <img src={AkvarieProto2} alt="anden prototype skærm" />
       </div>
-    </div>
+    </>
   );
 }

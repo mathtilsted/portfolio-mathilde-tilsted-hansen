@@ -1,10 +1,18 @@
-import "../css/pubhub-display.css";
+import "../css/display.css";
 
 export default function Pubhub() {
   return (
     <>
-      <div className="container">
-        <p className="titel">PubHub 2026</p>
+      <div className="top-container">
+        <p className="overlay-titel">PubHub appkoncept 2026</p>
+        <a
+          className="display-knap"
+          href="https://eaa25mtha.github.io/webapp-eksamen/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Prøv appen her
+        </a>
       </div>
     </>
   );
