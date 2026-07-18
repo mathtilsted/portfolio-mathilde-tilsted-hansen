@@ -1,3 +1,7 @@
+.kontakt-siden {
+  margin-top: 10rem;
+}
+
 .kontakt-knapper {
   display: flex;
   flex-direction: row;
