@@ -16,7 +16,7 @@
   letter-spacing: var(--spacing);
   color: var(--text);
   border-radius: 16px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   padding: 8px 16px;
   margin-bottom: 32px;
   cursor: pointer;
@@ -27,185 +27,19 @@
   font-family: var(--font-titel);
   font-weight: 100;
   font-size: 3.5rem;
-  letter-spacing: var(--spacing);
   z-index: 5;
   padding: 2rem 0;
   margin-top: 2rem;
 }
 
-.case-logo {
-  width: 200px;
-  padding-left: 2rem;
-}
-
-.case-beskrivelse {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 48px;
-  z-index: 5;
-}
-
-.case-tekst {
-  width: 600px;
-  text-align: center;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  letter-spacing: var(--spacing);
-  font-weight: var(--font-weight);
-  line-height: 32px;
-  z-index: 5;
-  background-color: var(--secondary-dark);
-  border-radius: 24px;
-  padding: 16px;
-}
-
 .midte {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 48px;
+  gap: 100px;
 }
 
 .bund {
   width: 100%;
-}
-
-/* akvarie display og animationer */
-.akvarie {
-  width: 450px;
-  height: 450px;
-  padding-right: 2rem;
-}
-
-.klovnfisk {
-  position: absolute;
-  bottom: 0;
-  top: 115vh;
-  right: 10vw;
-  width: 8vw;
-  animation: klovnfisk 25s linear infinite;
-  z-index: 0;
-}
-
-@keyframes klovnfisk {
-  0% {
-    transform: translate(0, 0) scaleX(1);
-  } /* fisken er på startposition (0,0) og vender mod højre scaleX(1) */
-  25% {
-    transform: translate(-30vw, 4vh) scaleX(1);
-  } /* fisken svømmer mod venstre og lidt ned (-30vw, 4vh), fisken vender stadig mod højre */
-  50% {
-    transform: translate(-70vw, 0) scaleX(1);
-  } /* fisken er svømmet 70vw af skærmen mod venstre, tilbage i samme højde igen og vender mod højre */
-  51% {
-    transform: translate(-70vw, 0) scaleX(-1);
-  } /* samme position og højde som ved 50%, spejlvendt så den nu vender mod venstre */
-  75% {
-    transform: translate(-30vw, 4vh) scaleX(-1);
-  } /* fisken svømmer tilbage mod højre, vendt mod venstre */
-  100% {
-    transform: translate(0, 0) scaleX(-1);
-  } /* tilbage til start punktet, looper så fisken vender sig igen og starter forfra */
-}
-
-.laks {
-  position: absolute;
-  top: 120vh;
-  left: 10vw;
-  width: 8vw;
-  animation: laks 30s linear infinite;
-  z-index: 0;
-}
-
-@keyframes laks {
-  0% {
-    transform: translate(0, 0) scaleX(1);
-  }
-  25% {
-    transform: translate(30vw, 6vh) scaleX(1);
-  }
-  50% {
-    transform: translate(70vw, 0) scaleX(1);
-  }
-  51% {
-    transform: translate(70vw, 0) scaleX(-1);
-  }
-  75% {
-    transform: translate(30vw, 6vh) scaleX(-1);
-  }
-  100% {
-    transform: translate(0, 0) scaleX(-1);
-  }
-}
-
-.lilla-fisk {
-  position: absolute;
-  bottom: 0;
-  top: 140vh;
-  left: 10vw;
-  width: 10vw;
-  animation: lilla-fisk 20s linear infinite;
-  z-index: 2;
-}
-
-@keyframes lilla-fisk {
-  0% {
-    transform: translateX(0);
-  }
-  48% {
-    transform: translateX(70vw) rotateY(0);
-  }
-  50% {
-    transform: translateX(70vw) rotateY(180deg);
-  }
-  98% {
-    transform: translateX(0) rotateY(180deg);
-  }
-  100% {
-    transform: translateX(0) rotateY(0);
-  }
-}
-
-.tang-1 {
-  width: 16vw;
-  position: relative;
-  bottom: 0;
-  top: 10vh;
-  left: 10vw;
-}
-
-.tang-2 {
-  width: 10vw;
-  position: relative;
-  bottom: 0;
-  top: 12vh;
-  left: 20vw;
-  z-index: 3;
-}
-
-.tang-3 {
-  width: 12vw;
-  position: relative;
-  bottom: 0;
-  top: 10vh;
-  left: 25vw;
-}
-
-.tang-4 {
-  width: 12vw;
-  position: relative;
-  bottom: 0;
-  top: 14vh;
-  left: 20vw;
-  z-index: 3;
-}
-
-.sandbanke {
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: fill;
 }

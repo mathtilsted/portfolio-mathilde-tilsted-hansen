@@ -1,5 +1,5 @@
-/* Aleo typografi import */
-@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@400;500;600;700&display=swap");
+/* Itim typografi import */
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 /*reset*/
 * {
@@ -14,13 +14,15 @@
   background-color: var(--primary);
 
   /*farver*/
-  --primary: #ffffff;
+  --primary: #f0e6dc;
   --secondary: #b2c278;
-  --secondary-dark: #84944a;
+  --secondary-dark: #506916;
+  --accent1: #76070d;
+  --accent2: #ffedab;
   --text: #000000;
 
   /*font*/
-  --font-titel: "Aleo", serif;
+  --font-titel: "Itim", sans-serif;
   --font-body: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-weight: 400;
   --spacing: 0.1em;
@@ -33,9 +35,8 @@
 .titel {
   color: var(--secondary);
   font-family: var(--font-titel);
-  font-weight: 100;
+  font-weight: 400;
   font-size: 4rem;
-  letter-spacing: var(--spacing);
 }
 
 .under-titel {

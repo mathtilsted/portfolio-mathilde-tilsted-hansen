@@ -16,7 +16,7 @@
 }
 
 .knap {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   width: 300px;
   height: 300px;
   border-radius: 64px;
@@ -40,7 +40,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: var(--secondary);
+  background: var(--primary);
   z-index: 1000;
   overflow-y: auto;
 }

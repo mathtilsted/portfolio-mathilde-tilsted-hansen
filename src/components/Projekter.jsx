@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../css/projekter.css";
 import PubhubLogo from "../assets/pubhub-ikon.svg";
-import AkvarieLogo from "../assets/akvarie-display/akvarie-ikon.svg";
-import LegepladsLogo from "../assets/legeplads-ikon.svg";
+import AkvarieLogo from "../assets/storcenternord-ikon.svg";
+import LegepladsLogo from "../assets/blandede-projekter-ikon.svg";
 
 /* display imports */
 import PubhubDisplay from "./PubhubDisplay";
@@ -17,7 +17,7 @@ export default function Projekter() {
       <div className="knap-sektion">
         <div className="knap-tekst-container">
           <button className="knap" onClick={() => setActiveProject("Akvarie")}>
-            <img src={AkvarieLogo} alt="grøn fisk" />
+            <img src={AkvarieLogo} alt="Storcenter Nords logo" />
           </button>
           <p>Storcenter Nord spildesign 2025</p>
         </div>
@@ -36,7 +36,7 @@ export default function Projekter() {
           >
             <img src={LegepladsLogo} alt="græskar mand i overalls" />
           </button>
-          <p>Legeplads</p>
+          <p>Blandede projekter</p>
         </div>
       </div>
 
