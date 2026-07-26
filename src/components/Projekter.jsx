@@ -19,21 +19,21 @@ export default function Projekter() {
           <button className="knap" onClick={() => setActiveProject("Pubhub")}>
             <img src={PubhubLogo} alt="Pubhub projekt logo" />
           </button>
-          <p>PubHub app-koncept 2026</p>
+          <p className="knap-tekst">PubHub app-koncept 2026</p>
         </div>
 
         <div className="knap-tekst-container">
           <button className="knap" onClick={() => setActiveProject("Akvarie")}>
             <img src={AkvarieLogo} alt="Storcenter Nords logo" />
           </button>
-          <p>Storcenter Nord spildesign 2025</p>
+          <p className="knap-tekst">Storcenter Nord spildesign 2025</p>
         </div>
 
         <div className="knap-tekst-container">
           <button className="knap" onClick={() => setActiveProject("Blandet")}>
             <img src={BlandetLogo} alt="spørgsmålstegn" />
           </button>
-          <p>Blandede projekter</p>
+          <p className="knap-tekst">Blandede projekter</p>
         </div>
       </div>
 

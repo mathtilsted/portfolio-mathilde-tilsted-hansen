@@ -78,3 +78,7 @@
   letter-spacing: var(--spacing);
   font-size: 1rem;
 }
+
+.knap-tekst {
+  z-index: 1; /* så går knapperne ikke ud over teksten når der bruges hover*/
+}
