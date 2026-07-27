@@ -35,8 +35,19 @@
   margin-top: 2rem;
 }
 
+/* tekststykke 1 og analog skitse */
 .midt-container {
-  padding: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* billede af den analoge skitse */
+.skitse {
+  width: 44%;
+  border-radius: 32px;
 }
 
 .display-tekst {
@@ -46,14 +57,43 @@
   font-size: 1.1rem;
   font-family: var(--font-body);
   line-height: 2;
+  width: 50%;
 }
 
-.bund-container {
+/* billederne af den færdige prototype */
+.prototype-container {
   display: flex;
   gap: 3.5rem;
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+  margin-bottom: 4rem;
+  padding: 0 1.5rem;
+}
+
+.display-tekst-bund {
+  border-radius: 32px;
+  background-color: var(--secondary);
+  padding: 2.5rem;
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  line-height: 2;
+  width: 50%;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+/* tekststykke 2 og moodboard */
+.bund-container {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 4rem;
+}
+
+.moodboard-img {
+  width: 50%;
+  border-radius: 32px;
 }
