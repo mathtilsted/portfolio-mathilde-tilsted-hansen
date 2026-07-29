@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import LottieModule from "lottie-react";
+import LoadingIndicator from "../animationer/loading-indicator.json";
 import Græskar from "../assets/blandet/pumpkin.svg";
 import PubPlakat from "../assets/blandet/pubhub-plakat.png";
 import Uterus from "../assets/blandet/uterus.svg";
@@ -9,6 +11,7 @@ import Craft2 from "../assets/blandet/creative-craft-2.png";
 import "../css/display.css";
 
 export default function Pubhub() {
+  const Lottie = LottieModule.default;
   return (
     <>
       <div className="top-container">
@@ -38,12 +41,61 @@ export default function Pubhub() {
         />
       </div>
       <div className="blandede-projekter-container">
-        <img src={PubPlakat} alt="pubhub plakat" />
-        <img src={Craft1} alt="plakat med hjerne på" />
-        <img src={CoilPlakat} alt="plakat fra projekt der hed Coil" />
-        <img src={SoMePlakat} alt="lille SoMe post fra skoleprojekt" />
-        <img src={Craft2} alt="fantasi hus lavet af en tekop" />
+        <div className="projekt-kort">
+          <img src={PubPlakat} alt="pubhub plakat" />
+
+          <div className="projekt-overlay">
+            <h3>PubHub</h3>
+            <p>2026 - Figma & React</p>
+          </div>
+        </div>
+
+        <div className="projekt-kort">
+          <img src={Craft1} alt="plakat med hjerne på" />
+
+          <div className="projekt-overlay">
+            <h3>Creative Craft</h3>
+            <p>2026 - Adobe Illustrator</p>
+          </div>
+        </div>
+
+        <div className="projekt-kort">
+          <img src={CoilPlakat} alt="plakat fra projekt der hed Coil" />
+
+          <div className="projekt-overlay">
+            <h3>COIL</h3>
+            <p>2026 - Figma</p>
+          </div>
+        </div>
+
+        <div className="projekt-kort">
+          <img src={SoMePlakat} alt="lille SoMe post fra skoleprojekt" />
+
+          <div className="projekt-overlay">
+            <h3>SoMe opgave</h3>
+            <p>2026 - Figma</p>
+          </div>
+        </div>
+
+        <div className="projekt-kort">
+          <img src={Craft2} alt="fantasi hus lavet af en tekop" />
+
+          <div className="projekt-overlay">
+            <h3>Creative Craft</h3>
+            <p>2026 - Photoshop</p>
+          </div>
+        </div>
+
+        <div className="projekt-kort">
+          <Lottie animationData={LoadingIndicator} loop={true} />
+
+          <div className="projekt-overlay">
+            <h3>Loading indicator</h3>
+            <p>2026 - Jitter</p>
+          </div>
+        </div>
       </div>
+
       <div className="bund-container">
         <p className="display-tekst-bund">
           Jeg kan godt lide at arbejde med forskellige stilarter. Jeg kan rigtig
