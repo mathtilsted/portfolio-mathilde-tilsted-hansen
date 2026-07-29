@@ -1,6 +1,21 @@
+.om-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 4rem;
+}
+
 .om-tekst {
+  border-radius: 32px;
+  background-color: var(--secondary);
+  padding: 2.5rem;
+  font-size: 1.1rem;
   font-family: var(--font-body);
-  font-size: 1.2rem;
-  width: 800px;
-  text-align: center;
+  line-height: 2;
+  width: 600px;
+}
+
+.om-container img {
+  width: 25%;
+  border-radius: 32px;
 }
