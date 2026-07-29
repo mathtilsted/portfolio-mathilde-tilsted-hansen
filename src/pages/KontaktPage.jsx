@@ -4,9 +4,9 @@ export default function KontaktPage() {
   return (
     <div className="kontakt-siden">
       <div className="sektion">
-        <p className="titel">Vil du vide mere?</p>
+        <h3 className="titel">Vil du vide mere?</h3>
 
-        <div className="kontakt-knapper">
+        <div className="kontakt-knap-container">
           <a
             className="kontakt-knap"
             href="https://github.com/mathtilsted?tab=repositories"

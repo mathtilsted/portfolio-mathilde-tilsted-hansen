@@ -2,13 +2,14 @@
   margin-top: 10rem;
 }
 
-.kontakt-knapper {
+.kontakt-knap-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 24px;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .kontakt-knap {
@@ -16,8 +17,8 @@
   background-color: var(--secondary);
   width: auto;
   height: 48px;
-  padding: 8px 24px;
-  border-radius: 16px;
+  padding: 32px 40px;
+  border-radius: 24px;
   border: none;
   display: flex;
   align-items: center;
