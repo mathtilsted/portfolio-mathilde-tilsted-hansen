@@ -6,6 +6,20 @@
   margin-bottom: 1rem;
 }
 
+/* containere til tekst og billeder */
+.midt-container,
+.bund-container {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.bund-container {
+  flex-direction: row-reverse;
+}
+
 /* fører til akvarie spillet og pubhub appen */
 .display-knap {
   text-decoration: none;
@@ -35,26 +49,18 @@
   margin-top: 2rem;
 }
 
-/* tekststykke 1 og skitse */
-.midt-container {
-  padding: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-}
-
-.display-tekst {
+/* display tekster */
+.display-tekst,
+.display-tekst-bund {
   border-radius: 32px;
   background-color: var(--secondary);
   padding: 2.5rem;
   font-size: 1.1rem;
   font-family: var(--font-body);
   line-height: 2;
-  width: 50%;
+  flex: 1; /* alt får lige meget plads */
 }
 
-/* billederne af den færdige prototype */
 .prototype-container {
   display: flex;
   gap: 3.5rem;
@@ -65,48 +71,18 @@
   padding: 0 1.5rem;
 }
 
-.display-tekst-bund {
-  border-radius: 32px;
-  background-color: var(--secondary);
-  padding: 2.5rem;
-  font-size: 1.1rem;
-  font-family: var(--font-body);
-  line-height: 2;
-  width: 50%;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+/* billedernes højde og bredde */
+.prototype-container img {
+  height: 520px;
+  width: auto;
 }
 
-/* tekststykke 2 og moodboard */
-.bund-container {
-  padding: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-  gap: 4rem;
-}
-
-/* pubhub skitse */
-.skitse {
-  width: 44%;
-  border-radius: 32px;
-}
-
-/* pubhub moodboard */
-.moodboard-img {
-  width: 50%;
-  border-radius: 32px;
-}
-
-/* akvarie komponent billede */
-.komponent-img {
-  width: 32%;
-  border-radius: 32px;
-}
-
-/* akvarie brugertest billede */
+/* alle billeder på de forskellige overlays */
+.skitse,
+.komponent-img,
+.moodboard-img,
 .brugertest-img {
-  width: 40%;
+  flex: 1;
   border-radius: 32px;
+  object-fit: cover;
 }
