@@ -1,21 +1,12 @@
-.om-container {
+.billed-container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 6rem;
   margin: 0 4rem;
 }
 
-.om-tekst {
-  border-radius: 32px;
-  background-color: var(--secondary);
-  padding: 2.5rem;
-  font-size: 1.1rem;
+.om-mig-under-titel {
   font-family: var(--font-body);
-  line-height: 2;
-  width: 600px;
-}
-
-.om-container img {
-  width: 25%;
-  border-radius: 32px;
+  font-weight: var(--font-weight);
+  font-size: 1.05rem;
 }
