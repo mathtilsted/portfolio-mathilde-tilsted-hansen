@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../css/projekter.css";
 import PubhubLogo from "../assets/pubhub-ikon.svg";
 import AkvarieLogo from "../assets/storcenternord-ikon.svg";
-import BlandetLogo from "../assets/blandede-projekter-ikon.svg";
+import BlandetLogo from "../assets/blandet-ikon.svg";
 
 /* display imports */
 import PubhubDisplay from "./PubhubDisplay";
