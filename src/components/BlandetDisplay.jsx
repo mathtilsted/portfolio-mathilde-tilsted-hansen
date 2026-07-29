@@ -7,6 +7,7 @@ import CoilPlakat from "../assets/blandet/coil-plakat.png";
 import SoMePlakat from "../assets/blandet/some.png";
 import Craft1 from "../assets/blandet/creative-craft-1.png";
 import Craft2 from "../assets/blandet/creative-craft-2.png";
+import Uterus from "../assets/blandet/uterus.svg";
 import "../css/display.css";
 
 export default function Pubhub() {
@@ -25,13 +26,11 @@ export default function Pubhub() {
           nødvendigvis har været noget der skulle bruges, men som har givet mig
           god mulighed for at øve mig på forskellige teknikker og diverse
           programmer under min uddannelse. Her sigter jeg ikke efter at være
-          perfekt, men i højere grad at jeg netop får prøvet krafter med nogle
-          ting jeg ikke nødvendigvis er i mål med endnu, men i en process med.
-          <br />
-          <br />
-          Hvis der er nogle spørgsmål til projekterne så skriv eller ring
-          endelig til mig. Mine kontaktinformationer kan findes under "kontakt
-          mig" siden eller ved at klikke på knappen ovenover.
+          perfekt, men i højere grad efter at jeg får prøvet kræfter med nogle
+          ting jeg måske ikke er i mål med endnu, men er i en process med. Hvis
+          der er nogle spørgsmål til projekterne så skriv eller ring endelig til
+          mig. Mine kontaktinformationer kan findes under "kontakt mig" siden
+          eller ved at klikke på knappen ovenover.
         </p>
       </div>
 
@@ -74,15 +73,6 @@ export default function Pubhub() {
         </div>
 
         <div className="projekt-kort">
-          <img src={Craft2} alt="fantasi hus lavet af en tekop" />
-
-          <div className="projekt-overlay">
-            <h3>Creative Craft</h3>
-            <p>2026 - Photoshop</p>
-          </div>
-        </div>
-
-        <div className="projekt-kort">
           <Lottie animationData={LoadingIndicator} loop={true} />
 
           <div className="projekt-overlay">
@@ -99,11 +89,29 @@ export default function Pubhub() {
             <p>2025 - Figma</p>
           </div>
         </div>
+
+        <div className="projekt-kort">
+          <img src={Uterus} alt="Livmoder med en dumbell i hånden" />
+
+          <div className="projekt-overlay">
+            <h3>Vektorgrafik</h3>
+            <p>2026 - Figma</p>
+          </div>
+        </div>
+
+        <div className="projekt-kort">
+          <img src={Craft2} alt="fantasi hus lavet af en tekop" />
+
+          <div className="projekt-overlay">
+            <h3>Creative Craft</h3>
+            <p>2026 - Photoshop</p>
+          </div>
+        </div>
       </div>
 
       <div className="bund-container">
         <p className="display-tekst-bund">
-          Jeg kan godt lide at arbejde med forskellige stilarter. Jeg kan rigtig
+          Jeg kan godt lide at arbejde med forskellige stilarter. Jeg kan især
           godt lide at arbejde med det "animerede look" når jeg designer og
           oplever tit at det er den stil jeg vender mest tilbage til. Mit
           seneste projekt "PubHub" handlede dog i højere grad om neon og fest
