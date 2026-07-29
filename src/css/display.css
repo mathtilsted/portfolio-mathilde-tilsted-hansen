@@ -35,19 +35,13 @@
   margin-top: 2rem;
 }
 
-/* tekststykke 1 og analog skitse */
+/* tekststykke 1 og skitse */
 .midt-container {
   padding: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
-}
-
-/* billede af den analoge skitse */
-.skitse {
-  width: 44%;
-  border-radius: 32px;
 }
 
 .display-tekst {
@@ -64,7 +58,7 @@
 .prototype-container {
   display: flex;
   gap: 3.5rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -93,7 +87,26 @@
   gap: 4rem;
 }
 
+/* pubhub skitse */
+.skitse {
+  width: 44%;
+  border-radius: 32px;
+}
+
+/* pubhub moodboard */
 .moodboard-img {
   width: 50%;
+  border-radius: 32px;
+}
+
+/* akvarie komponent billede */
+.komponent-img {
+  width: 32%;
+  border-radius: 32px;
+}
+
+/* akvarie brugertest billede */
+.brugertest-img {
+  width: 40%;
   border-radius: 32px;
 }
