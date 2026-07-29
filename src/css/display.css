@@ -61,6 +61,7 @@
   flex: 1; /* alt får lige meget plads */
 }
 
+/* prototyperne */
 .prototype-container {
   display: flex;
   gap: 3.5rem;
@@ -82,10 +83,30 @@
 .skitse,
 .komponent-img,
 .moodboard-img,
-.brugertest-img,
-.pumpkin-img {
+.brugertest-img {
   width: 520px;
   border-radius: 32px;
   object-fit: cover;
-  max-width: 520px;
+}
+
+.pumpkin-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+/* billed grid på det blandede projekt overlay */
+.blandede-projekter-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+  padding: 0 2.5rem;
+}
+
+.blandede-projekter-container img {
+  width: 100%;
+  border-radius: 32px;
+  display: block;
 }
