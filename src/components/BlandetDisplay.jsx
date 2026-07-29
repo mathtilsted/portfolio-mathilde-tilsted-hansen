@@ -3,7 +3,6 @@ import LottieModule from "lottie-react";
 import LoadingIndicator from "../animationer/loading-indicator.json";
 import Græskar from "../assets/blandet/pumpkin.svg";
 import PubPlakat from "../assets/blandet/pubhub-plakat.png";
-import Uterus from "../assets/blandet/uterus.svg";
 import CoilPlakat from "../assets/blandet/coil-plakat.png";
 import SoMePlakat from "../assets/blandet/some.png";
 import Craft1 from "../assets/blandet/creative-craft-1.png";
@@ -34,12 +33,9 @@ export default function Pubhub() {
           endelig til mig. Mine kontaktinformationer kan findes under "kontakt
           mig" siden eller ved at klikke på knappen ovenover.
         </p>
-        <img
-          className="pumpkin-img"
-          src={Græskar}
-          alt="Græskar mand lavet med vektorgrafik"
-        />
       </div>
+
+      {/* billed grid med projekter */}
       <div className="blandede-projekter-container">
         <div className="projekt-kort">
           <img src={PubPlakat} alt="pubhub plakat" />
@@ -94,6 +90,15 @@ export default function Pubhub() {
             <p>2026 - Jitter</p>
           </div>
         </div>
+
+        <div className="projekt-kort">
+          <img src={Græskar} alt="Græskar mand lavet med vektorgrafik" />
+
+          <div className="projekt-overlay">
+            <h3>Vektorgrafik</h3>
+            <p>2025 - Figma</p>
+          </div>
+        </div>
       </div>
 
       <div className="bund-container">
@@ -109,7 +114,6 @@ export default function Pubhub() {
           design, hvor man ikke forstyrres af for mange inputs undervejs. Det er
           en svær balancegang, men det er også det der gør det sjovt.
         </p>
-        <img src={Uterus} alt="livmoder illustration med dumbells i hænderne" />
       </div>
     </>
   );
