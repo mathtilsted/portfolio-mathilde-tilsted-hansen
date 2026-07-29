@@ -69,6 +69,7 @@
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 0 1.5rem;
+  flex: 1;
 }
 
 /* billedernes højde og bredde */
@@ -81,8 +82,10 @@
 .skitse,
 .komponent-img,
 .moodboard-img,
-.brugertest-img {
-  flex: 1;
+.brugertest-img,
+.pumpkin-img {
+  width: 520px;
   border-radius: 32px;
   object-fit: cover;
+  max-width: 520px;
 }

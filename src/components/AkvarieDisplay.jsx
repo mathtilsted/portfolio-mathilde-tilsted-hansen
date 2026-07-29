@@ -1,7 +1,7 @@
-import AkvarieProto1 from "../assets/akvarie-proto-1.svg";
-import AkvarieProto2 from "../assets/akvarie-proto-2.svg";
-import AkvarieTest from "../assets/akvarie-brugertest.png";
-import AkvarieKomponenter from "../assets/akvarie-komponenter.png";
+import AkvarieProto1 from "../assets/akvarie/akvarie-proto-1.svg";
+import AkvarieProto2 from "../assets/akvarie/akvarie-proto-2.svg";
+import AkvarieTest from "../assets/akvarie/brugertest.png";
+import AkvarieKomponenter from "../assets/akvarie/komponenter.png";
 import "../css/display.css";
 
 export default function Akvarie() {
