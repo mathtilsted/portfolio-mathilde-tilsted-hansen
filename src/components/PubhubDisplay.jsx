@@ -44,11 +44,11 @@ export default function Pubhub() {
       <div className="bund-container">
         <p className="display-tekst-bund">
           I samarbejde med en af mine medstuderende udviklede vi så appen
-          PubHHub. En app der er lavet til de unge studerende i Aarhus, som
-          gerne vil holde sig ajoure med hvad der sker i byen af events på
-          barerne. Appen er specielt lavet til de studerende som vil se og gemme
-          de events de måske gerne vil deltage i senere på ugen, den er bygget
-          op om et levende og sjovt design der inviterer til fest og natteliv.
+          PubHub. En app der er lavet til de unge studerende i Aarhus, som gerne
+          vil holde sig ajoure med hvad der sker i byen af events på barerne.
+          Appen er specielt lavet til de studerende som vil se og gemme de
+          events de måske gerne vil deltage i senere på ugen, den er bygget op
+          om et levende og sjovt design der inviterer til fest og natteliv.
           Særligt ved appen er at den er "drunk-safe" et udtryk vi opfandt
           undervejs, da appen har forstørret UI i form af knapper og et meget
           simpelt interface, da denne skal benyttes midt om natten og i
