@@ -59,7 +59,7 @@ export default function ProjektLayout({
       {/* GALLERY */}
       <section className="projekt-prototypes">
         <div className="section-heading">
-          <span className="projekt-label">Udvalgte visualer</span>
+          <span className="projekt-label">Udvalgte proces billeder</span>
           <h2>Projektet i praksis</h2>
         </div>
 
