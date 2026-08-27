@@ -1,5 +1,3 @@
-import "../css/kontakt.css";
-
 export default function KontaktPage() {
   return (
     <div className="kontakt-siden">

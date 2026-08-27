@@ -4,7 +4,6 @@ import PubProto3 from "../assets/pubhub/proto-3.svg";
 import PubProto4 from "../assets/pubhub/proto-4.svg";
 import PubSkitse from "../assets/pubhub/skitse.svg";
 import PubMoodboard from "../assets/pubhub/moodboard.png";
-import "../css/display.css";
 
 export default function Pubhub() {
   return (

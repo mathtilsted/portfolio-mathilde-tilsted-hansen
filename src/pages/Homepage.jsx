@@ -1,4 +1,3 @@
-import "../css/homepage.css";
 import LottieModule from "lottie-react";
 import BogstavAnimation from "../animationer/bogstav-anim.json";
 import KompetenceAnimation from "../animationer/kompetencer-anim.json";

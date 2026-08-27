@@ -8,9 +8,8 @@ import SoMePlakat from "../assets/blandet/some.png";
 import Craft1 from "../assets/blandet/creative-craft-1.png";
 import Craft2 from "../assets/blandet/creative-craft-2.png";
 import Uterus from "../assets/blandet/uterus.svg";
-import "../css/display.css";
 
-export default function Pubhub() {
+export default function BlandedeProjekter() {
   const Lottie = LottieModule.default;
   return (
     <>

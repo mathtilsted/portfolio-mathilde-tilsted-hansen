@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../css/flipcard.css";
 
 export default function FlipCard({ image, title, text }) {
   const [flipped, setFlipped] = useState(false);
