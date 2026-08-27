@@ -34,6 +34,12 @@
 }
 
 /* ------------ generelt css --------------- */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .titel {
   color: var(--secondary-dark);
   font-family: var(--font-titel);
