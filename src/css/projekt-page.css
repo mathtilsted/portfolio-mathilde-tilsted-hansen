@@ -1,0 +1,392 @@
+/* ------------- generel projekt side ------------- */
+
+.projekt-side {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* ------------- projekt forside ------------- */
+
+.projekter-grid {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+/* ------------- projekt card ------------- */
+
+.projekt-card {
+  width: 100%;
+}
+
+.projekt-card-link {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.projekt-card-link img {
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.projekt-card:hover .projekt-card-link img {
+  transform: scale(1.05);
+}
+
+/* ------------- card info ------------- */
+
+.projekt-card-info {
+  padding-top: 1.25rem;
+}
+
+.projekt-card-info h2 {
+  font-family: var(--font-titel);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 0.5rem;
+}
+
+.projekt-card-info p {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  opacity: 0.55;
+  margin: 0;
+}
+
+/* ------------- hero ------------- */
+
+.projekt-hero {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.projekt-label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.projekt-hero h1 {
+  font-family: var(--font-titel);
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin: 0.35em 0 0.25em;
+  color: var(--secondary-dark);
+  overflow: hidden;
+}
+
+.projekt-intro {
+  max-width: 620px;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.projekt-hero .display-knap {
+  margin-top: 2rem;
+}
+
+/* ------------- intro ------------- */
+
+.projekt-intro-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.projekt-intro-section p {
+  margin: 0;
+}
+
+/* ------------- stort visual / hero image ------------- */
+
+.projekt-visual {
+  margin: 2rem 0 10rem;
+}
+
+.projekt-visual img {
+  width: 100%;
+  max-height: 750px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ------------- placeholders ------------- */
+
+.projekt-placeholder {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.035);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.projekt-visual .projekt-placeholder {
+  min-height: 650px;
+}
+
+/* ------------- prototypes / gallery ------------- */
+
+.projekt-prototypes {
+  padding-bottom: 10rem;
+}
+
+.section-heading {
+  margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+  font-family: var(--font-titel);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin: 0.5rem 0 0;
+  color: var(--secondary-dark);
+  overflow: hidden;
+}
+
+.prototype-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.prototype-item {
+  width: 100%;
+}
+
+.prototype-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prototype-item .projekt-placeholder {
+  min-height: 350px;
+}
+
+/* ------------- refleksion ------------- */
+
+.projekt-refleksion {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 6rem;
+  align-items: center;
+  padding: 6rem 0 12rem;
+}
+
+.projekt-refleksion-tekst {
+  max-width: 500px;
+}
+
+.projekt-refleksion h2 {
+  font-family: var(--font-titel);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin: 0.5rem 0 2rem;
+  color: var(--secondary-dark);
+  overflow: hidden;
+}
+
+.projekt-refleksion p {
+  font-family: var(--font-body);
+  line-height: 1.8;
+  margin: 0 0 1.5rem;
+}
+
+.projekt-refleksion p:last-child {
+  margin-bottom: 0;
+}
+
+.projekt-refleksion > img {
+  width: 100%;
+  display: block;
+}
+
+/* ------------- blandede projekter ------------- */
+
+.blandede-projekter {
+  padding-bottom: 10rem;
+}
+
+.blandede-projekter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 3rem;
+}
+
+.blandet-projekt {
+  margin: 0;
+}
+
+.blandet-projekt-visual {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.blandet-projekt-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.blandet-projekt:hover .blandet-projekt-visual img {
+  transform: scale(1.02);
+}
+
+/* ------------- blandede projekter - tekst ------------- */
+
+.blandet-projekt-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.blandet-projekt-info h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.blandet-projekt-info p {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  opacity: 0.55;
+  margin: 0;
+}
+
+/* ------------- lottie animation ------------- */
+
+.blandet-projekt-visual svg {
+  width: 60%;
+  height: auto;
+}
+
+/* ------------- blandede projekter - refleksion ------------- */
+
+.blandede-refleksion {
+  padding-top: 8rem;
+}
+
+/* ------------- cta ------------- */
+
+.projekt-cta {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 0 10rem;
+}
+
+.projekt-cta h2 {
+  font-family: var(--font-titel);
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin: 0.4em 0 0.5em;
+}
+
+/* ------------- mobile ------------- */
+
+@media (max-width: 768px) {
+  .projekt-side {
+    padding: 0 1.5rem;
+  }
+
+  .projekt-hero {
+    min-height: 75vh;
+    padding: 4rem 0;
+  }
+
+  .projekt-hero h1 {
+    font-size: clamp(3.5rem, 16vw, 5rem);
+  }
+
+  .projekt-intro {
+    font-size: 1rem;
+  }
+
+  .projekt-intro-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 5rem 0;
+  }
+
+  .projekt-visual {
+    margin: 1rem 0 7rem;
+  }
+
+  .projekt-visual .projekt-placeholder {
+    min-height: 400px;
+  }
+
+  .prototype-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .prototype-item .projekt-placeholder {
+    min-height: 220px;
+  }
+
+  .projekt-prototypes {
+    padding-bottom: 7;
+  }
+}

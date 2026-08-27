@@ -2,7 +2,6 @@ import Mig2 from "../assets/om-mig/mig2.jpeg";
 import Mig3 from "../assets/om-mig/mig3.jpeg";
 import Mig4 from "../assets/om-mig/mig4.jpeg";
 import FlipCard from "../components/FlipCard";
-import "../css/om.css";
 
 export default function OmPage() {
   return (

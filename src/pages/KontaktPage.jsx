@@ -1,14 +1,12 @@
-import "../css/kontakt.css";
-
 export default function KontaktPage() {
   return (
     <div className="kontakt-siden">
       <div className="sektion">
         <h3 className="titel">Vil du vide mere?</h3>
 
-        <div className="kontakt-knap-container">
+        <div className="knap-container">
           <a
-            className="kontakt-knap"
+            id="knap"
             href="https://github.com/mathtilsted?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
@@ -17,7 +15,7 @@ export default function KontaktPage() {
           </a>
 
           <a
-            className="kontakt-knap"
+            id="knap"
             href="https://www.linkedin.com/in/mathilde-tilsted-hansen-125513347/"
             target="_blank"
             rel="noopener noreferrer"
@@ -25,16 +23,16 @@ export default function KontaktPage() {
             Linkedin
           </a>
 
-          <a className="kontakt-knap" href="mailto:mathildetilsted@gmail.com">
+          <a id="knap" href="mailto:mathildetilsted@gmail.com">
             mathildetilsted@gmail.com
           </a>
 
-          <a className="kontakt-knap" href="tel:+4551147110">
+          <a id="knap" href="tel:+4551147110">
             +45 51 14 71 10
           </a>
 
           <a
-            className="kontakt-knap"
+            id="knap"
             href={`${import.meta.env.BASE_URL}Mathilde-Tilsted-Hansen-CV.pdf`} //cv download virker både lokalt og efter deploye
             download
           >

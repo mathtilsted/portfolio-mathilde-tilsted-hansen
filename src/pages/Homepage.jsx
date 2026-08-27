@@ -1,4 +1,3 @@
-import "../css/homepage.css";
 import LottieModule from "lottie-react";
 import BogstavAnimation from "../animationer/bogstav-anim.json";
 import KompetenceAnimation from "../animationer/kompetencer-anim.json";
@@ -9,7 +8,9 @@ export default function HomePage() {
     <div className="homepage-container">
       <div className="hero-sektion">
         <Lottie animationData={BogstavAnimation} loop={false} />
-        <h1 className="under-titel">Multimediedesignstuderende</h1>
+        <h1 className="under-titel">
+          En glad multimediedesignstuderende fra Aarhus.
+        </h1>
       </div>
       <div className="kompetencer">
         <Lottie animationData={KompetenceAnimation} loop={true} />
