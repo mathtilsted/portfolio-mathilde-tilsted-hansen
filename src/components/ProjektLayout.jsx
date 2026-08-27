@@ -29,6 +29,7 @@ export default function ProjektLayout({
         {buttonLink && (
           <a
             className="display-knap"
+            id="knap"
             href={buttonLink}
             target="_blank"
             rel="noopener noreferrer"

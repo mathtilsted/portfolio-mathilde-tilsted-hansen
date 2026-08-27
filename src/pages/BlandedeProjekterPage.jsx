@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import LottieModule from "lottie-react";
-
 import LoadingIndicator from "../animationer/loading-indicator.json";
-
 import Græskar from "../assets/blandet/pumpkin.svg";
 import PubPlakat from "../assets/blandet/pubhub-plakat.png";
 import CoilPlakat from "../assets/blandet/coil-plakat.png";
@@ -10,7 +8,6 @@ import SoMePlakat from "../assets/blandet/some.png";
 import Craft1 from "../assets/blandet/creative-craft-1.png";
 import Craft2 from "../assets/blandet/creative-craft-2.png";
 import Uterus from "../assets/blandet/uterus.svg";
-
 import "../css/projekt-page.css";
 
 export default function BlandedeProjekter() {
@@ -164,7 +161,7 @@ export default function BlandedeProjekter() {
 
         <h2>Lad os snakke.</h2>
 
-        <Link className="display-knap" to="/kontakt-mig">
+        <Link id="knap" to="/kontakt-mig">
           Kontakt mig
         </Link>
       </section>
