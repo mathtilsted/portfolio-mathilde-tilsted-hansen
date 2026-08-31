@@ -65,7 +65,7 @@ export default function BlandedeProjekter() {
 
   return (
     <main className="projekt-side blandede-side">
-      {/* HERO */}
+      {/* hero sektion */}
       <section className="projekt-hero">
         <span className="projekt-label">
           Eksperimenter · Øvelser · Kreative projekter
@@ -79,7 +79,7 @@ export default function BlandedeProjekter() {
         </p>
       </section>
 
-      {/* INTRO */}
+      {/* introduktion */}
       <section className="projekt-intro-section">
         <p>
           Denne side er dedikeret til de projekter, som ikke nødvendigvis har
@@ -95,7 +95,7 @@ export default function BlandedeProjekter() {
         </p>
       </section>
 
-      {/* PROJECT GRID */}
+      {/* grid med projekter */}
       <section className="blandede-projekter">
         <div className="section-heading">
           <span className="projekt-label">Udvalgte projekter</span>
@@ -126,7 +126,7 @@ export default function BlandedeProjekter() {
         </div>
       </section>
 
-      {/* REFLECTION */}
+      {/* reflektion */}
       <section className="projekt-refleksion blandede-refleksion">
         <div className="projekt-refleksion-tekst">
           <span className="projekt-label">Min tilgang</span>
@@ -155,7 +155,7 @@ export default function BlandedeProjekter() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* cta  */}
       <section className="projekt-cta">
         <span className="projekt-label">Har du en idé?</span>
 

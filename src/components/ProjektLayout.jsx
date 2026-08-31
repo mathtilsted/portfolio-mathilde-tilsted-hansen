@@ -4,11 +4,10 @@ export default function ProjektLayout({
   label = "Case study",
   title = "Projekt titel",
   intro = "En kort introduktion til projektet.",
-  introLeft = "Her kan du beskrive projektets baggrund, problemstilling eller kontekst.",
-  introRight = "Her kan du beskrive din rolle, proces, målgruppe eller de vigtigste overvejelser.",
   heroImage,
   heroImageAlt = "Projekt visual",
   prototypes = [],
+  processText = "Her kan du skrive om din proces, dine designvalg og de overvejelser du gjorde dig undervejs.",
   reflectionTitle = "Refleksion",
   reflectionText = "Her kan du skrive om hvad du lærte, hvilke udfordringer du mødte, og hvad du ville gøre anderledes.",
   reflectionImage,
@@ -18,14 +17,11 @@ export default function ProjektLayout({
 }) {
   return (
     <main className="projekt-side">
-      {/* HERO */}
+      {/* ------------- hero sektion med indledende tekst ------------- */}
       <section className="projekt-hero">
         <span className="projekt-label">{label}</span>
-
         <h1>{title}</h1>
-
         <p className="projekt-intro">{intro}</p>
-
         {buttonLink && (
           <a
             className="display-knap"
@@ -39,13 +35,8 @@ export default function ProjektLayout({
         )}
       </section>
 
-      {/* INTRO */}
-      <section className="projekt-intro-section">
-        <p>{introLeft}</p>
-        <p>{introRight}</p>
-      </section>
+      {/* ------------- hero billede af projektet ------------- */}
 
-      {/* MAIN VISUAL */}
       <section className="projekt-visual">
         {heroImage ? (
           <img src={heroImage} alt={heroImageAlt} />
@@ -56,13 +47,14 @@ export default function ProjektLayout({
         )}
       </section>
 
-      {/* GALLERY */}
+      {/* ------------- de 4 skitse billeder ------------- */}
+
       <section className="projekt-prototypes">
         <div className="section-heading">
           <span className="projekt-label">Udvalgte proces billeder</span>
           <h2>Projektet i praksis</h2>
+          <p>{processText}</p>
         </div>
-
         <div className="prototype-grid">
           {prototypes.length > 0
             ? prototypes.map((image, index) => (
@@ -83,16 +75,14 @@ export default function ProjektLayout({
         </div>
       </section>
 
-      {/* REFLECTION */}
+      {/* ------------- refleksion ------------- */}
+
       <section className="projekt-refleksion">
         <div className="projekt-refleksion-tekst">
           <span className="projekt-label">Eftertanke</span>
-
           <h2>{reflectionTitle}</h2>
-
           <p>{reflectionText}</p>
         </div>
-
         {reflectionImage ? (
           <img src={reflectionImage} alt={reflectionImageAlt} />
         ) : (

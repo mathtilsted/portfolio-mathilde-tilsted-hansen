@@ -1,46 +1,54 @@
 import { Link } from "react-router-dom";
 import "../css/projekt-page.css";
-
 import PubhubLogo from "../assets/pubhub-ikon.svg";
 import AkvarieLogo from "../assets/storcenternord-ikon.svg";
 import BlandetLogo from "../assets/blandet-ikon.svg";
-//import Baggrund from "../assets/baggrunde/baggrund2.png";
+import Baggrund4 from "../assets/baggrunde/baggrund4.png";
 
 export default function ProjektPage() {
   return (
-    <main className="projekter-grid">
-      <div className="projekt-card">
-        <Link className="projekt-card-link" to="/pubhub">
-          <img src={PubhubLogo} alt="PubHub projekt logo" />
+    <>
+      <img className="baggrund-projekt-siden" src={Baggrund4} alt="" />
+      <main className="projekter-grid">
+        <Link className="projekt-card" to="/pubhub">
+          <img src={PubhubLogo} alt="PubHub projekt" />
+
+          <div className="projekt-card-text">
+            <h3>PubHub</h3>
+            <p>App-koncept · 2026 · React · Figma</p>
+          </div>
         </Link>
 
-        <div className="projekt-card-info">
-          <h2>PubHub</h2>
-          <p>App-koncept · 2026</p>
-        </div>
-      </div>
+        <Link className="projekt-card" to="/akvarie">
+          <img src={AkvarieLogo} alt="Akvarie projekt" />
 
-      <div className="projekt-card">
-        <Link className="projekt-card-link" to="/akvarie">
-          <img src={AkvarieLogo} alt="Storcenter Nord projekt logo" />
+          <div className="projekt-card-text">
+            <h3>Akvarie-spillet</h3>
+            <p>Interaktiv løsning · 2025 · JavaScript · Figma</p>
+          </div>
         </Link>
 
-        <div className="projekt-card-info">
-          <h2>Akvarie</h2>
-          <p>Spildesign · 2025</p>
-        </div>
-      </div>
+        <Link className="projekt-card" to="/blandede-projekter">
+          <img src={BlandetLogo} alt="Blandede projekter" />
 
-      <div className="projekt-card">
-        <Link className="projekt-card-link" to="/blandede-projekter">
-          <img src={BlandetLogo} alt="Blandede projekter logo" />
+          <div className="projekt-card-text">
+            <h3>Blandede Projekter</h3>
+            <p>Legeplads · Eksperimenter · Udfordring</p>
+          </div>
         </Link>
 
-        <div className="projekt-card-info">
-          <h2>Blandede projekter</h2>
-          <p>Eksperimenter · Øvelser · 2025–2026</p>
+        <div className="projekt-card projekt-placeholder">
+          <span>Projekt 04</span>
         </div>
-      </div>
-    </main>
+
+        <div className="projekt-card projekt-placeholder">
+          <span>Projekt 05</span>
+        </div>
+
+        <div className="projekt-card projekt-placeholder">
+          <span>Projekt 06</span>
+        </div>
+      </main>
+    </>
   );
 }
