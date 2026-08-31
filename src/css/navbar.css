@@ -27,6 +27,7 @@
   border-radius: 16px;
   transition: 0.5s;
   margin-top: 40px;
+  z-index: 5;
 }
 
 .link:hover,

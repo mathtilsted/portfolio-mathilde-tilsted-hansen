@@ -7,30 +7,31 @@
   padding: 0 3rem;
 }
 
-.projekt-page-titel {
-  color: var(--secondary-dark);
-  font-family: var(--font-titel);
-  font-weight: 400;
-  font-size: 4rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
+.baggrund-projekt-siden {
+  position: absolute;
+  width: 115%;
+  height: 95%;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 20%;
 }
 
 .projekter-grid {
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 8rem auto;
   padding: 0 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.4rem;
 }
 
 .projekt-card {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,8 +40,8 @@
 }
 
 .projekt-card img {
-  width: 44%;
-  height: 44%;
+  width: 55%;
+  height: 55%;
   object-fit: contain;
   display: block;
   transition: transform 0.5s ease;
@@ -50,21 +51,14 @@
   transform: scale(1.05);
 }
 
-.projekt-card-overlay {
-  position: absolute;
-  inset: 0;
+.projekt-card-text {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  padding: 1rem;
   color: var(--text);
-  font-family: var(--font-body);
-}
-
-.projekt-card:hover .projekt-card-overlay {
-  opacity: 1;
+  font-family: var(--font-titel);
 }
 
 .projekt-placeholder {
