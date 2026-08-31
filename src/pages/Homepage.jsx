@@ -1,20 +1,21 @@
 import LottieModule from "lottie-react";
-import BogstavAnimation from "../animationer/bogstav-anim.json";
 import KompetenceAnimation from "../animationer/kompetencer-anim.json";
+import Baggrund from "../assets/baggrund.png";
 
 export default function HomePage() {
   const Lottie = LottieModule.default;
+
   return (
-    <div className="homepage-container">
-      <div className="hero-sektion">
-        <Lottie animationData={BogstavAnimation} loop={false} />
-        <h1 className="under-titel">
-          En glad multimediedesignstuderende fra Aarhus.
-        </h1>
-      </div>
-      <div className="kompetencer">
-        <Lottie animationData={KompetenceAnimation} loop={true} />
-      </div>
-    </div>
+    <main>
+      <img className="homepage-baggrund" src={Baggrund} alt="" />
+
+      <section className="homepage-indhold">
+        <h1 className="homepage-titel">mathilde t. hansen</h1>
+
+        <div className="kompetencer">
+          <Lottie animationData={KompetenceAnimation} loop={true} />
+        </div>
+      </section>
+    </main>
   );
 }
