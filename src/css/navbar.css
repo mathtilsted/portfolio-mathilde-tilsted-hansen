@@ -33,6 +33,7 @@
 .link.active {
   background-color: var(--secondary);
   color: var(--text);
+  opacity: 100%;
 }
 
 .logo {

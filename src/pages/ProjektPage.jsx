@@ -4,6 +4,7 @@ import "../css/projekt-page.css";
 import PubhubLogo from "../assets/pubhub-ikon.svg";
 import AkvarieLogo from "../assets/storcenternord-ikon.svg";
 import BlandetLogo from "../assets/blandet-ikon.svg";
+//import Baggrund from "../assets/baggrunde/baggrund2.png";
 
 export default function ProjektPage() {
   return (
