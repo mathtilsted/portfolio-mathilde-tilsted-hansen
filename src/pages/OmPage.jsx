@@ -1,15 +1,14 @@
-/*import Mig2 from "../assets/om-mig/mig2.jpeg";
-import Mig3 from "../assets/om-mig/mig3.jpeg";
-import Mig4 from "../assets/om-mig/mig4.jpeg";*/
 import Mig5 from "../assets/om-mig/mig5.png";
 import Mig6 from "../assets/om-mig/mig6.png";
 import Mig7 from "../assets/om-mig/mig7.png";
 import FlipCard from "../components/FlipCard";
+import Baggrund from "../assets/baggrunde/baggrund1.png";
 
 export default function OmPage() {
   return (
     <>
       <div className="sektion">
+        <img className="baggrund" src={Baggrund} alt="" />
         <div className="titel">
           <h3>Hvem er jeg?</h3>
         </div>

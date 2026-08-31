@@ -1,6 +1,9 @@
+import Baggrund from "../assets/baggrunde/baggrund2.png";
+
 export default function KontaktPage() {
   return (
     <div className="kontakt-siden">
+      <img className="baggrund" src={Baggrund} alt="" />
       <div className="sektion">
         <h3 className="titel">Vil du vide mere?</h3>
 
