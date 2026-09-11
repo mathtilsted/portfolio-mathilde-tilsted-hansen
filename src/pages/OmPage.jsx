@@ -1,6 +1,6 @@
-import Mig5 from "../assets/om-mig/mig5.png";
-import Mig6 from "../assets/om-mig/mig6.png";
-import Mig7 from "../assets/om-mig/mig7.png";
+import Mig1 from "../assets/om-mig/mig1.svg";
+import Mig2 from "../assets/om-mig/mig2.svg";
+import Mig3 from "../assets/om-mig/mig3.svg";
 import FlipCard from "../components/FlipCard";
 import Baggrund from "../assets/baggrunde/baggrund1.png";
 
@@ -17,7 +17,7 @@ export default function OmPage() {
         </p>
         <div className="billed-container">
           <FlipCard
-            image={Mig5}
+            image={Mig1}
             title="Musiker"
             text="I min fritid er jeg amatørmusiker og spiller i Århus Brass Band. 
             Jeg bruger meget tid på at øve og forberede mig til koncerter og konkurrencer. 
@@ -25,7 +25,7 @@ export default function OmPage() {
             Musik er sindssygt vigtigt for mig, og jeg synes det er mega cool at kunne læse noder og opleve musikken indefra ved selv at spille den."
           />
           <FlipCard
-            image={Mig6}
+            image={Mig2}
             title="Crafty og effektiv"
             text="Jeg kan lidt af hvert.
             Jeg hækler og strikker. 
@@ -33,7 +33,7 @@ export default function OmPage() {
             Jeg vil beskrive mig selv som crafty frem for kreativ fordi jeg ikke nødvendigvis er den første til at få ideen, men jeg arbejder rigtig godt så snart første beslutning er taget, også kører vi derudaf."
           />
           <FlipCard
-            image={Mig7}
+            image={Mig3}
             title="Ordentlig"
             text="Jeg ville elske at skrive at jeg er en håbløs kreativ sjæl der forsvinder ind i boblen når jeg kreerer ting.
             Det er jeg på sin vis også. Jeg har super god koncentration når jeg skal løse opgaver, men mest af alt er jeg ordentlig. 
