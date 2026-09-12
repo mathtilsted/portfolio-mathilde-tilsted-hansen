@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "../css/navbar.css";
-import logo from "../assets/mth.svg";
 
 export default function NavBar() {
+  const logo = `${import.meta.env.BASE_URL}mth.svg`;
+
   return (
     <header className="nav-container">
-      <NavLink to="/">
-        <img src={logo} alt="logo" className="logo" />
+      <NavLink to="/" aria-label="Gå til forsiden">
+        <img src={logo} alt="Mathilde Tilsted Hansen" className="logo" />
       </NavLink>
       <nav className="nav">
         <NavLink to="/projekter" className="link">

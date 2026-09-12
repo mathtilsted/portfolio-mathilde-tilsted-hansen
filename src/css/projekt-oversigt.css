@@ -1,0 +1,233 @@
+/* =========================================================
+   PROJEKTOVERSIGT
+   ========================================================= */
+
+.projektoversigt {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.baggrund-projekt-siden {
+  position: absolute;
+  width: 115%;
+  height: 95%;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.projektoversigt-indhold {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 6rem, 1400px);
+  margin: 0 auto;
+  padding: 2.5rem 0 9rem;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.projektoversigt-header {
+  max-width: 700px;
+  margin-bottom: 5rem;
+  margin-left: 3.8rem;
+}
+
+.projektoversigt-header h1 {
+  font-family: var(--font-titel);
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 400;
+  color: var(--secondary-dark);
+}
+
+.projektoversigt-header p {
+  max-width: 560px;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+/* =========================================================
+   PROJEKT GRID
+   ========================================================= */
+
+.projekter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: clamp(2rem, 5vw, 6rem);
+  row-gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+/* =========================================================
+   MAPPER
+   ========================================================= */
+
+.projekt-mappe {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transform: translateY(0) rotate(0deg);
+  transition:
+    transform 300ms ease,
+    filter 300ms ease;
+}
+
+.projekt-mappe img {
+  display: block;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  transition:
+    transform 300ms ease,
+    filter 300ms ease;
+}
+
+/* ---------- hover ---------- */
+
+@media (hover: hover) and (pointer: fine) {
+  .projekt-mappe:not(.projekt-mappe--kommende):hover {
+    transform: translateY(-10px) rotate(-0.6deg);
+  }
+
+  .projekt-mappe:not(.projekt-mappe--kommende):hover img {
+    transform: scale(1.025);
+  }
+}
+
+/* ---------- keyboard navigation ---------- */
+
+.projekt-mappe:focus-visible {
+  outline: 3px solid var(--secondary-dark);
+  outline-offset: 8px;
+  border-radius: 1rem;
+}
+
+/* =========================================================
+   KOMMENDE PROJEKT
+   ========================================================= */
+
+.projekt-mappe--kommende {
+  cursor: default;
+}
+
+.projekt-mappe--kommende img {
+  opacity: 0.72;
+}
+
+.projekt-mappe-status {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%) translateY(6px);
+  width: max-content;
+  max-width: 80%;
+  padding: 0.5rem 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text);
+  opacity: 0;
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .projekt-mappe--kommende:hover .projekt-mappe-status {
+    opacity: 0.65;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .projektoversigt-indhold {
+    width: min(100% - 3rem, 900px);
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+
+  .projektoversigt-header {
+    margin-bottom: 4rem;
+  }
+
+  .projekter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+    row-gap: 4rem;
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .projektoversigt {
+    overflow: hidden;
+  }
+
+  .baggrund-projekt-siden {
+    width: 170%;
+    height: 100%;
+  }
+
+  .projektoversigt-indhold {
+    width: min(100% - 2rem, 500px);
+    padding-top: 2.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .projektoversigt-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .projektoversigt-header h1 {
+    font-size: clamp(3.5rem, 18vw, 5rem);
+  }
+
+  .projektoversigt-header p {
+    font-size: 1rem;
+  }
+
+  .projekter-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .projekt-mappe {
+    width: min(100%, 430px);
+    margin-inline: auto;
+  }
+
+  .projekt-mappe-status {
+    opacity: 0.55;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* =========================================================
+   REDUCERET BEVÆGELSE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .projekt-mappe,
+  .projekt-mappe img,
+  .projekt-mappe-status {
+    transition: none;
+  }
+}
