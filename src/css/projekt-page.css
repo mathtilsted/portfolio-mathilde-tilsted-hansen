@@ -1,10 +1,12 @@
-/* ------------- projekt forsiden ------------- */
+/* =========================================================
+   PROJEKTOVERSIGT
+   ========================================================= */
 
-.projekt-side {
+.projektoversigt {
+  position: relative;
+  min-height: 100vh;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 3rem;
+  overflow: hidden;
 }
 
 .baggrund-projekt-siden {
@@ -14,348 +16,223 @@
   top: 50%;
   left: 48%;
   transform: translate(-50%, -50%);
+  object-fit: contain;
   z-index: 0;
   pointer-events: none;
-  opacity: 20%;
+  opacity: 0.2;
 }
+
+.projektoversigt-indhold {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 6rem, 1400px);
+  margin: 0 auto;
+  padding: 7rem 0 9rem;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.projektoversigt-header {
+  max-width: 700px;
+  margin-bottom: 5rem;
+  margin-left: 3.8rem;
+}
+
+.projektoversigt-header h1 {
+  font-family: var(--font-titel);
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 400;
+  color: var(--secondary-dark);
+}
+
+.projektoversigt-header p {
+  max-width: 560px;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+/* =========================================================
+   PROJEKT GRID
+   ========================================================= */
 
 .projekter-grid {
-  width: 100%;
-  max-width: 1400px;
-  margin: 8rem auto;
-  padding: 0 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: clamp(2rem, 5vw, 6rem);
+  row-gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
 }
 
-.projekt-card {
+/* =========================================================
+   MAPPER
+   ========================================================= */
+
+.projekt-mappe {
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   text-decoration: none;
+  cursor: pointer;
+  transform: translateY(0) rotate(0deg);
+  transition:
+    transform 300ms ease,
+    filter 300ms ease;
 }
 
-.projekt-card img {
-  width: 55%;
-  height: 55%;
-  object-fit: contain;
+.projekt-mappe img {
   display: block;
-  transition: transform 0.5s ease;
-}
-
-.projekt-card:hover img {
-  transform: scale(1.05);
-}
-
-.projekt-card-text {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1rem;
-  color: var(--text);
-  font-family: var(--font-titel);
-}
-
-.projekt-placeholder {
-  background: rgba(0, 0, 0, 0.025);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.6;
-}
-
-.projekt-placeholder span {
-  opacity: 0.6;
-}
-
-/* ------------- projekt siderne ------------- */
-
-/*-------------- hero sektion ----------------  */
-.projekt-hero {
-  min-height: 78vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 5rem 0;
-}
-
-.projekt-label {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  opacity: 0.55;
-}
-
-.projekt-hero h1 {
-  font-family: var(--font-titel);
-  font-size: clamp(4rem, 10vw, 9rem);
-  font-weight: 400;
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  margin: 0.35em 0 0.25em;
-  color: var(--secondary-dark);
-  overflow: hidden;
-}
-
-.projekt-intro {
-  max-width: 620px;
-  margin: 0;
-  font-family: var(--font-body);
-  font-size: 1.2rem;
-  line-height: 1.7;
-  opacity: 0.8;
-}
-
-.projekt-hero .display-knap {
-  margin-top: 2rem;
-}
-
-.projekt-visual {
-  margin: 2rem 0 10rem;
-  display: flex;
-  justify-content: center;
-  border-radius: 64px;
-}
-
-.projekt-visual img {
   width: 90%;
-  max-height: 750px;
+  height: auto;
   object-fit: contain;
-  display: block;
-  border-radius: 64px;
+  transition:
+    transform 300ms ease,
+    filter 300ms ease;
 }
 
-/* ------------- visuals - skitser og process ------------- */
+/* ---------- hover ---------- */
 
-.section-heading {
-  margin-bottom: 3rem;
+@media (hover: hover) and (pointer: fine) {
+  .projekt-mappe:not(.projekt-mappe--kommende):hover {
+    transform: translateY(-10px) rotate(-0.6deg);
+  }
+
+  .projekt-mappe:not(.projekt-mappe--kommende):hover img {
+    transform: scale(1.025);
+  }
 }
 
-.section-heading h2 {
-  font-family: var(--font-titel);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.03em;
-  margin-bottom: 1rem;
-  color: var(--secondary-dark);
-  overflow: hidden;
+/* ---------- keyboard navigation ---------- */
+
+.projekt-mappe:focus-visible {
+  outline: 3px solid var(--secondary-dark);
+  outline-offset: 8px;
+  border-radius: 1rem;
 }
 
-.prototype-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: stretch;
-  justify-content: flex-start;
+/* =========================================================
+   KOMMENDE PROJEKT
+   ========================================================= */
+
+.projekt-mappe--kommende {
+  cursor: default;
 }
 
-.prototype-item {
-  width: 100%;
-  aspect-ratio: 1 / 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.projekt-mappe--kommende img {
+  opacity: 0.72;
 }
 
-.prototype-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 32px;
-}
-
-/* ------------- refleksion ------------- */
-
-.projekt-refleksion {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 6rem;
-  align-items: center;
-  padding-left: 4rem;
-}
-
-.projekt-refleksion h2 {
-  font-family: var(--font-titel);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  margin: 0.5rem 0 2rem;
-  color: var(--secondary-dark);
-  overflow: hidden;
-}
-
-.projekt-refleksion p {
-  font-family: var(--font-body);
-  line-height: 1.8;
-  margin: 0 0 1.5rem;
-}
-
-.projekt-refleksion > img {
-  height: 50%;
-  width: auto;
-  object-fit: contain;
-  border-radius: 32px;
-}
-
-/* ------------- blandede projekter ------------- */
-
-.blandede-projekter {
-  padding-bottom: 10rem;
-}
-
-.blandede-projekter-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem 3rem;
-}
-
-.blandet-projekt {
-  margin: 0;
-}
-
-.blandet-projekt-visual {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.025);
-}
-
-.blandet-projekt-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.blandet-projekt:hover .blandet-projekt-visual img {
-  transform: scale(1.02);
-}
-
-.blandet-projekt-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 2rem;
-  padding-top: 1rem;
-}
-
-.blandet-projekt-info h3 {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0;
-}
-
-.blandet-projekt-info p {
+.projekt-mappe-status {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%) translateY(6px);
+  width: max-content;
+  max-width: 80%;
+  padding: 0.5rem 0.8rem;
   font-family: var(--font-body);
   font-size: 0.8rem;
-  opacity: 0.55;
-  margin: 0;
+  color: var(--text);
+  opacity: 0;
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
 }
 
-.blandet-projekt-visual svg {
-  width: 60%;
-  height: auto;
-}
-
-.blandede-refleksion {
-  padding-top: 8rem;
-}
-
-.projekt-cta {
-  min-height: 55vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 6rem 0 10rem;
-}
-
-.projekt-cta h2 {
-  font-family: var(--font-titel);
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  font-weight: 400;
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  margin: 0.4em 0 0.5em;
-}
-
-/* ------------- mobile ------------- */
-
-@media (max-width: 480px) {
-  .projekter-grid {
-    grid-template-columns: 1fr;
-    padding: 3rem 1rem;
-    gap: 1.5rem;
+@media (hover: hover) and (pointer: fine) {
+  .projekt-mappe--kommende:hover .projekt-mappe-status {
+    opacity: 0.65;
+    transform: translateX(-50%) translateY(0);
   }
 }
 
-@media (max-width: 768px) {
-  .projekt-side {
-    padding: 0 1.5rem;
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .projektoversigt-indhold {
+    width: min(100% - 3rem, 900px);
+
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+  }
+
+  .projektoversigt-header {
+    margin-bottom: 4rem;
   }
 
   .projekter-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 4rem 1.5rem;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 3rem;
+    row-gap: 4rem;
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .projektoversigt {
+    overflow: hidden;
   }
 
-  .projekt-hero {
-    min-height: 75vh;
-    padding: 4rem 0;
+  .baggrund-projekt-siden {
+    width: 170%;
+    height: 100%;
   }
 
-  .projekt-hero h1 {
-    font-size: clamp(3.5rem, 16vw, 5rem);
+  .projektoversigt-indhold {
+    width: min(100% - 2rem, 500px);
+
+    padding-top: 4rem;
+    padding-bottom: 6rem;
   }
 
-  .projekt-intro {
+  .projektoversigt-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .projektoversigt-header h1 {
+    font-size: clamp(3.5rem, 18vw, 5rem);
+  }
+
+  .projektoversigt-header p {
     font-size: 1rem;
   }
 
-  .projekt-intro-section {
+  .projekter-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 5rem 0;
+
+    gap: 3rem;
   }
 
-  .projekt-visual {
-    margin: 1rem 0 7rem;
+  .projekt-mappe {
+    width: min(100%, 430px);
+    margin-inline: auto;
   }
 
-  .projekt-visual .projekt-placeholder {
-    min-height: 400px;
-  }
+  .projekt-mappe-status {
+    opacity: 0.55;
 
-  .prototype-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    transform: translateX(-50%) translateY(0);
   }
+}
 
-  .prototype-item .projekt-placeholder {
-    min-height: 220px;
-  }
+/* =========================================================
+   REDUCERET BEVÆGELSE
+   ========================================================= */
 
-  .projekt-prototypes {
-    padding-bottom: 7;
+@media (prefers-reduced-motion: reduce) {
+  .projekt-mappe,
+  .projekt-mappe img,
+  .projekt-mappe-status {
+    transition: none;
   }
 }

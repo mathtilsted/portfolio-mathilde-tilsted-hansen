@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom";
 import "../css/navbar.css";
-import logo from "../assets/mth.svg";
 
 export default function NavBar() {
   return (
     <header className="nav-container">
       <NavLink to="/">
-        <img src={logo} alt="logo" className="logo" />
+        <img src="/mth.svg" alt="logo" className="logo" />
       </NavLink>
       <nav className="nav">
         <NavLink to="/projekter" className="link">
