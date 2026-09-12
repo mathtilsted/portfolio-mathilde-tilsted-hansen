@@ -27,7 +27,7 @@
   z-index: 1;
   width: min(100% - 6rem, 1400px);
   margin: 0 auto;
-  padding: 7rem 0 9rem;
+  padding: 2.5rem 0 9rem;
 }
 
 /* =========================================================
@@ -157,8 +157,7 @@
 @media (max-width: 950px) {
   .projektoversigt-indhold {
     width: min(100% - 3rem, 900px);
-
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 7rem;
   }
 
@@ -168,7 +167,6 @@
 
   .projekter-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     column-gap: 3rem;
     row-gap: 4rem;
   }
@@ -190,8 +188,7 @@
 
   .projektoversigt-indhold {
     width: min(100% - 2rem, 500px);
-
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     padding-bottom: 6rem;
   }
 
@@ -209,7 +206,6 @@
 
   .projekter-grid {
     grid-template-columns: 1fr;
-
     gap: 3rem;
   }
 
@@ -220,7 +216,6 @@
 
   .projekt-mappe-status {
     opacity: 0.55;
-
     transform: translateX(-50%) translateY(0);
   }
 }

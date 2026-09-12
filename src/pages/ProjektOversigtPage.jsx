@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import "../css/projekt-page.css";
+import "../css/projekt-oversigt.css";
 import Baggrund4 from "../assets/baggrunde/baggrund4.png";
 import PubhubMappe from "../assets/projekt-sider/pubhub-mappe.svg";
 import MellemrumMappe from "../assets/projekt-sider/mellemrum-mappe.svg";
