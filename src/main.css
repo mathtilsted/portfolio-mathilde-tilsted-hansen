@@ -1,21 +1,24 @@
-/* Itim typografi import */
+/* =========================================================
+   TYPOGRAFI
+   ========================================================= */
+
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
-/*reset*/
+/* =========================================================
+   RESET
+   ========================================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: scroll;
 }
 
-/* --------------- variabler -------------------*/
+/* =========================================================
+   VARIABLER
+   ========================================================= */
 
 :root {
-  color: var(--text);
-  background-color: var(--primary);
-
-  /*farver*/
   --primary: #f0e6dc;
   --secondary: #b2c278;
   --secondary-dark: #506916;
@@ -23,17 +26,26 @@
   --accent2: #ffedab;
   --text: #000000;
 
-  /*font*/
   --font-titel: "Itim", sans-serif;
   --font-body: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-weight: 400;
   --spacing: 0.1em;
 
+  color: var(--text);
+  background-color: var(--primary);
   min-height: 100%;
   line-height: 1.5;
 }
 
-/* ------------ generelt css --------------- */
+body {
+  min-height: 100vh;
+  background-color: var(--primary);
+}
+
+/* =========================================================
+   GENERELT
+   ========================================================= */
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -48,12 +60,12 @@
 }
 
 .under-titel {
+  display: flex;
+  justify-content: center;
   color: var(--text);
   font-family: var(--font-body);
   font-weight: var(--font-weight);
   font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
 }
 
 .sektion {
@@ -73,35 +85,69 @@
   transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
-  opacity: 30%;
+  opacity: 0.2;
 }
 
-/* -------------- homepage ---------------- */
+/* =========================================================
+   HOMEPAGE
+   ========================================================= */
 
 .homepage-indhold {
   position: relative;
-  margin-top: 10rem;
   z-index: 1;
+  width: min(100% - 6rem, 1400px);
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.homepage-hero {
+  margin-top: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: clamp(2rem, 5vw, 5rem);
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.homepage-profil {
+  width: clamp(250px, 25vw, 380px);
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 32px;
 }
 
 .homepage-titel {
+  max-width: 850px;
+  margin-bottom: 2rem;
   color: var(--secondary-dark);
   font-family: var(--font-titel);
   font-weight: 400;
-  font-size: clamp(4rem, 9vw, 9rem);
-  text-align: center;
-  margin: 0;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.95;
+  text-align: left;
+}
+
+.homepage-tekst {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  line-height: 40px;
+  z-index: 10;
 }
 
 .kompetencer {
+  margin-top: 2.5rem;
   width: 100%;
 }
 
-/* ---------------- om mig side  -------------------- */
+/* =========================================================
+   OM MIG
+   ========================================================= */
+
 .billed-container {
   display: flex;
   justify-content: center;
@@ -115,7 +161,10 @@
   font-size: 1.2rem;
 }
 
-/* ------------------- kontakt side ----------------------*/
+/* =========================================================
+   KONTAKT
+   ========================================================= */
+
 .kontakt-siden {
   margin-top: 10rem;
 }
@@ -132,36 +181,39 @@
 }
 
 #knap {
-  cursor: pointer;
-  background-color: var(--secondary);
   width: auto;
   height: 48px;
   padding: 32px 40px;
-  border-radius: 32px;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease;
-  font-size: 1rem;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--secondary);
+  color: var(--text);
   font-family: var(--font-body);
+  font-size: 1.08rem;
   letter-spacing: var(--spacing);
   text-decoration: none;
-  color: var(--text);
+  cursor: pointer;
   z-index: 5;
+  transition: transform 0.2s ease;
 }
 
 #knap:hover {
   transform: scale(1.05);
 }
 
-/* ----------------- flipcard komponent ------------------- */
+/* =========================================================
+   FLIPCARD
+   ========================================================= */
+
 .flip-card {
   position: relative;
   width: 300px;
   height: 420px;
   cursor: pointer;
-  perspective: 1000px; /* bevarer 3d effekten */
+  perspective: 1000px;
   font-family: var(--font-body);
   font-weight: var(--font-weight);
   line-height: 1.5;
@@ -170,14 +222,14 @@
 .flip-side {
   position: absolute;
   inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 32px;
   overflow: hidden;
   transition:
     transform 0.6s ease,
     opacity 0.6s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .front {
@@ -192,12 +244,13 @@
 }
 
 .back {
-  background: var(--secondary);
-  color: var(--text);
   padding: 2rem;
-  text-align: center;
   flex-direction: column;
   justify-content: flex-start;
+  background: var(--primary);
+  color: var(--text);
+  text-align: center;
+  line-height: 1.8rem;
   transform: rotateY(-180deg);
   opacity: 0;
 }
@@ -210,4 +263,80 @@
 .flip-card.flipped .back {
   transform: rotateY(0deg);
   opacity: 1;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .homepage-indhold {
+    width: min(100% - 3rem, 900px);
+    padding-top: 3rem;
+  }
+
+  .homepage-hero {
+    gap: 2.5rem;
+  }
+
+  .homepage-profil {
+    width: clamp(200px, 30vw, 300px);
+  }
+
+  .homepage-titel {
+    font-size: clamp(4rem, 9vw, 6rem);
+  }
+
+  .billed-container {
+    gap: 3rem;
+    margin: 0 2rem;
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .homepage-indhold {
+    width: min(100% - 2rem, 550px);
+    padding-top: 2.5rem;
+  }
+
+  .homepage-hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .homepage-profil {
+    width: min(70%, 300px);
+  }
+
+  .homepage-titel {
+    font-size: clamp(4rem, 18vw, 6rem);
+    text-align: center;
+  }
+
+  .billed-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem;
+  }
+
+  .knap-container {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+/* =========================================================
+   REDUCERET BEVÆGELSE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  #knap,
+  .flip-side {
+    transition: none;
+  }
 }
