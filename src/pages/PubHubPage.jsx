@@ -4,7 +4,7 @@ import "../css/project-layout.css";
 export default function PubHubPage() {
   return (
     <ProjectLayout
-      title="PubHub"
+      title="PubHub 2026"
       label="2. semester · Eksamen"
       intro="En mobile-first webapp til Aarhus' natteliv, hvor brugeren hurtigt kan finde events, barer og oplevelser i nærheden."
       role="UX/UI · Design · Udvikling"

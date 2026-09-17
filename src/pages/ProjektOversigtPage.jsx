@@ -56,8 +56,8 @@ export default function ProjektPage() {
           <h1>Projekter</h1>
 
           <p>
-            Et udvalg af projekter, hvor jeg har arbejdet med design,
-            brugeroplevelser og digitale løsninger.
+            Her ser du et udvalg af mine yndlingsprojekter. Vælg en mappe og lær
+            mere om et projekt.
           </p>
         </header>
 
