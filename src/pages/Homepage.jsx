@@ -25,8 +25,7 @@ export default function HomePage() {
               2027. Jeg er multimediedesignstuderende på 3. semester på
               Erhvervsakademi Aarhus og brænder for at skabe løsninger der både
               er fede OG funktionelle. Jeg læser på IXD linjen på akademiet og
-              har min interesser i UX/UI samt React som er mit hovedsprog i
-              kodning.
+              har mine interesser i UX/UI samt React og Figma.
             </p>
           </section>
         </div>

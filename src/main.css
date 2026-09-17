@@ -97,11 +97,10 @@ body {
   z-index: 1;
   width: min(100% - 6rem, 1400px);
   margin: 0 auto;
-  padding-top: 4rem;
 }
 
 .homepage-hero {
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -140,7 +139,7 @@ body {
 }
 
 .kompetencer {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   width: 100%;
 }
 
