@@ -13,7 +13,7 @@
 
 .pubhub-phone--hero {
   width: min(55%, 260px);
-  max-height: 500px;
+  max-height: 420px;
 }
 
 /* =========================================================
@@ -22,7 +22,7 @@
 
 .pubhub-product {
   padding: 6rem 0;
-  background: #d5c7b9;
+  background: var(--secondary);
 }
 
 .pubhub-product-grid {
@@ -39,14 +39,6 @@
   align-items: center;
   justify-content: center;
   gap: clamp(0.75rem, 2vw, 1.5rem);
-}
-
-.pubhub-product-blob {
-  position: absolute;
-  width: 90%;
-  height: 75%;
-  border-radius: 53% 47% 55% 45% / 45% 55% 45% 55%;
-  background: var(--secondary);
 }
 
 .pubhub-product-text {

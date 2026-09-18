@@ -111,7 +111,7 @@
 
 .project-hero-media {
   position: relative;
-  min-height: 520px;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,7 +154,7 @@
    ========================================================= */
 
 .project-live {
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .project-button {

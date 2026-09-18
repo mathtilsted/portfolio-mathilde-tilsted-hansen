@@ -2,6 +2,11 @@
    HOMEPAGE
    ========================================================= */
 
+.homepage {
+  position: relative;
+  width: 100%;
+}
+
 .homepage-indhold {
   position: relative;
   z-index: 1;
@@ -54,10 +59,10 @@
 @media (max-width: 950px) {
   .homepage-indhold {
     width: min(100% - 3rem, 900px);
-    padding-top: 3rem;
   }
 
   .homepage-hero {
+    margin-top: 3rem;
     gap: 2.5rem;
   }
 
@@ -77,10 +82,10 @@
 @media (max-width: 700px) {
   .homepage-indhold {
     width: min(100% - 2rem, 550px);
-    padding-top: 2.5rem;
   }
 
   .homepage-hero {
+    margin-top: 2.5rem;
     padding: 0;
     flex-direction: column;
     gap: 2rem;

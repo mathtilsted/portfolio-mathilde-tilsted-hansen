@@ -6,10 +6,12 @@ import KontaktPage from "./pages/KontaktPage";
 import OmPage from "./pages/OmPage";
 import NavBar from "./components/NavBar";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />

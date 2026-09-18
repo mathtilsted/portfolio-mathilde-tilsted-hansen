@@ -1,53 +1,104 @@
 /* =========================================================
-   MELLEMRUM - DESKTOP PLACEHOLDER
+   MELLEMRUM - DESKTOP FRAME
    ========================================================= */
 
 .desktop-placeholder {
   position: relative;
   z-index: 2;
   width: 100%;
-  aspect-ratio: 16 / 10;
   overflow: hidden;
-  border: 2px solid rgba(0, 0, 0, 0.18);
-  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0.8rem;
   background: #e7e7e7;
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.1);
 }
 
 .desktop-placeholder--hero {
-  width: min(100%, 520px);
+  width: min(100%, 620px);
+}
+
+.desktop-placeholder--hero .desktop-placeholder-content {
+  max-height: 560px;
+  overflow: hidden;
 }
 
 .desktop-placeholder-bar {
-  height: 34px;
+  position: relative;
+  height: 42px;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0 0.8rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  background: rgba(255, 255, 255, 0.45);
-}
-
-.desktop-placeholder-bar span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.25);
+  padding: 0 0.9rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f3f3f3;
 }
 
 .desktop-placeholder-content {
-  height: calc(100% - 34px);
+  width: 100%;
+  padding: 0;
+}
+
+.mellemrum-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================================
+   MAC BROWSER BAR
+   ========================================================= */
+
+.mac-controls {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.mac-control {
+  width: 11px;
+  height: 11px;
+  display: block;
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+
+.mac-control--close {
+  background: #ff5f57;
+}
+
+.mac-control--minimize {
+  background: #febc2e;
+}
+
+.mac-control--maximize {
+  background: #28c840;
+}
+
+.mac-address {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(45%, 260px);
+  height: 24px;
+  padding: 0 1rem;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  background: #e7e7e7;
 }
 
-.desktop-placeholder-content > span {
+.mac-address span {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.45);
   font-family: var(--font-body);
-  font-size: 0.8rem;
-  text-align: center;
-  opacity: 0.45;
+  font-size: 0.65rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* =========================================================
@@ -246,6 +297,33 @@
 @media (max-width: 700px) {
   .desktop-placeholder--hero {
     width: 100%;
+  }
+
+  .desktop-placeholder--hero .desktop-placeholder-content {
+    max-height: none;
+  }
+
+  .desktop-placeholder-bar {
+    height: 38px;
+    padding: 0 0.7rem;
+  }
+
+  .mac-control {
+    width: 9px;
+    height: 9px;
+  }
+
+  .mac-controls {
+    gap: 5px;
+  }
+
+  .mac-address {
+    width: 48%;
+    height: 21px;
+  }
+
+  .mac-address span {
+    font-size: 0.58rem;
   }
 
   .mellemrum-technical,
