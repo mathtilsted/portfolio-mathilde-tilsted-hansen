@@ -7,7 +7,7 @@ import "../css/mellemrum.css";
 export default function MellemrumPage() {
   return (
     <ProjectLayout
-      title="Mellemrum"
+      title="Mellemrum 2026"
       label="Teknisk optimering"
       intro="Optimering og videreudvikling af en eksisterende digital løsning med fokus på kodearkitektur, database og brugerhåndtering."
       role="Udvikling · Struktur · Database"
