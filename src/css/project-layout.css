@@ -124,7 +124,7 @@
   width: 90%;
   height: 80%;
   border-radius: 52% 48% 42% 58% / 48% 42% 58% 52%;
-  background: rgba(218, 153, 199, 0.42);
+  background: var(--secondary);
 }
 
 /* =========================================================
@@ -246,7 +246,7 @@
 
 .pubhub-product {
   padding: 6rem 0;
-  background: rgba(218, 153, 199, 0.22);
+  background: #d5c7b9;
 }
 
 .pubhub-product-grid {
@@ -270,7 +270,7 @@
   width: 90%;
   height: 75%;
   border-radius: 53% 47% 55% 45% / 45% 55% 45% 55%;
-  background: rgba(218, 153, 199, 0.45);
+  background: var(--secondary);
 }
 
 .pubhub-product-phones .phone-placeholder {

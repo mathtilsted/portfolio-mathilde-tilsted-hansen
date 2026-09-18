@@ -4,7 +4,6 @@
 
 .projektoversigt {
   position: relative;
-  min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -27,7 +26,6 @@
   z-index: 1;
   width: min(100% - 6rem, 1400px);
   margin: 0 auto;
-  padding: 2.5rem 0 9rem;
 }
 
 /* =========================================================
@@ -36,13 +34,14 @@
 
 .projektoversigt-header {
   max-width: 700px;
-  margin-bottom: 5rem;
-  margin-left: 3.8rem;
+  margin-bottom: 3rem;
+  margin-left: 6rem;
+  margin-top: 2rem;
 }
 
 .projektoversigt-header h1 {
   font-family: var(--font-titel);
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: clamp(4rem, 4vw, 7rem);
   font-weight: 400;
   color: var(--secondary-dark);
 }
@@ -50,7 +49,7 @@
 .projektoversigt-header p {
   max-width: 560px;
   font-family: var(--font-body);
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--text);
 }
 
@@ -62,7 +61,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: clamp(1rem, 1vw, 3rem);
-  row-gap: clamp(3rem, 6vw, 6rem);
+  row-gap: clamp(3rem, 1vw, 6rem);
   align-items: center;
 }
 
