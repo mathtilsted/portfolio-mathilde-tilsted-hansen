@@ -1,9 +1,9 @@
+import "../css/pubhub.css";
 import ProjectLayout from "../components/ProjectLayout";
 import Pub1 from "../assets/projekt-sider/pubhub/pub1.svg";
 import Pub2 from "../assets/projekt-sider/pubhub/pub2.svg";
 import Pub3 from "../assets/projekt-sider/pubhub/pub3.svg";
 import Pub4 from "../assets/projekt-sider/pubhub/pub4.svg";
-import "../css/project-layout.css";
 
 export default function PubHubPage() {
   return (
@@ -94,7 +94,6 @@ export default function PubHubPage() {
       <section className="pubhub-product">
         <div className="project-container pubhub-product-grid">
           <div className="pubhub-product-phones">
-            <div className="pubhub-product-blob" />
             <img
               className="pubhub-phone"
               src={Pub2}

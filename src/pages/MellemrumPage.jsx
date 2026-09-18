@@ -1,26 +1,38 @@
 import ProjectLayout from "../components/ProjectLayout";
-import "../css/project-layout.css";
+import Mellem1 from "../assets/projekt-sider/mellemrum/mellem1.png";
+import Mellem2 from "../assets/projekt-sider/mellemrum/mellem2.png";
+import Mellem3 from "../assets/projekt-sider/mellemrum/mellem3.png";
 import "../css/mellemrum.css";
 
 export default function MellemrumPage() {
   return (
     <ProjectLayout
-      title="Mellemrum"
+      title="Mellemrum 2026"
       label="Teknisk optimering"
       intro="Optimering og videreudvikling af en eksisterende digital løsning med fokus på kodearkitektur, database og brugerhåndtering."
       role="Udvikling · Struktur · Database"
-      collaboration="Individuelt projekt"
+      collaboration="Gruppeprojekt"
       focus="React · Supabase · Authentication"
       hero={
         <div className="desktop-placeholder desktop-placeholder--hero">
           <div className="desktop-placeholder-bar">
-            <span />
-            <span />
-            <span />
+            <div className="mac-controls" aria-hidden="true">
+              <span className="mac-control mac-control--close" />
+              <span className="mac-control mac-control--minimize" />
+              <span className="mac-control mac-control--maximize" />
+            </div>
+
+            <div className="mac-address">
+              <span>Mellemrum</span>
+            </div>
           </div>
 
           <div className="desktop-placeholder-content">
-            <span>Screenshot af Mellemrum</span>
+            <img
+              src={Mellem1}
+              alt="Mellemrum vist på desktop"
+              className="mellemrum-image"
+            />
           </div>
         </div>
       }
@@ -99,13 +111,23 @@ export default function MellemrumPage() {
           <div className="mellemrum-technical-media">
             <div className="desktop-placeholder">
               <div className="desktop-placeholder-bar">
-                <span />
-                <span />
-                <span />
+                <div className="mac-controls" aria-hidden="true">
+                  <span className="mac-control mac-control--close" />
+                  <span className="mac-control mac-control--minimize" />
+                  <span className="mac-control mac-control--maximize" />
+                </div>
+
+                <div className="mac-address">
+                  <span>Mellemrum</span>
+                </div>
               </div>
 
               <div className="desktop-placeholder-content">
-                <span>Screenshot af kode eller løsning</span>
+                <img
+                  src={Mellem2}
+                  alt="Teknisk løsning i Mellemrum"
+                  className="mellemrum-image"
+                />
               </div>
             </div>
           </div>
@@ -121,9 +143,9 @@ export default function MellemrumPage() {
 
             <p>
               En stor del af arbejdet foregik i den kode, brugeren aldrig ser.
-              Jeg arbejdede blandt andet med at samle databasekald og fetch-
-              funktionalitet i en service-fil frem for at have logikken spredt
-              rundt i forskellige komponenter.
+              Jeg arbejdede blandt andet med at samle databasekald og
+              fetch-funktionalitet i en service-fil frem for at have logikken
+              spredt rundt i forskellige komponenter.
             </p>
 
             <p>
@@ -207,13 +229,23 @@ export default function MellemrumPage() {
 
           <div className="desktop-placeholder">
             <div className="desktop-placeholder-bar">
-              <span />
-              <span />
-              <span />
+              <div className="mac-controls" aria-hidden="true">
+                <span className="mac-control mac-control--close" />
+                <span className="mac-control mac-control--minimize" />
+                <span className="mac-control mac-control--maximize" />
+              </div>
+
+              <div className="mac-address">
+                <span>Mellemrum</span>
+              </div>
             </div>
 
             <div className="desktop-placeholder-content">
-              <span>Screenshot af færdig løsning</span>
+              <img
+                src={Mellem3}
+                alt="Den færdige Mellemrum løsning"
+                className="mellemrum-image"
+              />
             </div>
           </div>
         </div>

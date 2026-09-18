@@ -1,0 +1,173 @@
+/* =========================================================
+   PUBHUB BILLEDER
+   ========================================================= */
+
+.pubhub-phone {
+  position: relative;
+  z-index: 2;
+  width: clamp(150px, 16vw, 215px);
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.pubhub-phone--hero {
+  width: min(55%, 260px);
+  max-height: 420px;
+}
+
+/* =========================================================
+   PRODUKT
+   ========================================================= */
+
+.pubhub-product {
+  padding: 6rem 0;
+  background: var(--secondary);
+}
+
+.pubhub-product-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.pubhub-product-phones {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.pubhub-product-text {
+  max-width: 540px;
+}
+
+.pubhub-product-text p + p {
+  margin-top: 1.25rem;
+}
+
+.pubhub-product-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   REFLEKSION
+   ========================================================= */
+
+.pubhub-reflection {
+  padding: 6rem 0;
+}
+
+.pubhub-reflection-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(4rem, 9vw, 9rem);
+  align-items: center;
+}
+
+.pubhub-reflection-text {
+  max-width: 720px;
+}
+
+.pubhub-reflection-text p + p {
+  margin-top: 1.25rem;
+}
+
+.pubhub-next-steps {
+  padding-left: clamp(2rem, 5vw, 5rem);
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.pubhub-next-steps h3 {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.pubhub-next-steps ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+  list-style: none;
+}
+
+.pubhub-next-steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .pubhub-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pubhub-product-text {
+    max-width: 650px;
+  }
+
+  .pubhub-product-phones {
+    min-height: 430px;
+  }
+
+  .pubhub-product-phones .pubhub-phone {
+    width: min(27%, 200px);
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .pubhub-phone--hero {
+    width: min(55%, 230px);
+  }
+
+  .pubhub-product {
+    padding: 5rem 0;
+  }
+
+  .pubhub-product-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .pubhub-product-phones {
+    min-height: 340px;
+    gap: 0.75rem;
+  }
+
+  .pubhub-product-phones .pubhub-phone {
+    width: 29%;
+  }
+
+  .pubhub-reflection {
+    padding: 5rem 0;
+  }
+
+  .pubhub-reflection-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .pubhub-next-steps {
+    padding-left: 0;
+    padding-top: 3rem;
+    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}
