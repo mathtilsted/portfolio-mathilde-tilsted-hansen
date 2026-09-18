@@ -1,6 +1,7 @@
 import HomePage from "./pages/Homepage";
 import ProjektOversigtPage from "./pages/ProjektOversigtPage";
 import PubHubPage from "./pages/PubHubPage";
+import MellemrumPage from "./pages/MellemrumPage";
 import KontaktPage from "./pages/KontaktPage";
 import OmPage from "./pages/OmPage";
 import NavBar from "./components/NavBar";
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projekter" element={<ProjektOversigtPage />} />
         <Route path="/projekter/pubhub" element={<PubHubPage />} />
+        <Route path="/projekter/mellemrum" element={<MellemrumPage />} />
         <Route path="/kontakt-mig" element={<KontaktPage />} />
         <Route path="/om-mig" element={<OmPage />} />
       </Routes>

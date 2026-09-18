@@ -1,0 +1,286 @@
+/* =========================================================
+   MELLEMRUM - DESKTOP PLACEHOLDER
+   ========================================================= */
+
+.desktop-placeholder {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  border-radius: 1rem;
+  background: #e7e7e7;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-placeholder--hero {
+  width: min(100%, 520px);
+}
+
+.desktop-placeholder-bar {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 0.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.desktop-placeholder-bar span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.desktop-placeholder-content {
+  height: calc(100% - 34px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.desktop-placeholder-content > span {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.45;
+}
+
+/* =========================================================
+   TEKNISK FOKUS
+   ========================================================= */
+
+.mellemrum-technical {
+  padding: 6rem 0;
+  background: #d5c7b9;
+}
+
+.mellemrum-technical-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(4rem, 8vw, 8rem);
+  align-items: center;
+}
+
+.mellemrum-technical-media {
+  position: relative;
+}
+
+.mellemrum-technical-text {
+  max-width: 540px;
+}
+
+.mellemrum-technical-text p + p {
+  margin-top: 1.25rem;
+}
+
+/* =========================================================
+   AUTHENTICATION
+   ========================================================= */
+
+.mellemrum-auth {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.mellemrum-auth-heading {
+  max-width: 720px;
+  margin-bottom: 4rem;
+}
+
+.mellemrum-auth-heading > p:last-child {
+  max-width: 650px;
+}
+
+.mellemrum-roles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.mellemrum-role {
+  min-height: 260px;
+  padding: 2rem;
+}
+
+.mellemrum-role + .mellemrum-role {
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.mellemrum-role > span {
+  display: block;
+  margin-bottom: 2rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  opacity: 0.45;
+}
+
+.mellemrum-role h3 {
+  margin: 0 0 1rem;
+  font-family: var(--font-titel);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--secondary-dark);
+}
+
+.mellemrum-role p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* =========================================================
+   RESULTAT
+   ========================================================= */
+
+.mellemrum-result {
+  padding: 6rem 0;
+  background: var(--secondary);
+}
+
+.mellemrum-result-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: clamp(4rem, 8vw, 8rem);
+  align-items: center;
+}
+
+.mellemrum-result-text {
+  max-width: 520px;
+}
+
+.mellemrum-result-text p + p {
+  margin-top: 1.25rem;
+}
+
+/* =========================================================
+   REFLEKSION
+   ========================================================= */
+
+.mellemrum-reflection {
+  padding: 6rem 0;
+}
+
+.mellemrum-reflection-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(4rem, 9vw, 9rem);
+  align-items: center;
+}
+
+.mellemrum-reflection-text {
+  max-width: 720px;
+}
+
+.mellemrum-reflection-text p + p {
+  margin-top: 1.25rem;
+}
+
+.mellemrum-learning {
+  padding-left: clamp(2rem, 5vw, 5rem);
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.mellemrum-learning h3 {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.mellemrum-learning ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+  list-style: none;
+}
+
+.mellemrum-learning li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .mellemrum-technical-grid,
+  .mellemrum-result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mellemrum-technical-text,
+  .mellemrum-result-text {
+    max-width: 650px;
+  }
+
+  .mellemrum-roles {
+    grid-template-columns: 1fr;
+  }
+
+  .mellemrum-role {
+    min-height: auto;
+  }
+
+  .mellemrum-role + .mellemrum-role {
+    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.16);
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .desktop-placeholder--hero {
+    width: 100%;
+  }
+
+  .mellemrum-technical,
+  .mellemrum-result,
+  .mellemrum-reflection {
+    padding: 5rem 0;
+  }
+
+  .mellemrum-technical-grid,
+  .mellemrum-result-grid {
+    gap: 3rem;
+  }
+
+  .mellemrum-auth {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .mellemrum-auth-heading {
+    margin-bottom: 3rem;
+  }
+
+  .mellemrum-role {
+    padding: 2rem 0;
+  }
+
+  .mellemrum-reflection-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .mellemrum-learning {
+    padding-left: 0;
+    padding-top: 3rem;
+    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}
