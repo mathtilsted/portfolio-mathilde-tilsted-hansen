@@ -1,12 +1,12 @@
 import { Link } from "react-router";
 import "../css/projekt-oversigt.css";
 import Baggrund4 from "../assets/baggrunde/baggrund4.png";
-import PubhubMappe from "../assets/projekt-sider/pubhub-mappe.svg";
-import MellemrumMappe from "../assets/projekt-sider/mellemrum-mappe.svg";
-import VuuhMappe from "../assets/projekt-sider/vuuh-mappe.svg";
-import SyncMappe from "../assets/projekt-sider/sync-mappe.svg";
-import BlandetMappe from "../assets/projekt-sider/blandet-mappe.svg";
-import TomMappe from "../assets/projekt-sider/mappe.svg";
+import PubhubMappe from "../assets/projekt-sider/mapper/pubhub-mappe.svg";
+import MellemrumMappe from "../assets/projekt-sider/mapper/mellemrum-mappe.svg";
+import VuuhMappe from "../assets/projekt-sider/mapper/vuuh-mappe.svg";
+import SyncMappe from "../assets/projekt-sider/mapper/sync-mappe.svg";
+import BlandetMappe from "../assets/projekt-sider/mapper/blandet-mappe.svg";
+import TomMappe from "../assets/projekt-sider/mapper/mappe.svg";
 
 const projekter = [
   {
