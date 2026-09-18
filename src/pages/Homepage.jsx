@@ -1,5 +1,6 @@
 //import LottieModule from "lottie-react";
 //import KompetenceAnimation from "../animationer/kompetencer-anim.json";
+import "../css/homepage.css";
 import Baggrund3 from "../assets/baggrunde/baggrund3.png";
 import Profil from "../assets/profil.jpeg";
 

@@ -3,6 +3,7 @@ import Mig2 from "../assets/om-mig/mig2.JPG";
 import Mig3 from "../assets/om-mig/mig3.JPG";
 import FlipCard from "../components/FlipCard";
 import Baggrund from "../assets/baggrunde/baggrund1.png";
+import "../css/om-mig.css";
 
 export default function OmPage() {
   return (

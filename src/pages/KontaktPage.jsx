@@ -1,4 +1,5 @@
 import Baggrund from "../assets/baggrunde/baggrund2.png";
+import "../css/kontakt.css";
 
 export default function KontaktPage() {
   return (

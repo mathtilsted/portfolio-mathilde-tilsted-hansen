@@ -1,5 +1,4 @@
 import ProjectLayout from "../components/ProjectLayout";
-import "../css/project-layout.css";
 import "../css/mellemrum.css";
 
 export default function MellemrumPage() {

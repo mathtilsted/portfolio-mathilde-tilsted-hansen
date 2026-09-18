@@ -1,0 +1,101 @@
+/* =========================================================
+   HOMEPAGE
+   ========================================================= */
+
+.homepage-indhold {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 6rem, 1400px);
+  margin: 0 auto;
+}
+
+.homepage-hero {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+.homepage-profil {
+  width: clamp(250px, 25vw, 380px);
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.homepage-tekst {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+}
+
+.homepage-titel {
+  max-width: 850px;
+  margin-bottom: 2rem;
+  color: var(--secondary-dark);
+  font-family: var(--font-titel);
+  font-weight: 400;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.95;
+  text-align: left;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .homepage-indhold {
+    width: min(100% - 3rem, 900px);
+    padding-top: 3rem;
+  }
+
+  .homepage-hero {
+    gap: 2.5rem;
+  }
+
+  .homepage-profil {
+    width: clamp(200px, 30vw, 300px);
+  }
+
+  .homepage-titel {
+    font-size: clamp(4rem, 9vw, 6rem);
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .homepage-indhold {
+    width: min(100% - 2rem, 550px);
+    padding-top: 2.5rem;
+  }
+
+  .homepage-hero {
+    padding: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .homepage-profil {
+    width: min(70%, 300px);
+  }
+
+  .homepage-titel {
+    font-size: clamp(4rem, 18vw, 6rem);
+    text-align: center;
+  }
+
+  .homepage-tekst {
+    line-height: 1.8;
+  }
+}
