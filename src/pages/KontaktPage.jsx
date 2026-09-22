@@ -37,7 +37,7 @@ export default function KontaktPage() {
 
           <a
             id="knap"
-            href={`${import.meta.env.BASE_URL}Mathilde-Tilsted-Hansen-CV.pdf`} //cv download virker både lokalt og efter deploye
+            href={`${import.meta.env.BASE_URL}mathilde-cv.pdf`} //cv download virker både lokalt og efter deploye
             download
           >
             Download CV

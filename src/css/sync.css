@@ -1,0 +1,169 @@
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.sync-hero {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 520px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sync-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 32px;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.sync-intro-section {
+  margin-top: 8rem;
+  width: 100%;
+  background: var(--secondary);
+}
+
+.sync-intro {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(4rem, 9vw, 9rem);
+}
+
+.sync-intro-heading {
+  max-width: 580px;
+}
+
+.sync-intro-heading h2 {
+  margin-bottom: 0;
+}
+
+.sync-intro-text {
+  max-width: 620px;
+  padding-top: 2rem;
+}
+
+.sync-intro-text p + p {
+  margin-top: 1.25rem;
+}
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.sync-gallery {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.sync-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.sync-gallery-item {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.sync-gallery-item img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+}
+
+/* =========================================================
+   REFLEKSION
+   ========================================================= */
+
+.sync-reflection {
+  padding: 6rem 0;
+  background: #d5c7b9;
+}
+
+.sync-reflection-grid {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+.sync-reflection-grid > div {
+  max-width: 700px;
+}
+
+.sync-reflection-grid h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .sync-intro {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .sync-intro-text {
+    padding-top: 0;
+  }
+
+  .sync-gallery-grid {
+    gap: 1.5rem;
+  }
+
+  .sync-reflection-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .sync-hero {
+    width: 100%;
+  }
+
+  .sync-intro {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .sync-logo-section {
+    padding: 4rem 0;
+  }
+
+  .sync-gallery {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sync-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sync-gallery-item img {
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .sync-reflection {
+    padding: 5rem 0;
+  }
+}

@@ -22,6 +22,7 @@
 }
 
 .project-back {
+  margin-bottom: 2rem;
   display: inline-block;
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -155,6 +156,7 @@
 
 .project-live {
   padding-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .project-button {
