@@ -5,17 +5,16 @@
 .vuuh-placeholder {
   width: 100%;
   min-height: 380px;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: 1rem;
   background: #e7e7e7;
 }
 
 .vuuh-placeholder span {
-  font-family: var(--font-body);
   font-size: 0.8rem;
   text-align: center;
   opacity: 0.45;
@@ -46,44 +45,6 @@
   max-width: 650px;
 }
 
-.vuuh-process-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(0, 0, 0, 0.16);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-.vuuh-process-step {
-  min-height: 300px;
-  padding: 2rem;
-}
-
-.vuuh-process-step + .vuuh-process-step {
-  border-left: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-.vuuh-process-number {
-  display: block;
-  margin-bottom: 2rem;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  opacity: 0.45;
-}
-
-.vuuh-process-step h3 {
-  margin-bottom: 1rem;
-  font-family: var(--font-titel);
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--secondary-dark);
-}
-
-.vuuh-process-step p {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
 /* =========================================================
    OPTIMERING
    ========================================================= */
@@ -112,53 +73,7 @@
    ========================================================= */
 
 .vuuh-reflection {
-  padding: 6rem 0;
   background: #d5c7b9;
-}
-
-.vuuh-reflection-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: clamp(4rem, 9vw, 9rem);
-  align-items: center;
-}
-
-.vuuh-reflection-text {
-  max-width: 720px;
-}
-
-.vuuh-reflection-text p + p {
-  margin-top: 1.25rem;
-}
-
-.vuuh-learning {
-  padding-left: clamp(2rem, 5vw, 5rem);
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.vuuh-learning h3 {
-  margin: 0 0 1.5rem;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.vuuh-learning ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.9rem;
-  list-style: none;
-}
-
-.vuuh-learning li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.5;
 }
 
 /* =========================================================
@@ -166,19 +81,6 @@
    ========================================================= */
 
 @media (max-width: 950px) {
-  .vuuh-process-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .vuuh-process-step {
-    min-height: auto;
-  }
-
-  .vuuh-process-step + .vuuh-process-step {
-    border-left: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.16);
-  }
-
   .vuuh-optimisation-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -204,42 +106,11 @@
   }
 
   .vuuh-process,
-  .vuuh-optimisation,
-  .vuuh-reflection {
+  .vuuh-optimisation {
     padding: 5rem 0;
   }
 
   .vuuh-process-heading {
     margin-bottom: 3rem;
-  }
-
-  .vuuh-process-step {
-    padding: 2rem 0;
-  }
-
-  .vuuh-comparison {
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-  }
-
-  .vuuh-comparison-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .vuuh-comparison-item .vuuh-placeholder {
-    min-height: 260px;
-  }
-
-  .vuuh-reflection-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .vuuh-learning {
-    padding-left: 0;
-    padding-top: 3rem;
-    border-left: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
   }
 }

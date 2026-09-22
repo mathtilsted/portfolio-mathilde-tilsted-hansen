@@ -25,19 +25,64 @@
   --accent1: #76070d;
   --accent2: #ffedab;
   --text: #000000;
+
   --font-titel: "Itim", sans-serif;
   --font-body: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-weight: 400;
   --spacing: 0.1em;
-  color: var(--text);
-  background-color: var(--primary);
+}
+
+/* =========================================================
+   GLOBALT
+   ========================================================= */
+
+html {
   min-height: 100%;
-  line-height: 1.5;
 }
 
 body {
   min-height: 100vh;
+  color: var(--text);
   background-color: var(--primary);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =========================================================
+   TYPOGRAFISK HIERARKI
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-titel);
+  font-weight: 400;
+  color: var(--secondary-dark);
+}
+
+h1 {
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.95;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.2;
+}
+
+p {
+  font-family: var(--font-body);
+  line-height: 1.7;
 }
 
 /* =========================================================
@@ -56,13 +101,6 @@ body {
   opacity: 0.2;
 }
 
-.titel {
-  color: var(--secondary-dark);
-  font-family: var(--font-titel);
-  font-weight: 400;
-  font-size: 4rem;
-}
-
 .sektion {
   position: relative;
   z-index: 1;
@@ -71,4 +109,36 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  h1 {
+    font-size: clamp(3.5rem, 9vw, 6rem);
+  }
+
+  h2 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: clamp(3.5rem, 15vw, 5rem);
+  }
+
+  h2 {
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
 }

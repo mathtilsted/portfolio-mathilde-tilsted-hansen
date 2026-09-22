@@ -1,9 +1,9 @@
-import "../css/pubhub.css";
 import ProjectLayout from "../components/ProjectLayout";
-import Pub1 from "../assets/projekt-sider/pubhub/pub1.svg";
-import Pub2 from "../assets/projekt-sider/pubhub/pub2.svg";
-import Pub3 from "../assets/projekt-sider/pubhub/pub3.svg";
-import Pub4 from "../assets/projekt-sider/pubhub/pub4.svg";
+import Pub1 from "../assets/projekt-sider/pubhub/pub1.png";
+import Pub2 from "../assets/projekt-sider/pubhub/pub2.png";
+import Pub3 from "../assets/projekt-sider/pubhub/pub3.png";
+import Pub4 from "../assets/projekt-sider/pubhub/pub4.png";
+import "../css/pubhub.css";
 
 export default function PubHubPage() {
   return (
@@ -16,9 +16,9 @@ export default function PubHubPage() {
       focus="Mobile-first · UX · Webapp"
       hero={
         <img
-          className="pubhub-phone pubhub-phone--hero"
           src={Pub1}
-          alt="PubHub vist på mobil"
+          alt="PubHub app"
+          className="pubhub-phone pubhub-phone--hero"
         />
       }
       previousProject={{
@@ -30,21 +30,6 @@ export default function PubHubPage() {
         path: "/projekter/mellemrum",
       }}
     >
-      {/* =====================================================
-          LIVE PROJEKT
-      ====================================================== */}
-
-      <div className="project-live project-container">
-        <a
-          href="https://eaa25mtha.github.io/webapp-eksamen/"
-          target="_blank"
-          rel="noreferrer"
-          className="project-button"
-        >
-          Se PubHub live ↗
-        </a>
-      </div>
-
       {/* =====================================================
           UDFORDRING + LØSNING
       ====================================================== */}
@@ -62,9 +47,9 @@ export default function PubHubPage() {
 
           <p>
             Vi så et behov for én samlet løsning, fordi man tit skal jonglere
-            rundt mellem apps for at planlægge en bytur. Det skulle være en app,
+            rundt mellem apps for at planlægge en bytur. Det skulle være en app
             hvor man hurtigt kunne opdage events, finde barer i nærheden og få
-            en fornemmelse af stemningen på et sted, før man besluttede sig for,
+            en fornemmelse af stemningen på et sted, før man besluttede sig for
             om det var det værd.
           </p>
         </article>
@@ -81,8 +66,8 @@ export default function PubHubPage() {
           <p>
             Grundideen var at gøre det lettere og sjovere at planlægge en
             spontan aften og blandt andet skabe mulighed for pubcrawls og fælles
-            oplevelser rundt i byen. Vi havde også bare lyst til at bygge en
-            app, vi faktisk selv ville bruge, hvis den eksisterede.
+            oplevelser rundt i byen. Vi havde også bare lyst til at bygge en app
+            vi faktisk selv ville bruge hvis den eksisterede.
           </p>
         </article>
       </section>
@@ -94,13 +79,11 @@ export default function PubHubPage() {
       <section className="pubhub-product">
         <div className="project-container pubhub-product-grid">
           <div className="pubhub-product-phones">
-            <img
-              className="pubhub-phone"
-              src={Pub2}
-              alt="PubHub eventoversigt"
-            />
-            <img className="pubhub-phone" src={Pub3} alt="PubHub baroversigt" />
-            <img className="pubhub-phone" src={Pub4} alt="PubHub kortvisning" />
+            <img src={Pub2} alt="PubHub events" className="pubhub-phone" />
+
+            <img src={Pub3} alt="PubHub barer" className="pubhub-phone" />
+
+            <img src={Pub4} alt="PubHub kort" className="pubhub-phone" />
           </div>
 
           <div className="pubhub-product-text">
@@ -130,9 +113,9 @@ export default function PubHubPage() {
           REFLEKSION
       ====================================================== */}
 
-      <section className="pubhub-reflection">
-        <div className="project-container pubhub-reflection-grid">
-          <div className="pubhub-reflection-text">
+      <section className="project-section">
+        <div className="project-container project-section-grid">
+          <div className="project-section-text">
             <p className="project-label">Refleksion</p>
             <h2>Det tager jeg med videre</h2>
 
@@ -149,7 +132,7 @@ export default function PubHubPage() {
             </p>
           </div>
 
-          <div className="pubhub-next-steps">
+          <div className="project-side-list">
             <h3>Hvis vi arbejdede videre</h3>
 
             <ul>

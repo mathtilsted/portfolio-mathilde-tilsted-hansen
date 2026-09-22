@@ -10,9 +10,9 @@ export default function SyncPage() {
     <ProjectLayout
       title="Sync"
       label="Logo design · Personligt projekt"
-      intro="Et mindre designprojekt for et band, der havde brug for et nyt visuelt element til deres nye merch og visuelle udtryk."
-      role="Logo design"
-      collaboration="Individuelt projekt"
+      intro="Et mindre designprojekt for et band, der havde brug for en ny visuel identitet med udgangspunkt i et nyt logo."
+      role="Visuel identitet · Logo design"
+      collaboration="Selvstændigt projekt"
       focus="Branding · Typografi · Design"
       hero={
         <div className="sync-hero">
@@ -84,7 +84,7 @@ export default function SyncPage() {
         <div className="project-container sync-reflection-grid">
           <p className="project-label">Refleksion</p>
 
-          <div>
+          <div className="sync-reflection-text">
             <h2>Et projekt i mindre skala</h2>
 
             <p>

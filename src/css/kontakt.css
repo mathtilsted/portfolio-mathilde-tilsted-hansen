@@ -3,42 +3,58 @@
    ========================================================= */
 
 .kontakt-siden {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .knap-container {
   width: 100%;
-  height: 100px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-#knap {
-  width: auto;
-  height: 48px;
-  padding: 32px 40px;
-  display: flex;
+/* =========================================================
+   KNAPPER
+   ========================================================= */
+
+.kontakt-knap {
+  min-height: 48px;
+  padding: 0.85rem 1.5rem;
+
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+
   border: none;
-  border-radius: 32px;
-  background-color: var(--secondary);
+  border-radius: 999px;
+
+  background: var(--secondary);
   color: var(--text);
-  font-family: var(--font-body);
-  font-size: 1.08rem;
+
+  font-size: 1rem;
   letter-spacing: var(--spacing);
   text-decoration: none;
+
   cursor: pointer;
-  z-index: 5;
-  transition: transform 0.2s ease;
+
+  transition: transform 200ms ease;
 }
 
-#knap:hover {
-  transform: scale(1.05);
+.kontakt-knap:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .kontakt-siden {
+    margin-top: 4rem;
+  }
 }
 
 /* =========================================================
@@ -46,9 +62,17 @@
    ========================================================= */
 
 @media (max-width: 700px) {
+  .kontakt-siden {
+    margin-top: 3rem;
+  }
+
   .knap-container {
-    height: auto;
     flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .kontakt-knap {
+    padding: 0.8rem 1.25rem;
   }
 }
 
@@ -57,7 +81,7 @@
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-  #knap {
+  .kontakt-knap {
     transition: none;
   }
 }

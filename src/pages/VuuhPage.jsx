@@ -4,15 +4,15 @@ import "../css/vuuh.css";
 export default function VuuhPage() {
   return (
     <ProjectLayout
-      title="Vuuh 2026"
-      label="Produktoptimering · Virksomhedscase"
-      intro="Optimering af Vuuhs onboarding med fokus på at gøre en kompleks proces enklere, tydeligere og lettere at gennemføre."
+      title="Vuuh"
+      label="3. semester · Produktoptimering"
+      intro="En optimering af Vuuhs onboarding med fokus på at gøre et eksisterende produkt mere overskueligt, intuitivt og lettere at komme i gang med."
       role="UX/UI · Motion design · Udvikling"
-      collaboration="2 personer"
+      collaboration="Gruppeprojekt"
       focus="Onboarding · UX · Produktoptimering"
       hero={
         <div className="vuuh-placeholder vuuh-placeholder--hero">
-          <span>Screenshot af Vuuh onboarding</span>
+          <span>Billede af Vuuh onboarding</span>
         </div>
       }
       previousProject={{
@@ -34,18 +34,17 @@ export default function VuuhPage() {
           <h2>Udfordringen</h2>
 
           <p>
-            Vuuh er en fashion tech-virksomhed, der skaber forbindelsen mellem
-            webshops og brands. Deres løsning samler produktdata fra forskellige
-            brands, så webshop-ejeren ikke selv skal håndtere og indtaste den
-            manuelt.
+            Vuuh er en fashion tech-virksomhed, der skaber forbindelse mellem
+            webshopejere og brands. Deres løsning gør det muligt automatisk at
+            samle produktdata fra forskellige brands, så webshopejeren ikke selv
+            behøver at indtaste dem manuelt.
           </p>
 
           <p>
-            Casen tog udgangspunkt i onboarding til et nyt produkt, som Vuuh
-            ønskede at teste og kvalificere. Den eksisterende onboarding
-            indeholdt den nødvendige information, men oplevelsen var rodet og
-            gjorde det svært for brugeren hurtigt at forstå processen og komme i
-            gang.
+            Casen tog udgangspunkt i en eksisterende onboarding, som skulle
+            testes og optimeres. Den oprindelige løsning indeholdt meget
+            information på én gang og gjorde det svært for brugeren hurtigt at
+            forstå processen og komme i gang.
           </p>
         </article>
 
@@ -54,16 +53,15 @@ export default function VuuhPage() {
           <h2>Løsningen</h2>
 
           <p>
-            I stedet for at redesigne produktet fra bunden arbejdede vi med at
-            optimere den eksisterende løsning gennem mindre, målrettede
-            ændringer.
+            I stedet for at redesigne hele produktet arbejdede vi med mindre,
+            målrettede forbedringer af den eksisterende onboarding.
           </p>
 
           <p>
-            Vi arbejdede blandt andet med informationshierarki, semantik,
-            simplificering og motion design for at skabe en onboarding, hvor
-            brugeren lettere kunne forstå, hvad der skulle ske, og hvad næste
-            handling var.
+            Vi arbejdede blandt andet med motion design, visuelt hierarki,
+            semantik og simplificering af indholdet. Målet var at skabe en mere
+            tydelig proces, hvor brugeren lettere kunne forstå næste skridt og
+            komme i gang med produktet.
           </p>
         </article>
       </section>
@@ -79,44 +77,44 @@ export default function VuuhPage() {
             <h2>Fra diagnose til kvalificeret løsning</h2>
 
             <p>
-              Arbejdet blev struktureret omkring tre trin, som gjorde det muligt
-              først at forstå problemerne, derefter forbedre løsningen og til
-              sidst vurdere, om ændringerne faktisk gjorde onboarding lettere at
-              bruge.
+              Arbejdet blev delt op i tre trin, så vi først kunne forstå
+              problemerne i den eksisterende løsning, derefter arbejde med
+              forbedringerne og til sidst vurdere, om ændringerne faktisk
+              fungerede.
             </p>
           </div>
 
-          <div className="vuuh-process-grid">
-            <article className="vuuh-process-step">
-              <span className="vuuh-process-number">01</span>
+          <div className="project-three-column">
+            <article className="project-three-column-item">
+              <span>01</span>
               <h3>Diagnosticere</h3>
 
               <p>
-                Før vi ændrede noget, undersøgte vi den eksisterende onboarding
-                og identificerede de steder, hvor struktur, information og
-                interaktion skabte unødig friktion for brugeren.
+                Først undersøgte vi den eksisterende onboarding for at finde de
+                steder, hvor brugeren kunne blive forvirret eller møde
+                unødvendig kompleksitet.
               </p>
             </article>
 
-            <article className="vuuh-process-step">
-              <span className="vuuh-process-number">02</span>
+            <article className="project-three-column-item">
+              <span>02</span>
               <h3>Redesigne</h3>
 
               <p>
-                På baggrund af diagnosen arbejdede vi med målrettede ændringer i
-                blandt andet hierarki, semantik, motion og opbygningen af de
-                enkelte trin.
+                På baggrund af vores observationer arbejdede vi med hierarki,
+                motion design, semantik og simplificering frem for et komplet
+                redesign af produktet.
               </p>
             </article>
 
-            <article className="vuuh-process-step">
-              <span className="vuuh-process-number">03</span>
+            <article className="project-three-column-item">
+              <span>03</span>
               <h3>Kvalificere</h3>
 
               <p>
-                Til sidst kvalificerede vi den optimerede løsning for at
-                undersøge, om ændringerne havde gjort onboarding mere tydelig og
-                lettere for brugeren at gennemføre.
+                Til sidst blev løsningen vurderet igen for at undersøge, om
+                ændringerne gjorde onboarding-processen mere tydelig og lettere
+                at gennemføre.
               </p>
             </article>
           </div>
@@ -130,30 +128,23 @@ export default function VuuhPage() {
       <section className="vuuh-optimisation">
         <div className="project-container vuuh-optimisation-grid">
           <div className="vuuh-placeholder">
-            <span>Screenshot af optimeret onboarding</span>
+            <span>Billede fra den optimerede onboarding</span>
           </div>
 
           <div className="vuuh-optimisation-text">
             <p className="project-label">Optimeringen</p>
-
-            <h2>
-              Små ændringer.
-              <br />
-              Tydeligere oplevelse.
-            </h2>
+            <h2>Små ændringer med et tydeligt formål</h2>
 
             <p>
-              Projektet handlede ikke om at give Vuuh et helt nyt visuelt
-              udtryk. I stedet arbejdede vi inden for det eksisterende produkt
-              og fokuserede på de steder, hvor relativt små ændringer kunne
-              forbedre brugerens oplevelse.
+              Fokus var ikke at ændre Vuuhs visuelle identitet eller skabe et
+              helt nyt interface. I stedet arbejdede vi videre med det produkt,
+              der allerede eksisterede.
             </p>
 
             <p>
-              Tydeligere hierarki og semantik gjorde informationen lettere at
-              afkode, mens simplificering fjernede unødvendig kompleksitet.
-              Motion design blev brugt funktionelt til at skabe feedback og
-              hjælpe brugeren med at forstå progressionen gennem onboarding.
+              Information blev prioriteret tydeligere, elementer blev
+              simplificeret, og motion blev brugt til at understøtte brugerens
+              forståelse af processen frem for blot at fungere som dekoration.
             </p>
           </div>
         </div>
@@ -163,49 +154,48 @@ export default function VuuhPage() {
           REFLEKSION
       ====================================================== */}
 
-      <section className="vuuh-reflection">
-        <div className="project-container vuuh-reflection-grid">
-          <div className="vuuh-reflection-text">
+      <section className="vuuh-reflection project-section">
+        <div className="project-container project-section-grid">
+          <div className="project-section-text">
             <p className="project-label">Refleksion</p>
-            <h2>Det tager jeg med videre</h2>
+            <h2>Optimering behøver ikke være et redesign</h2>
 
             <p>
-              Vuuh-casen lærte mig især værdien af at forstå et eksisterende
-              produkt, før man begynder at ændre på det. Et redesign behøver
-              ikke være en total visuel forandring for at gøre en mærkbar
-              forskel for brugeren.
+              Vuuh-projektet gjorde det tydeligt for mig, at produktoptimering
+              ofte handler om at forstå, hvad der allerede fungerer, før man
+              begynder at ændre noget.
             </p>
 
             <p>
-              Projektet gav mig mere erfaring med at bruge UX, UI og motion
-              design som værktøjer til at løse konkrete problemer og med at
-              arbejde ud fra et eksisterende produkt og en virkelig virksomheds
-              behov.
+              Det gav også erfaring med at arbejde inden for rammerne af et
+              eksisterende produkt og en rigtig virksomheds løsning, hvor små
+              tekniske og visuelle justeringer kan have stor betydning for
+              brugeroplevelsen.
             </p>
           </div>
 
-          <div className="vuuh-learning">
-            <h3>Kompetencer fra projektet</h3>
+          <div className="project-side-list">
+            <h3>Det tager jeg med videre</h3>
 
             <ul>
               <li>
                 <span>→</span>
-                Produkt- og UX-analyse
+                Diagnosticér før du designer
               </li>
 
               <li>
                 <span>→</span>
-                Informationshierarki og semantik
+                Simplificér før du tilføjer
               </li>
 
               <li>
                 <span>→</span>
-                Motion design som funktionelt værktøj
+                Brug motion med et funktionelt formål
               </li>
 
               <li>
                 <span>→</span>
-                Optimering af eksisterende interfaces
+                Test om ændringer faktisk forbedrer oplevelsen
               </li>
             </ul>
           </div>
