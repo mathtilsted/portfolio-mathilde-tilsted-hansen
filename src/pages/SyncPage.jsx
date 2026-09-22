@@ -24,8 +24,8 @@ export default function SyncPage() {
         path: "/projekter/vuuh",
       }}
       nextProject={{
-        title: "Blandet",
-        path: "/projekter/blandet",
+        title: "PubHub",
+        path: "/projekter/pubhub",
       }}
     >
       {/* =====================================================

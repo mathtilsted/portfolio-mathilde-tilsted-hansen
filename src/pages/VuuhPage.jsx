@@ -1,4 +1,6 @@
 import ProjectLayout from "../components/ProjectLayout";
+import Vuuh1 from "../assets/projekt-sider/vuuh/vuuh1.jpg";
+import Vuuh2 from "../assets/projekt-sider/vuuh/vuuh2.jpg";
 import "../css/vuuh.css";
 
 export default function VuuhPage() {
@@ -11,8 +13,8 @@ export default function VuuhPage() {
       collaboration="Gruppeprojekt"
       focus="Onboarding · UX · Produktoptimering"
       hero={
-        <div className="vuuh-placeholder vuuh-placeholder--hero">
-          <span>Billede af Vuuh onboarding</span>
+        <div className="vuuh-hero">
+          <img src={Vuuh1} alt="Vuuh onboarding" className="vuuh-hero-image" />
         </div>
       }
       previousProject={{
@@ -31,6 +33,7 @@ export default function VuuhPage() {
       <section className="project-story project-container">
         <article className="project-story-item">
           <span className="project-number">01</span>
+
           <h2>Udfordringen</h2>
 
           <p>
@@ -50,6 +53,7 @@ export default function VuuhPage() {
 
         <article className="project-story-item">
           <span className="project-number">02</span>
+
           <h2>Løsningen</h2>
 
           <p>
@@ -74,6 +78,7 @@ export default function VuuhPage() {
         <div className="project-container">
           <div className="vuuh-process-heading">
             <p className="project-label">Processen</p>
+
             <h2>Fra diagnose til kvalificeret løsning</h2>
 
             <p>
@@ -87,6 +92,7 @@ export default function VuuhPage() {
           <div className="project-three-column">
             <article className="project-three-column-item">
               <span>01</span>
+
               <h3>Diagnosticere</h3>
 
               <p>
@@ -98,6 +104,7 @@ export default function VuuhPage() {
 
             <article className="project-three-column-item">
               <span>02</span>
+
               <h3>Redesigne</h3>
 
               <p>
@@ -109,6 +116,7 @@ export default function VuuhPage() {
 
             <article className="project-three-column-item">
               <span>03</span>
+
               <h3>Kvalificere</h3>
 
               <p>
@@ -127,12 +135,17 @@ export default function VuuhPage() {
 
       <section className="vuuh-optimisation">
         <div className="project-container vuuh-optimisation-grid">
-          <div className="vuuh-placeholder">
-            <span>Billede fra den optimerede onboarding</span>
+          <div className="vuuh-optimisation-media">
+            <img
+              src={Vuuh2}
+              alt="Den optimerede onboarding i Vuuh"
+              className="vuuh-optimisation-image"
+            />
           </div>
 
           <div className="vuuh-optimisation-text">
             <p className="project-label">Optimeringen</p>
+
             <h2>Små ændringer med et tydeligt formål</h2>
 
             <p>
@@ -158,6 +171,7 @@ export default function VuuhPage() {
         <div className="project-container project-section-grid">
           <div className="project-section-text">
             <p className="project-label">Refleksion</p>
+
             <h2>Optimering behøver ikke være et redesign</h2>
 
             <p>

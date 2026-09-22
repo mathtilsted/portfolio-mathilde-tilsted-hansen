@@ -22,8 +22,8 @@ export default function PubHubPage() {
         />
       }
       previousProject={{
-        title: "Blandet",
-        path: "/projekter/blandet",
+        title: "Sync",
+        path: "/projekter/sync",
       }}
       nextProject={{
         title: "Mellemrum",
