@@ -1,8 +1,8 @@
 import ProjectLayout from "../components/ProjectLayout";
-import Pub1 from "../assets/projekt-sider/pubhub/pub1.png";
-import Pub2 from "../assets/projekt-sider/pubhub/pub2.png";
-import Pub3 from "../assets/projekt-sider/pubhub/pub3.png";
-import Pub4 from "../assets/projekt-sider/pubhub/pub4.png";
+import Pub1 from "../assets/projekt-sider/pubhub/pub1.svg";
+import Pub2 from "../assets/projekt-sider/pubhub/pub2.svg";
+import Pub3 from "../assets/projekt-sider/pubhub/pub3.svg";
+import Pub4 from "../assets/projekt-sider/pubhub/pub4.svg";
 import "../css/pubhub.css";
 
 export default function PubHubPage() {

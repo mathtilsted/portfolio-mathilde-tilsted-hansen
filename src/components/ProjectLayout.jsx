@@ -28,7 +28,7 @@ export default function ProjectLayout({
           <div className="project-hero-grid">
             <div className="project-hero-content">
               <p className="project-label">{label}</p>
-              <h1>{title}</h1>
+              <h2>{title}</h2>
               <p className="project-intro">{intro}</p>
 
               <div className="project-meta">

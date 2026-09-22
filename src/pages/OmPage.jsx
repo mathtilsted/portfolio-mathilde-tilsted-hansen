@@ -11,7 +11,7 @@ export default function OmPage() {
       <div className="sektion">
         <img className="baggrund" src={Baggrund} alt="" />
         <div className="titel">
-          <h3>Hvem er jeg?</h3>
+          <h2>Hvem er jeg?</h2>
         </div>
         <p className="om-mig-under-titel">
           Klik på billederne og lær lidt om mig

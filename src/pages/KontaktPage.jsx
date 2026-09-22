@@ -6,7 +6,7 @@ export default function KontaktPage() {
     <div className="kontakt-siden">
       <img className="baggrund" src={Baggrund} alt="" />
       <div className="sektion">
-        <h3 className="titel">Vil du vide mere?</h3>
+        <h2 className="titel">Vil du vide mere?</h2>
 
         <div className="knap-container">
           <a

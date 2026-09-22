@@ -53,7 +53,7 @@ export default function ProjektPage() {
 
       <section className="projektoversigt-indhold">
         <header className="projektoversigt-header">
-          <h1>Projekter</h1>
+          <h2>Projekter</h2>
 
           <p>
             Her ser du et udvalg af mine yndlingsprojekter. Vælg en mappe og lær

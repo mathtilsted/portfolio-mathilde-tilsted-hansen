@@ -118,9 +118,10 @@ export default function MellemrumPage() {
           </div>
 
           <div className="mellemrum-technical-text">
-            <p className="project-label">Teknisk fokus</p>
-            <h2>En bedre struktur bag løsningen</h2>
-
+            <div className="mellemrum-technical-heading">
+              <p className="project-label">Teknisk fokus</p>
+              <h2>En bedre struktur bag løsningen</h2>
+            </div>
             <p>
               En stor del af arbejdet lå i selve kodebasen. Projektet blev
               struktureret mere konsekvent, så komponenter og funktionalitet fik
@@ -190,7 +191,7 @@ export default function MellemrumPage() {
         <div className="project-container mellemrum-result-grid">
           <div className="mellemrum-result-text">
             <p className="project-label">Resultatet</p>
-            <h2>Mindre synligt, men vigtigere under overfladen</h2>
+            <h2>Teknisk optimering</h2>
 
             <p>
               Resultatet var ikke et stort visuelt redesign. Forbedringen lå i
