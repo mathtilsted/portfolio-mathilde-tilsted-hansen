@@ -16,6 +16,11 @@
   max-height: 420px;
 }
 
+.project-hero-media:has(.pubhub-phone--hero) {
+  min-height: 420px;
+  height: auto;
+}
+
 /* =========================================================
    PRODUKT
    ========================================================= */
