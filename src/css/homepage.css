@@ -5,6 +5,7 @@
 .homepage {
   position: relative;
   width: 100%;
+  overflow-y: clip;
 }
 
 .homepage-indhold {

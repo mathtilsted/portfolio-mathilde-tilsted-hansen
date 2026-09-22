@@ -3,9 +3,10 @@ import "../css/kontakt.css";
 
 export default function KontaktPage() {
   return (
-    <div className="kontakt-siden">
+    <main className="kontakt-siden">
       <img className="baggrund" src={Baggrund} alt="" />
-      <div className="sektion">
+
+      <section className="kontakt-indhold">
         <h2 className="titel">Vil du vide mere?</h2>
 
         <div className="knap-container">
@@ -37,13 +38,13 @@ export default function KontaktPage() {
 
           <a
             id="knap"
-            href={`${import.meta.env.BASE_URL}mathilde-cv.pdf`} //cv download virker både lokalt og efter deploye
+            href={`${import.meta.env.BASE_URL}mathilde-cv.pdf`}
             download
           >
             Download CV
           </a>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }

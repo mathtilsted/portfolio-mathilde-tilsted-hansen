@@ -101,16 +101,6 @@ p {
   opacity: 0.2;
 }
 
-.sektion {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
 /* =========================================================
    TABLET
    ========================================================= */
