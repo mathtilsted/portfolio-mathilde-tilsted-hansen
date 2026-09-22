@@ -5,18 +5,24 @@
 .projektoversigt {
   position: relative;
   width: 100%;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .baggrund-projekt-siden {
   position: absolute;
-  top: 50%;
-  left: 48%;
+  top: 20%;
+  left: 50%;
   z-index: 0;
-  width: 115%;
-  height: 95%;
+
+  width: 100vw;
+  height: 100%;
+
   transform: translate(-50%, -50%);
-  object-fit: contain;
+
+  object-fit: cover;
+  object-position: center;
+
   pointer-events: none;
   opacity: 0.2;
 }
@@ -24,6 +30,7 @@
 .projektoversigt-indhold {
   position: relative;
   z-index: 1;
+
   width: min(100% - 6rem, 1400px);
   margin-inline: auto;
 }
@@ -36,11 +43,12 @@
   max-width: 700px;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  margin-left: 8rem;
+  margin-left: 6rem;
 }
 
 .projektoversigt-header p {
-  max-width: 560px;
+  max-width: 760px;
+  margin-top: 1rem;
 }
 
 /* =========================================================
@@ -50,9 +58,12 @@
 .projekter-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+
   column-gap: clamp(1rem, 3vw, 3rem);
   row-gap: clamp(3rem, 5vw, 6rem);
+
   align-items: center;
+
   margin-bottom: 4rem;
 }
 
@@ -62,22 +73,31 @@
 
 .projekt-mappe {
   position: relative;
+
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: inherit;
   text-decoration: none;
+
   cursor: pointer;
+
   transform: translateY(0) rotate(0deg);
+
   transition: transform 300ms ease;
 }
 
 .projekt-mappe img {
-  width: 60%;
+  width: 70%;
   height: auto;
+
   display: block;
+
   object-fit: contain;
+
   transition: transform 300ms ease;
 }
 
@@ -121,12 +141,18 @@
   position: absolute;
   left: 50%;
   bottom: 18%;
+
   width: max-content;
   max-width: 80%;
+
   padding: 0.5rem 0.8rem;
+
   transform: translateX(-50%) translateY(6px);
+
   font-size: 0.8rem;
+
   opacity: 0;
+
   transition:
     opacity 250ms ease,
     transform 250ms ease;
@@ -156,12 +182,17 @@
 
   .projekter-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     column-gap: 3rem;
     row-gap: 4rem;
   }
 
   .projekt-mappe img {
     width: 70%;
+  }
+
+  .baggrund-projekt-siden {
+    width: 120vw;
   }
 }
 
@@ -170,11 +201,6 @@
    ========================================================= */
 
 @media (max-width: 700px) {
-  .baggrund-projekt-siden {
-    width: 170%;
-    height: 100%;
-  }
-
   .projektoversigt-indhold {
     width: min(100% - 2rem, 550px);
   }
@@ -201,6 +227,10 @@
   .projekt-mappe-status {
     opacity: 0.55;
     transform: translateX(-50%) translateY(0);
+  }
+
+  .baggrund-projekt-siden {
+    width: 160vw;
   }
 }
 

@@ -41,6 +41,10 @@
   margin-bottom: 4rem;
 }
 
+.vuuh-process-heading h2 {
+  margin-bottom: 1rem;
+}
+
 .vuuh-process-heading > p:last-child {
   max-width: 650px;
 }
@@ -62,6 +66,10 @@
 
 .vuuh-optimisation-text {
   max-width: 540px;
+}
+
+.vuuh-optimisation-text h2 {
+  margin-bottom: 1rem;
 }
 
 .vuuh-optimisation-text p + p {

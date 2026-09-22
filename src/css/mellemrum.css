@@ -166,6 +166,10 @@
   align-items: center;
 }
 
+.mellemrum-result-text h2 {
+  margin-bottom: 1rem;
+}
+
 .mellemrum-result-text {
   max-width: 520px;
 }

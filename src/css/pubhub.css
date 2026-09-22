@@ -50,6 +50,10 @@
   max-width: 540px;
 }
 
+.pubhub-product-text h2 {
+  margin-bottom: 1rem;
+}
+
 .pubhub-product-text p + p {
   margin-top: 1.25rem;
 }

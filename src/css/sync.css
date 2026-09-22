@@ -97,6 +97,10 @@
   gap: clamp(3rem, 8vw, 8rem);
 }
 
+.sync-reflection-text h2 {
+  margin-bottom: 1rem;
+}
+
 .sync-reflection-text {
   max-width: 700px;
 }

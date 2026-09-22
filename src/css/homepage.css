@@ -40,6 +40,10 @@
   line-height: 2;
 }
 
+.homepage-tekst p {
+  line-height: 2.5;
+}
+
 .homepage-titel {
   max-width: 850px;
   margin-bottom: 2rem;

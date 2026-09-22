@@ -197,7 +197,7 @@
 }
 
 /* =========================================================
-   FÆLLES CASE SECTION
+   FÆLLES SEKTIONER
    ========================================================= */
 
 .project-section {
@@ -213,6 +213,10 @@
 
 .project-section-text {
   max-width: 720px;
+}
+
+.project-section-text h2 {
+  margin-bottom: 1rem;
 }
 
 .project-section-text p + p {

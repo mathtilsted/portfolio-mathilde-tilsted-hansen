@@ -1,11 +1,11 @@
 import { Link } from "react-router";
 import "../css/projekt-oversigt.css";
-import Baggrund4 from "../assets/baggrunde/baggrund4.png";
+
+import Baggrund1 from "../assets/baggrunde/baggrund1.png";
 import PubhubMappe from "../assets/projekt-sider/mapper/pubhub-mappe.svg";
 import MellemrumMappe from "../assets/projekt-sider/mapper/mellemrum-mappe.svg";
 import VuuhMappe from "../assets/projekt-sider/mapper/vuuh-mappe.svg";
 import SyncMappe from "../assets/projekt-sider/mapper/sync-mappe.svg";
-import BlandetMappe from "../assets/projekt-sider/mapper/blandet-mappe.svg";
 import TomMappe from "../assets/projekt-sider/mapper/mappe.svg";
 
 const projekter = [
@@ -33,12 +33,6 @@ const projekter = [
     billede: SyncMappe,
     path: "/projekter/sync",
   },
-  {
-    id: "blandet",
-    navn: "Blandet",
-    billede: BlandetMappe,
-    path: "/projekter/blandet",
-  },
 ];
 
 export default function ProjektPage() {
@@ -46,7 +40,7 @@ export default function ProjektPage() {
     <main className="projektoversigt">
       <img
         className="baggrund-projekt-siden"
-        src={Baggrund4}
+        src={Baggrund1}
         alt=""
         aria-hidden="true"
       />
@@ -56,8 +50,10 @@ export default function ProjektPage() {
           <h2>Projekter</h2>
 
           <p>
-            Her ser du et udvalg af mine yndlingsprojekter. Vælg en mappe og lær
-            mere om et projekt.
+            Her ser du et udvalg af mine yndlingsprojekter. Bag hver mappe,
+            gemmer sig et projekt jeg har arbejdet med for nyligt. Alle
+            projekter har haft forskellige scopes og har udfordret mig på
+            forskellige måder. Vælg en mappe og lær mere om et projekt.
           </p>
         </header>
 

@@ -56,9 +56,10 @@
 .back {
   padding: 2rem;
   flex-direction: column;
+  gap: 2rem;
   justify-content: flex-start;
 
-  background: var(--primary);
+  background: var(--secondary);
   color: var(--text);
   text-align: center;
   line-height: 1.8;
