@@ -1,31 +1,22 @@
 /* =========================================================
-   VUUH PLACEHOLDERS
+   HERO
    ========================================================= */
 
-.vuuh-placeholder {
-  width: 100%;
-  min-height: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  border-radius: 1rem;
-  background: #e7e7e7;
-}
-
-.vuuh-placeholder span {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  text-align: center;
-  opacity: 0.45;
-}
-
-.vuuh-placeholder--hero {
+.vuuh-hero {
   position: relative;
   z-index: 2;
   width: min(100%, 600px);
-  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vuuh-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 1rem;
 }
 
 /* =========================================================
@@ -42,46 +33,12 @@
   margin-bottom: 4rem;
 }
 
+.vuuh-process-heading h2 {
+  margin-bottom: 1rem;
+}
+
 .vuuh-process-heading > p:last-child {
   max-width: 650px;
-}
-
-.vuuh-process-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(0, 0, 0, 0.16);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-.vuuh-process-step {
-  min-height: 300px;
-  padding: 2rem;
-}
-
-.vuuh-process-step + .vuuh-process-step {
-  border-left: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-.vuuh-process-number {
-  display: block;
-  margin-bottom: 2rem;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  opacity: 0.45;
-}
-
-.vuuh-process-step h3 {
-  margin-bottom: 1rem;
-  font-family: var(--font-titel);
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--secondary-dark);
-}
-
-.vuuh-process-step p {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.7;
 }
 
 /* =========================================================
@@ -96,11 +53,30 @@
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: clamp(4rem, 8vw, 8rem);
+
   align-items: center;
+}
+
+.vuuh-optimisation-media {
+  width: 100%;
+}
+
+.vuuh-optimisation-image {
+  width: 100%;
+  height: auto;
+
+  display: block;
+  object-fit: contain;
+
+  border-radius: 1rem;
 }
 
 .vuuh-optimisation-text {
   max-width: 540px;
+}
+
+.vuuh-optimisation-text h2 {
+  margin-bottom: 1rem;
 }
 
 .vuuh-optimisation-text p + p {
@@ -112,53 +88,7 @@
    ========================================================= */
 
 .vuuh-reflection {
-  padding: 6rem 0;
   background: #d5c7b9;
-}
-
-.vuuh-reflection-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: clamp(4rem, 9vw, 9rem);
-  align-items: center;
-}
-
-.vuuh-reflection-text {
-  max-width: 720px;
-}
-
-.vuuh-reflection-text p + p {
-  margin-top: 1.25rem;
-}
-
-.vuuh-learning {
-  padding-left: clamp(2rem, 5vw, 5rem);
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.vuuh-learning h3 {
-  margin: 0 0 1.5rem;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.vuuh-learning ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.9rem;
-  list-style: none;
-}
-
-.vuuh-learning li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.5;
 }
 
 /* =========================================================
@@ -166,19 +96,6 @@
    ========================================================= */
 
 @media (max-width: 950px) {
-  .vuuh-process-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .vuuh-process-step {
-    min-height: auto;
-  }
-
-  .vuuh-process-step + .vuuh-process-step {
-    border-left: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.16);
-  }
-
   .vuuh-optimisation-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -187,6 +104,10 @@
   .vuuh-optimisation-text {
     max-width: 650px;
   }
+
+  .vuuh-hero {
+    width: min(100%, 520px);
+  }
 }
 
 /* =========================================================
@@ -194,18 +115,12 @@
    ========================================================= */
 
 @media (max-width: 700px) {
-  .vuuh-placeholder {
-    min-height: 260px;
-  }
-
-  .vuuh-placeholder--hero {
+  .vuuh-hero {
     width: 100%;
-    min-height: 300px;
   }
 
   .vuuh-process,
-  .vuuh-optimisation,
-  .vuuh-reflection {
+  .vuuh-optimisation {
     padding: 5rem 0;
   }
 
@@ -213,33 +128,12 @@
     margin-bottom: 3rem;
   }
 
-  .vuuh-process-step {
-    padding: 2rem 0;
-  }
-
-  .vuuh-comparison {
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-  }
-
-  .vuuh-comparison-grid {
-    grid-template-columns: 1fr;
+  .vuuh-optimisation-grid {
     gap: 3rem;
   }
 
-  .vuuh-comparison-item .vuuh-placeholder {
-    min-height: 260px;
-  }
-
-  .vuuh-reflection-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .vuuh-learning {
-    padding-left: 0;
-    padding-top: 3rem;
-    border-left: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  .vuuh-hero-image,
+  .vuuh-optimisation-image {
+    border-radius: 0.75rem;
   }
 }

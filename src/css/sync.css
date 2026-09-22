@@ -24,8 +24,8 @@
    ========================================================= */
 
 .sync-intro-section {
-  margin-top: 8rem;
   width: 100%;
+  margin-top: 4rem;
   background: var(--secondary);
 }
 
@@ -78,7 +78,6 @@
 .sync-gallery-item img {
   width: 100%;
   height: 100%;
-
   display: block;
   object-fit: cover;
 }
@@ -98,12 +97,12 @@
   gap: clamp(3rem, 8vw, 8rem);
 }
 
-.sync-reflection-grid > div {
-  max-width: 700px;
+.sync-reflection-text h2 {
+  margin-bottom: 1rem;
 }
 
-.sync-reflection-grid h2 {
-  margin-bottom: 1.5rem;
+.sync-reflection-text {
+  max-width: 700px;
 }
 
 /* =========================================================
@@ -139,13 +138,13 @@
     width: 100%;
   }
 
-  .sync-intro {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+  .sync-intro-section {
+    margin-top: 3rem;
   }
 
-  .sync-logo-section {
-    padding: 4rem 0;
+  .sync-intro {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .sync-gallery {
@@ -159,7 +158,6 @@
   }
 
   .sync-gallery-item img {
-    aspect-ratio: auto;
     height: auto;
   }
 

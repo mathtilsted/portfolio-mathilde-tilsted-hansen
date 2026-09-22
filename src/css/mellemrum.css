@@ -34,7 +34,6 @@
 
 .desktop-placeholder-content {
   width: 100%;
-  padding: 0;
 }
 
 .mellemrum-image {
@@ -94,11 +93,10 @@
 
 .mac-address span {
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.45);
-  font-family: var(--font-body);
   font-size: 0.65rem;
   white-space: nowrap;
   text-overflow: ellipsis;
+  opacity: 0.45;
 }
 
 /* =========================================================
@@ -108,6 +106,10 @@
 .mellemrum-technical {
   padding: 6rem 0;
   background: #d5c7b9;
+}
+
+.mellemrum-technical-heading {
+  margin-bottom: 1rem;
 }
 
 .mellemrum-technical-grid {
@@ -144,44 +146,8 @@
 }
 
 .mellemrum-auth-heading > p:last-child {
+  margin-top: 1rem;
   max-width: 650px;
-}
-
-.mellemrum-roles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(0, 0, 0, 0.16);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-.mellemrum-role {
-  min-height: 260px;
-  padding: 2rem;
-}
-
-.mellemrum-role + .mellemrum-role {
-  border-left: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-.mellemrum-role > span {
-  display: block;
-  margin-bottom: 2rem;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  opacity: 0.45;
-}
-
-.mellemrum-role h3 {
-  margin: 0 0 1rem;
-  font-family: var(--font-titel);
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--secondary-dark);
-}
-
-.mellemrum-role p {
-  margin: 0;
-  font-size: 0.9rem;
 }
 
 /* =========================================================
@@ -200,65 +166,16 @@
   align-items: center;
 }
 
+.mellemrum-result-text h2 {
+  margin-bottom: 1rem;
+}
+
 .mellemrum-result-text {
   max-width: 520px;
 }
 
 .mellemrum-result-text p + p {
   margin-top: 1.25rem;
-}
-
-/* =========================================================
-   REFLEKSION
-   ========================================================= */
-
-.mellemrum-reflection {
-  padding: 6rem 0;
-}
-
-.mellemrum-reflection-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: clamp(4rem, 9vw, 9rem);
-  align-items: center;
-}
-
-.mellemrum-reflection-text {
-  max-width: 720px;
-}
-
-.mellemrum-reflection-text p + p {
-  margin-top: 1.25rem;
-}
-
-.mellemrum-learning {
-  padding-left: clamp(2rem, 5vw, 5rem);
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.mellemrum-learning h3 {
-  margin: 0 0 1.5rem;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.mellemrum-learning ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.9rem;
-  list-style: none;
-}
-
-.mellemrum-learning li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.5;
 }
 
 /* =========================================================
@@ -269,24 +186,12 @@
   .mellemrum-technical-grid,
   .mellemrum-result-grid {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .mellemrum-technical-text,
   .mellemrum-result-text {
     max-width: 650px;
-  }
-
-  .mellemrum-roles {
-    grid-template-columns: 1fr;
-  }
-
-  .mellemrum-role {
-    min-height: auto;
-  }
-
-  .mellemrum-role + .mellemrum-role {
-    border-left: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -308,13 +213,13 @@
     padding: 0 0.7rem;
   }
 
+  .mac-controls {
+    gap: 5px;
+  }
+
   .mac-control {
     width: 9px;
     height: 9px;
-  }
-
-  .mac-controls {
-    gap: 5px;
   }
 
   .mac-address {
@@ -327,14 +232,8 @@
   }
 
   .mellemrum-technical,
-  .mellemrum-result,
-  .mellemrum-reflection {
+  .mellemrum-result {
     padding: 5rem 0;
-  }
-
-  .mellemrum-technical-grid,
-  .mellemrum-result-grid {
-    gap: 3rem;
   }
 
   .mellemrum-auth {
@@ -344,21 +243,5 @@
 
   .mellemrum-auth-heading {
     margin-bottom: 3rem;
-  }
-
-  .mellemrum-role {
-    padding: 2rem 0;
-  }
-
-  .mellemrum-reflection-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .mellemrum-learning {
-    padding-left: 0;
-    padding-top: 3rem;
-    border-left: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
   }
 }

@@ -1,44 +1,119 @@
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
 .nav-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  height: 8rem;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  padding: 24px;
-  margin-right: 1rem;
 }
 
 .nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 48px;
+  align-items: center;
+  gap: 2rem;
 }
+
+.logo {
+  width: 64px;
+  height: auto;
+  display: block;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
 
 .link {
   display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 8px 16px;
-  text-decoration: none;
-  letter-spacing: var(--spacing);
-  text-transform: uppercase;
-  font-family: var(--font-body);
-  font-weight: var(--font-weight);
-  font-size: var(--font-size-body);
+  padding: 0.5rem 1rem;
+
   border-radius: 16px;
-  transition: 0.5s;
-  margin-top: 40px;
-  z-index: 5;
+
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: var(--spacing);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition:
+    background-color 200ms ease,
+    transform 200ms ease;
 }
 
 .link:hover,
 .link.active {
   background-color: var(--secondary);
   color: var(--text);
-  opacity: 100%;
 }
 
-.logo {
-  width: 80px;
-  padding-top: 18px;
-  padding-left: 18px;
+.link:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .nav-container {
+    padding: 1.5rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .nav-container {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .nav {
+    max-width: 75%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.4rem;
+  }
+
+  .link {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .logo {
+    width: 58px;
+  }
+}
+
+/* =========================================================
+   REDUCERET BEVÆGELSE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .link {
+    transition: none;
+  }
 }

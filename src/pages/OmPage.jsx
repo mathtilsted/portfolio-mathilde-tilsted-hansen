@@ -7,35 +7,38 @@ import "../css/om-mig.css";
 
 export default function OmPage() {
   return (
-    <>
-      <div className="sektion">
-        <img className="baggrund" src={Baggrund} alt="" />
+    <main className="om-mig">
+      <img className="baggrund" src={Baggrund} alt="" />
+
+      <section className="om-mig-indhold">
         <div className="titel">
-          <h3>Hvem er jeg?</h3>
+          <h2>Hvem er jeg?</h2>
         </div>
+
         <p className="om-mig-under-titel">
-          Klik på billederne og lær lidt om mig
+          3 fun facts om mig, vælg et billede og find en fun fact
         </p>
+
         <div className="billed-container">
           <FlipCard
             image={Mig1}
             title="Musiker"
-            text="I min fritid er jeg amatørmusiker og spiller i Århus Brass Band. Det er en vaskeægte nørde hobby, og jeg elsker det."
+            text="I min fritid er jeg amatørmusiker og spiller i Århus Brass Band. Jeg spiller et instrument der hedder euphonium. Der er ingen der ved hvad det er for et instrument, men den er bedst sammenlignet med en lille tuba."
           />
+
           <FlipCard
             image={Mig2}
-            title="Crafty og effektiv"
-            text="Jeg plejer at sige at jeg er Crafty frem for rent ud kreativ. Det er jeg også, men jeg elsker at være crafty 
-            for det er altid når man er rigtig crafty at de bedste og skøreste løsninger opstår."
+            title="Hækling"
+            text="Jeg hækler en del og er i det hele taget glad for at bruge hænderne i sammenhæng med hovedet. Jeg har lige færdiggjort en sutteklud til min niece."
           />
+
           <FlipCard
             image={Mig3}
-            title="Ordentlig"
-            text=" Jeg tager mine ansvar utroligt seriøst og jeg synes det er mega fedt at have overblik og overskud til, at gøre tingene ordentligt.
-            Jeg gør altid mit bedste."
+            title="Musical-stjerne-ønsket"
+            text="Jeg ELSKER musicals. Da jeg var yngre ønskede jeg mig at være musical stjerne og skuespiller."
           />
         </div>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }

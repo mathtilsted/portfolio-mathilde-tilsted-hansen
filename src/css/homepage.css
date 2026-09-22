@@ -5,13 +5,14 @@
 .homepage {
   position: relative;
   width: 100%;
+  overflow-y: clip;
 }
 
 .homepage-indhold {
   position: relative;
   z-index: 1;
   width: min(100% - 6rem, 1400px);
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .homepage-hero {
@@ -36,17 +37,17 @@
   max-width: 850px;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-body);
   font-size: 1.1rem;
-  line-height: 2.5rem;
+  line-height: 2;
+}
+
+.homepage-tekst p {
+  line-height: 2.5;
 }
 
 .homepage-titel {
   max-width: 850px;
   margin-bottom: 2rem;
-  color: var(--secondary-dark);
-  font-family: var(--font-titel);
-  font-weight: 400;
   font-size: clamp(4rem, 8vw, 8rem);
   line-height: 0.95;
   text-align: left;
@@ -62,7 +63,6 @@
   }
 
   .homepage-hero {
-    margin-top: 3rem;
     gap: 2.5rem;
   }
 
@@ -71,7 +71,12 @@
   }
 
   .homepage-titel {
-    font-size: clamp(4rem, 9vw, 6rem);
+    font-size: clamp(3.5rem, 8vw, 6rem);
+  }
+
+  .homepage-tekst {
+    font-size: 1rem;
+    line-height: 1.8;
   }
 }
 
@@ -85,9 +90,10 @@
   }
 
   .homepage-hero {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     padding: 0;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
   }
 
@@ -95,12 +101,16 @@
     width: min(70%, 300px);
   }
 
-  .homepage-titel {
-    font-size: clamp(4rem, 18vw, 6rem);
-    text-align: center;
+  .homepage-tekst {
+    width: 100%;
+    max-width: 550px;
+    line-height: 1.8;
   }
 
-  .homepage-tekst {
-    line-height: 1.8;
+  .homepage-titel {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: clamp(3.5rem, 15vw, 5.5rem);
+    text-align: center;
   }
 }
