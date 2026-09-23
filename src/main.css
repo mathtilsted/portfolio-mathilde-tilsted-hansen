@@ -1,8 +1,8 @@
 /* =========================================================
-   TYPOGRAFI
+   TYPOGRAFI - NUNITO
    ========================================================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 /* =========================================================
    RESET
@@ -27,7 +27,7 @@
   --text: #000000;
 
   --font-titel: "Itim", sans-serif;
-  --font-body: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-body: "Nunito", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-weight: 400;
   --spacing: 0.1em;
 }
