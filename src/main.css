@@ -19,11 +19,9 @@
    ========================================================= */
 
 :root {
-  --primary: #f0e6dc;
+  --primary: #f5ebe1;
   --secondary: #b2c278;
   --secondary-dark: #506916;
-  --accent1: #76070d;
-  --accent2: #ffedab;
   --text: #000000;
 
   --font-titel: "Itim", sans-serif;
