@@ -28,6 +28,15 @@ export default function KontaktPage() {
             Linkedin
           </a>
 
+          <a
+            id="knap"
+            href="https://candidate.dk/candidates/6ab10d0b9970e4e2ac2f007e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Candidate
+          </a>
+
           <a id="knap" href="mailto:mathildetilsted@gmail.com">
             mathildetilsted@gmail.com
           </a>

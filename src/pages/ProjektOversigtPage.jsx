@@ -14,24 +14,28 @@ const projekter = [
     navn: "PubHub",
     billede: PubhubMappe,
     path: "/projekter/pubhub",
+    preview: ["Mobile webapp", "UX/UI", "React"],
   },
   {
     id: "mellemrum",
     navn: "Mellemrum",
     billede: MellemrumMappe,
     path: "/projekter/mellemrum",
+    preview: ["Supabase", "Authentication", "Kodestruktur"],
   },
   {
     id: "vuuh",
     navn: "Vuuh",
     billede: VuuhMappe,
     path: "/projekter/vuuh",
+    preview: ["Onboarding", "UX", "Motion design"],
   },
   {
     id: "sync",
     navn: "Sync",
     billede: SyncMappe,
     path: "/projekter/sync",
+    preview: ["Logo design", "Visuel identitet", "Freelance-case"],
   },
 ];
 
@@ -50,10 +54,9 @@ export default function ProjektPage() {
           <h2>Projekter</h2>
 
           <p>
-            Her ser du et udvalg af mine yndlingsprojekter. Bag hver mappe,
-            gemmer sig et projekt jeg har arbejdet med for nyligt. Alle
-            projekter har haft forskellige scopes og har udfordret mig på
-            forskellige måder. Vælg en mappe og lær mere om et projekt.
+            Her ser du et udvalg af mine yndlingsprojekter. Hvert projekt har
+            givet mig nogle kompetencer jeg tager med videre. Prøv at vælge en
+            mappe og lær mere om et projekt.
           </p>
         </header>
 
@@ -65,7 +68,21 @@ export default function ProjektPage() {
               className="projekt-mappe"
               aria-label={`Se projektet ${projekt.navn}`}
             >
-              <img src={projekt.billede} alt="" />
+              <div className="projekt-dokument" aria-hidden="true">
+                <span className="projekt-dokument-titel">{projekt.navn}</span>
+
+                <ul>
+                  {projekt.preview.map((punkt) => (
+                    <li key={punkt}>{punkt}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <img
+                className="projekt-mappe-billede"
+                src={projekt.billede}
+                alt=""
+              />
             </Link>
           ))}
 
@@ -73,7 +90,7 @@ export default function ProjektPage() {
             className="projekt-mappe projekt-mappe--kommende"
             aria-label="Nyt projekt på vej"
           >
-            <img src={TomMappe} alt="" />
+            <img className="projekt-mappe-billede" src={TomMappe} alt="" />
 
             <span className="projekt-mappe-status">Nyt projekt på vej</span>
           </div>

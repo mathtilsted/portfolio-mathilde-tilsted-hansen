@@ -121,7 +121,6 @@
    ========================================================= */
 
 .project-live {
-  margin-top: 2rem;
   padding-bottom: 4rem;
 }
 
@@ -130,10 +129,9 @@
   align-items: center;
   justify-content: center;
   padding: 0.85rem 1.5rem;
-  border: 1px solid var(--secondary-dark);
   border-radius: 999px;
-  background: var(--secondary-dark);
-  color: var(--primary);
+  background: var(--secondary);
+  color: var(--text);
   font-family: var(--font-body);
   font-size: 0.9rem;
   text-decoration: none;
@@ -145,8 +143,8 @@
 
 .project-button:hover {
   transform: translateY(-3px);
-  background: var(--secondary);
-  color: var(--text);
+  background: var(--secondary-dark);
+  color: var(--primary);
 }
 
 /* =========================================================

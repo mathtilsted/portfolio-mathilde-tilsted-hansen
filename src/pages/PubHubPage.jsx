@@ -30,6 +30,17 @@ export default function PubHubPage() {
         path: "/projekter/mellemrum",
       }}
     >
+      <div className="project-live project-container">
+        <a
+          className="project-button"
+          href="https://eaa25mtha.github.io/webapp-eksamen/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Se live projekt ↗
+        </a>
+      </div>
+
       {/* =====================================================
           UDFORDRING + LØSNING
       ====================================================== */}

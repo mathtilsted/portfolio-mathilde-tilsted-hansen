@@ -11,18 +11,14 @@
 
 .baggrund-projekt-siden {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   z-index: 0;
-
   width: 100vw;
   height: 100%;
-
   transform: translate(-50%, -50%);
-
   object-fit: cover;
   object-position: center;
-
   pointer-events: none;
   opacity: 0.2;
 }
@@ -30,7 +26,6 @@
 .projektoversigt-indhold {
   position: relative;
   z-index: 1;
-
   width: min(100% - 6rem, 1400px);
   margin-inline: auto;
 }
@@ -47,7 +42,7 @@
 }
 
 .projektoversigt-header p {
-  max-width: 760px;
+  max-width: 660px;
   margin-top: 1rem;
 }
 
@@ -58,12 +53,9 @@
 .projekter-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-
   column-gap: clamp(1rem, 3vw, 3rem);
   row-gap: clamp(3rem, 5vw, 6rem);
-
   align-items: center;
-
   margin-bottom: 4rem;
 }
 
@@ -73,32 +65,87 @@
 
 .projekt-mappe {
   position: relative;
-
   width: 100%;
-
+  min-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: inherit;
   text-decoration: none;
-
   cursor: pointer;
-
   transform: translateY(0) rotate(0deg);
-
   transition: transform 300ms ease;
 }
 
-.projekt-mappe img {
+/* =========================================================
+   MAPPEBILLEDE
+   ========================================================= */
+
+.projekt-mappe-billede {
+  position: relative;
+  z-index: 2;
   width: 70%;
   height: auto;
-
   display: block;
-
   object-fit: contain;
-
   transition: transform 300ms ease;
+}
+
+/* =========================================================
+   DOKUMENT PREVIEW
+   ========================================================= */
+
+.projekt-dokument {
+  position: absolute;
+  left: 50%;
+  bottom: 75.5%;
+  z-index: 1;
+  width: 48%;
+  min-height: 130px;
+  padding: 1.1rem 1.2rem;
+  background: #fffdf8;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translate(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 350ms ease,
+    opacity 250ms ease;
+}
+
+.projekt-dokument::before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 3px;
+  margin-bottom: 0.8rem;
+  border-radius: 999px;
+  background: var(--secondary);
+}
+
+.projekt-dokument-titel {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--secondary-dark);
+  font-family: var(--font-titel);
+  font-size: 1.15rem;
+  line-height: 1.1;
+}
+
+.projekt-dokument ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.projekt-dokument li {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 /* =========================================================
@@ -107,11 +154,16 @@
 
 @media (hover: hover) and (pointer: fine) {
   .projekt-mappe:not(.projekt-mappe--kommende):hover {
-    transform: translateY(-10px) rotate(-0.6deg);
+    transform: translateY(-6px);
   }
 
-  .projekt-mappe:not(.projekt-mappe--kommende):hover img {
-    transform: scale(1.025);
+  .projekt-mappe:not(.projekt-mappe--kommende):hover .projekt-mappe-billede {
+    transform: translateY(8px) rotate(-0.8deg);
+  }
+
+  .projekt-mappe:not(.projekt-mappe--kommende):hover .projekt-dokument {
+    transform: translate(-50%, -18%);
+    opacity: 1;
   }
 }
 
@@ -125,6 +177,13 @@
   border-radius: 1rem;
 }
 
+/* Samme effekt ved keyboard-navigation */
+
+.projekt-mappe:focus-visible .projekt-dokument {
+  transform: translate(-50%, -18%);
+  opacity: 1;
+}
+
 /* =========================================================
    KOMMENDE PROJEKT
    ========================================================= */
@@ -133,7 +192,7 @@
   cursor: default;
 }
 
-.projekt-mappe--kommende img {
+.projekt-mappe--kommende .projekt-mappe-billede {
   opacity: 0.72;
 }
 
@@ -141,6 +200,7 @@
   position: absolute;
   left: 50%;
   bottom: 18%;
+  z-index: 3;
 
   width: max-content;
   max-width: 80%;
@@ -187,8 +247,16 @@
     row-gap: 4rem;
   }
 
-  .projekt-mappe img {
+  .projekt-mappe {
+    min-height: 240px;
+  }
+
+  .projekt-mappe-billede {
     width: 70%;
+  }
+
+  .projekt-dokument {
+    width: 50%;
   }
 
   .baggrund-projekt-siden {
@@ -217,11 +285,32 @@
 
   .projekt-mappe {
     width: min(100%, 430px);
+    min-height: 300px;
+
     margin-inline: auto;
   }
 
-  .projekt-mappe img {
+  .projekt-mappe-billede {
     width: 75%;
+  }
+
+  /* På touch-enheder findes der ikke en rigtig hover. Derfor lader vi en lille del af dokumentet være synligt. */
+
+  .projekt-dokument {
+    bottom: 43%;
+
+    width: 52%;
+
+    transform: translate(-50%, 5%);
+    opacity: 1;
+  }
+
+  .projekt-dokument-titel {
+    font-size: 1.1rem;
+  }
+
+  .projekt-dokument li {
+    font-size: 0.7rem;
   }
 
   .projekt-mappe-status {
@@ -240,7 +329,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .projekt-mappe,
-  .projekt-mappe img,
+  .projekt-mappe-billede,
+  .projekt-dokument,
   .projekt-mappe-status {
     transition: none;
   }

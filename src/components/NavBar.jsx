@@ -17,7 +17,7 @@ export default function NavBar() {
           Om mig
         </NavLink>
         <NavLink to="/kontakt-mig" className="link">
-          Kontakt mig
+          Kontakt
         </NavLink>
       </nav>
     </header>
