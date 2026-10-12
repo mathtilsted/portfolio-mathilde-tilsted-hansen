@@ -1,0 +1,177 @@
+import ProjectLayout from "../components/ProjectLayout";
+import RogueLogo from "../assets/projekt-sider/rogue/rogue_logo.svg";
+import "../css/rogue.css";
+
+// Importér dine billeder her, når de er klar.
+// import Brandarkitektur from "../assets/projekt-sider/rogue/brandarkitektur.png";
+import Branddeck from "../assets/projekt-sider/rogue/branddeck.svg";
+import Branddeck2 from "../assets/projekt-sider/rogue/branddeck2.svg";
+
+export default function RoguePage() {
+  return (
+    <ProjectLayout
+      title="Go Rogue"
+      label="Branding · Recommerce · Gruppeprojekt"
+      intro="Et subbrand og datteren til La Rouge. Casen arbejde med recommerce og målgruppe forståelse, med fokus på at fremme og styrke La Rouges recommerce initiativ."
+      role="Brandstrategi · Konceptudvikling · Visuel identitet"
+      collaboration="Gruppeprojekt"
+      focus="Recommerce · Målgruppe · Branding"
+      hero={
+        <div className="rogue-hero">
+          <img
+            src={RogueLogo}
+            alt="Go Rogue-logo"
+            className="rogue-hero-logo"
+          />
+        </div>
+      }
+      previousProject={{
+        title: "Sync",
+        path: "/projekter/sync",
+      }}
+      nextProject={{
+        title: "PubHub",
+        path: "/projekter/pubhub",
+      }}
+    >
+      <section className="project-story project-container">
+        <article className="project-story-item">
+          <span className="project-number">01</span>
+          <h2>Udfordringen</h2>
+
+          <p>
+            La Rouge bad os om at styrke deres recommerce initiativ. De oplever
+            at kunderne elsker tøjet og at de gerne køber det brugt, men at de
+            meget sjældent sender deres tøj tilbage til La Rouge gennem det
+            eksisterende koncept de bruger lige nu, hvor man sender tøjet ind og
+            får et gavekort med 30% af det oprindelige køb, som der kan shoppes
+            for på hjemmesiden.
+          </p>
+
+          <p>
+            Vores opgave blev at rebrande deres recommerce i et subbrand der
+            kunne tale til brugeren på en anden måde og på den måde opfordre dem
+            til at bruge konceptet og sende deres tøj tilbage til La Rouge i
+            stedet for at sælge det på platforme som Vinted mm.
+          </p>
+        </article>
+
+        <article className="project-story-item">
+          <span className="project-number">02</span>
+          <h2>Vores løsning</h2>
+
+          <p>
+            Vi udviklede Go Rogue som et subbrand, der bygger videre på La
+            Rouges eksisterende univers, men taler med en yngre og mere frisk
+            stemme, der opfordre kvinder til at genbruge det tidløse og elegante
+            La Rouge tøj og stå ved deres egen stil og person.
+          </p>
+
+          <p>
+            Vi valgte en yngre målgruppe, primært kvinder i 30'erne, og
+            arbejdede med en feministisk designretning. Målet var at skabe en
+            identitet, som både kunne vække nysgerrighed og give
+            recommerce-konceptet sin egen plads i fortællingen om La Rouge. Vi
+            ville give La Rouge et seriøst TWIST. Rødstrømpe anno 2026.
+          </p>
+        </article>
+      </section>
+
+      <section className="rogue-section brandstrategi">
+        <div className="project-container rogue-split">
+          <div className="rogue-copy">
+            <p className="project-label">Brandstrategi</p>
+            <h2>Et Branded House</h2>
+
+            <p>
+              Vi arbejdede med en branded house tilgang. Go Rogue skulle ikke
+              stå som et uafhængigt brand, men fungere som en forlængelse af La
+              Rouge. Vi arbejde meget med mor-datter forholdet i denne
+              sammenhæng fordi vi så det som en naturlig forlængelse af La
+              Rouge,så forbindelsen til moderbrandets kvalitet og identitet
+              stadig var tydelig.
+            </p>
+
+            <p>
+              Det gav os mulighed for at udforske et mere modigt og larmende
+              udtryk uden at slippe den eksisterende brandfortælling og
+              kærligheden til kvinder og deres ret til dem selv der ligger bag
+              brandet.
+            </p>
+          </div>
+
+          {/* BILLEDE: Brandarkitektur
+          <img
+            src={Brandarkitektur}
+            alt="Brandarkitektur for Go Rogue og La Rouge"
+            className="rogue-image"
+          />
+          */}
+        </div>
+      </section>
+
+      <section className="rogue-section project-container">
+        <div className="rogue-section-heading">
+          <p className="project-label">Kreativ retning</p>
+          <h2>Unapolegetically Us</h2>
+
+          <p>
+            Den visuelle retning blev med afsæt i rødstrømpebevægelsen. Hvordan
+            kunne vi tage det eksisterende fællesskab La Rouge havde bygget op
+            omkring deres kerneværdier omkring selvkærlighed og give det et
+            twist der kunne fange opmærksomheden fra en yngre målgruppe der i
+            højere grad shopper recommerce?
+          </p>
+
+          <p>
+            Vi tog udgangspunkt i det eksisterende udtryk fra La Rouge, men med
+            mere kontrastfyldte farver og et udtryk med scener "bag Paris". Vi
+            fjernede lidt af det polerede, uden at skille os af med det elegante
+            og tidløse udtryk. Herunder ses to branddecks. Til venstre er det vi
+            endte med at gå med fordi de skarpere og "vildere" udtryk talte
+            bedst ind i brandpersonligheden, hvorimod det branddeck der ses til
+            højre var en af flere variationer der havde tungere afsæt i den
+            oprindelige identitet, men ultimativt gik vi ikke med denne retning.
+          </p>
+        </div>
+
+        <div className="rogue-gallery">
+          <img
+            src={Branddeck}
+            alt="Branddeck for Go Rogues visuelle identitet"
+            className="rogue-image"
+          />
+
+          <img
+            src={Branddeck2}
+            alt="varation af det endelige branddeck, denne version blev ikke valgt"
+            className="rogue-image branddeck2"
+          />
+        </div>
+      </section>
+
+      <section className="rogue-section rogue-reflection project-container">
+        <p className="project-label">Refleksion</p>
+
+        <div>
+          <h2>Branding med en eksisterende identitet som afsæt</h2>
+
+          <p>
+            Go Rogue gav os mulighed for at arbejde med, hvordan et eksisterende
+            brand kan udvikle en ny retning uden at miste forbindelsen til sit
+            udgangspunkt. Det krævede både forståelse for La Rouge, en afgrænset
+            målgruppe og et koncept, der kunne give recommerce mere opmærksomhed
+            og oplyse brugerene på ny om deres muligheder.
+          </p>
+
+          <p>
+            For mig har casen været interessant fordi vi fik lov til at udvikle
+            på og udfordre et eksiseterende og veletableret brand. Det var fedt
+            at lege med konceptet og bygge en brandidentitet der potentielt kan
+            bruges af La Rouge i fremtiden.
+          </p>
+        </div>
+      </section>
+    </ProjectLayout>
+  );
+}

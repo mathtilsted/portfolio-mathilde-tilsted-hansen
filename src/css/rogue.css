@@ -1,0 +1,128 @@
+/* =========================================================
+   GO ROGUE – CASESIDE
+   ========================================================= */
+
+.rogue-hero {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 410px);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rogue-hero-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.08));
+}
+
+/* =========================================================
+   GO ROGUE – HERO BLOB
+   ========================================================= */
+
+.project-layout:has(.rogue-hero) .project-hero-blob {
+  background: #ffffff;
+}
+
+/* =========================================================
+   SEKTIONER
+   ========================================================= */
+
+.rogue-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.brandstrategi {
+  background: var(--secondary);
+}
+
+.rogue-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.rogue-copy h2,
+.rogue-section-heading h2,
+.rogue-reflection h2 {
+  margin-bottom: 1.5rem;
+}
+
+.rogue-copy p + p,
+.rogue-section-heading p + p,
+.rogue-reflection p + p {
+  margin-top: 1.25rem;
+}
+
+.rogue-section-heading {
+  max-width: 780px;
+  margin-bottom: 3rem;
+}
+
+/* =========================================================
+   BILLEDER
+   ========================================================= */
+
+.rogue-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.rogue-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.branddeck2 {
+  width: 75%;
+}
+
+/* =========================================================
+   REFLEKSION
+   ========================================================= */
+
+.rogue-reflection {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 3rem;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .rogue-split {
+    gap: 3rem;
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .rogue-hero {
+    max-width: 300px;
+  }
+
+  .rogue-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .rogue-split,
+  .rogue-gallery,
+  .rogue-reflection {
+    grid-template-columns: 1fr;
+  }
+}
