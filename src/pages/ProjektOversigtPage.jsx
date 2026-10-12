@@ -6,6 +6,7 @@ import PubhubMappe from "../assets/projekt-sider/mapper/pubhub-mappe.svg";
 import MellemrumMappe from "../assets/projekt-sider/mapper/mellemrum-mappe.svg";
 import VuuhMappe from "../assets/projekt-sider/mapper/vuuh-mappe.svg";
 import SyncMappe from "../assets/projekt-sider/mapper/sync-mappe.svg";
+import RogueMappe from "../assets/projekt-sider/mapper/rogue-mappe.svg";
 import TomMappe from "../assets/projekt-sider/mapper/mappe.svg";
 
 const projekter = [
@@ -14,7 +15,7 @@ const projekter = [
     navn: "PubHub",
     billede: PubhubMappe,
     path: "/projekter/pubhub",
-    preview: ["Mobile webapp", "UX/UI", "React"],
+    preview: ["Mobil webapp", "UX/UI", "React"],
   },
   {
     id: "mellemrum",
@@ -28,14 +29,21 @@ const projekter = [
     navn: "Vuuh",
     billede: VuuhMappe,
     path: "/projekter/vuuh",
-    preview: ["Onboarding", "UX", "Motion design"],
+    preview: ["Onboarding", "UX", "Motiondesign"],
   },
   {
     id: "sync",
     navn: "Sync",
     billede: SyncMappe,
     path: "/projekter/sync",
-    preview: ["Logo design", "Visuel identitet", "Freelance-case"],
+    preview: ["Logo-design", "Visuel identitet", "Freelance-case"],
+  },
+  {
+    id: "rogue",
+    navn: "Go Rogue",
+    billede: RogueMappe,
+    path: "/projekter/rogue",
+    preview: ["Sub-branding", "Visuel identitet", "Re-commerce"],
   },
 ];
 
