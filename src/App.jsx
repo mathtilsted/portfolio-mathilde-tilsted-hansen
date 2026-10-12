@@ -4,6 +4,7 @@ import PubHubPage from "./pages/PubHubPage";
 import MellemrumPage from "./pages/MellemrumPage";
 import VuuhPage from "./pages/VuuhPage";
 import SyncPage from "./pages/SyncPage";
+import RoguePage from "./pages/RoguePage";
 import KontaktPage from "./pages/KontaktPage";
 import OmPage from "./pages/OmPage";
 import NavBar from "./components/NavBar";
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/projekter/mellemrum" element={<MellemrumPage />} />
         <Route path="/projekter/vuuh" element={<VuuhPage />} />
         <Route path="/projekter/sync" element={<SyncPage />} />
+        <Route path="/projekter/rogue" element={<RoguePage />} />
         <Route path="/kontakt-mig" element={<KontaktPage />} />
         <Route path="/om-mig" element={<OmPage />} />
       </Routes>
