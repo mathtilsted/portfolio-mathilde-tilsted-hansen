@@ -17,7 +17,7 @@
    ========================================================= */
 
 .project-hero {
-  padding: 3.5rem 0 1rem;
+  margin-top: 3rem;
 }
 
 .project-back {
@@ -125,6 +125,7 @@
 }
 
 .project-button {
+  margin-top: 2rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
