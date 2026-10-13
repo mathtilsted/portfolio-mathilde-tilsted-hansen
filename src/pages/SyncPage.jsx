@@ -20,8 +20,8 @@ export default function SyncPage() {
         </div>
       }
       previousProject={{
-        title: "Vuuh",
-        path: "/projekter/vuuh",
+        title: "Go Rogue",
+        path: "/projekter/rogue",
       }}
       nextProject={{
         title: "PubHub",

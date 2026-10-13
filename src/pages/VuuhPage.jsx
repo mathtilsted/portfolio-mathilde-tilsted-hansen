@@ -22,8 +22,8 @@ export default function VuuhPage() {
         path: "/projekter/mellemrum",
       }}
       nextProject={{
-        title: "Sync",
-        path: "/projekter/sync",
+        title: "Go Rogue",
+        path: "/projekter/rogue",
       }}
     >
       {/* =====================================================

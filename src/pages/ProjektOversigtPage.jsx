@@ -11,13 +11,6 @@ import TomMappe from "../assets/projekt-sider/mapper/mappe.svg";
 
 const projekter = [
   {
-    id: "pubhub",
-    navn: "PubHub",
-    billede: PubhubMappe,
-    path: "/projekter/pubhub",
-    preview: ["Mobil webapp", "UX/UI", "React"],
-  },
-  {
     id: "mellemrum",
     navn: "Mellemrum",
     billede: MellemrumMappe,
@@ -32,6 +25,13 @@ const projekter = [
     preview: ["Onboarding", "UX", "Motiondesign"],
   },
   {
+    id: "rogue",
+    navn: "Go Rogue",
+    billede: RogueMappe,
+    path: "/projekter/rogue",
+    preview: ["Sub-branding", "Visuel identitet", "Re-commerce"],
+  },
+  {
     id: "sync",
     navn: "Sync",
     billede: SyncMappe,
@@ -39,11 +39,11 @@ const projekter = [
     preview: ["Logo-design", "Visuel identitet", "Freelance-case"],
   },
   {
-    id: "rogue",
-    navn: "Go Rogue",
-    billede: RogueMappe,
-    path: "/projekter/rogue",
-    preview: ["Sub-branding", "Visuel identitet", "Re-commerce"],
+    id: "pubhub",
+    navn: "PubHub",
+    billede: PubhubMappe,
+    path: "/projekter/pubhub",
+    preview: ["Mobil webapp", "UX/UI", "React"],
   },
 ];
 

@@ -64,14 +64,19 @@
   margin-bottom: 3rem;
 }
 
+.kreativ-retning {
+  max-width: 900px;
+}
+
 /* =========================================================
    BILLEDER
    ========================================================= */
 
 .rogue-gallery {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 0;
 }
 
 .rogue-image {
@@ -84,6 +89,18 @@
 
 .branddeck2 {
   width: 75%;
+}
+
+/* =========================================================
+   VIDEO I BRANDED HOUSE-SEKTIONEN
+   ========================================================= */
+
+.rogue-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  background: #ffffff;
 }
 
 /* =========================================================
@@ -124,5 +141,9 @@
   .rogue-gallery,
   .rogue-reflection {
     grid-template-columns: 1fr;
+  }
+
+  .rogue-video {
+    border-radius: 1rem;
   }
 }

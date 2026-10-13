@@ -1,11 +1,10 @@
 import ProjectLayout from "../components/ProjectLayout";
 import RogueLogo from "../assets/projekt-sider/rogue/rogue_logo.svg";
-import "../css/rogue.css";
-
-// Importér dine billeder her, når de er klar.
-// import Brandarkitektur from "../assets/projekt-sider/rogue/brandarkitektur.png";
 import Branddeck from "../assets/projekt-sider/rogue/branddeck.svg";
 import Branddeck2 from "../assets/projekt-sider/rogue/branddeck2.svg";
+import RogueVideo from "../assets/projekt-sider/rogue/rogue-screenrecord.mp4";
+
+import "../css/rogue.css";
 
 export default function RoguePage() {
   return (
@@ -26,14 +25,32 @@ export default function RoguePage() {
         </div>
       }
       previousProject={{
+        title: "Vuuh",
+        path: "/projekter/vuuh",
+      }}
+      nextProject={{
         title: "Sync",
         path: "/projekter/sync",
       }}
-      nextProject={{
-        title: "PubHub",
-        path: "/projekter/pubhub",
-      }}
     >
+      {/* =====================================================
+          PROTOTYPELINK
+          ===================================================== */}
+      <div className="project-live project-container">
+        <a
+          href="https://www.figma.com/proto/xJ147c7hA2Vpd1IKHds3Sg/La-Rouge---Go-Rogue?node-id=177-2576&viewport=117%2C113%2C0.27&t=f92LTAeiAP3rhhp6-1&scaling=contain&content-scaling=fixed&starting-point-node-id=139%3A1495&page-id=139%3A1494"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-button"
+        >
+          Se prototype ↗
+        </a>
+      </div>
+
+      {/* =====================================================
+          UDFORDRINGEN OG LØSNINGEN
+          ===================================================== */}
+
       <section className="project-story project-container">
         <article className="project-story-item">
           <span className="project-number">01</span>
@@ -77,6 +94,10 @@ export default function RoguePage() {
         </article>
       </section>
 
+      {/* =====================================================
+          BRANDSTRATEGI MED PROTOTYPEVIDEO
+          ===================================================== */}
+
       <section className="rogue-section brandstrategi">
         <div className="project-container rogue-split">
           <div className="rogue-copy">
@@ -100,18 +121,28 @@ export default function RoguePage() {
             </p>
           </div>
 
-          {/* BILLEDE: Brandarkitektur
-          <img
-            src={Brandarkitektur}
-            alt="Brandarkitektur for Go Rogue og La Rouge"
-            className="rogue-image"
-          />
-          */}
+          <video
+            className="rogue-video"
+            src={RogueVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="metadata"
+            aria-label="Skærmoptagelse af Go Rogue-prototypen"
+          >
+            Din browser understøtter ikke videoafspilning.
+          </video>
         </div>
       </section>
 
+      {/* =====================================================
+          KREATIV RETNING
+          ===================================================== */}
+
       <section className="rogue-section project-container">
-        <div className="rogue-section-heading">
+        <div className="rogue-section-heading kreativ-retning">
           <p className="project-label">Kreativ retning</p>
           <h2>Unapolegetically Us</h2>
 
@@ -127,28 +158,32 @@ export default function RoguePage() {
             Vi tog udgangspunkt i det eksisterende udtryk fra La Rouge, men med
             mere kontrastfyldte farver og et udtryk med scener "bag Paris". Vi
             fjernede lidt af det polerede, uden at skille os af med det elegante
-            og tidløse udtryk. Herunder ses to branddecks. Til venstre er det vi
+            og tidløse udtryk. Herunder ses to branddecks. Til højre er det vi
             endte med at gå med fordi de skarpere og "vildere" udtryk talte
             bedst ind i brandpersonligheden, hvorimod det branddeck der ses til
-            højre var en af flere variationer der havde tungere afsæt i den
+            venstre var en af flere variationer der havde tungere afsæt i den
             oprindelige identitet, men ultimativt gik vi ikke med denne retning.
           </p>
         </div>
 
         <div className="rogue-gallery">
           <img
+            src={Branddeck2}
+            alt="Variation af branddeck, som ikke blev valgt"
+            className="rogue-image branddeck2"
+          />
+
+          <img
             src={Branddeck}
             alt="Branddeck for Go Rogues visuelle identitet"
             className="rogue-image"
           />
-
-          <img
-            src={Branddeck2}
-            alt="varation af det endelige branddeck, denne version blev ikke valgt"
-            className="rogue-image branddeck2"
-          />
         </div>
       </section>
+
+      {/* =====================================================
+          REFLEKSION
+          ===================================================== */}
 
       <section className="rogue-section rogue-reflection project-container">
         <p className="project-label">Refleksion</p>
