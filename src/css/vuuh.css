@@ -1,5 +1,5 @@
 /* =========================================================
-   HERO
+   VUUH - HERO
    ========================================================= */
 
 .vuuh-hero {
@@ -11,12 +11,28 @@
   justify-content: center;
 }
 
-.vuuh-hero-image {
-  width: 100%;
+.vuuh-hero-image,
+.vuuh-hero-video {
+  width: 120%;
   height: auto;
   display: block;
   object-fit: contain;
   border-radius: 1rem;
+}
+
+.vuuh-hero-video {
+  background: #ffffff;
+}
+
+/* =========================================================
+   LINKS TIL PROTOTYPE OG UX AUDIT
+   ========================================================= */
+
+.vuuh-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* =========================================================
@@ -53,7 +69,6 @@
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: clamp(4rem, 8vw, 8rem);
-
   align-items: center;
 }
 
@@ -64,10 +79,8 @@
 .vuuh-optimisation-image {
   width: 100%;
   height: auto;
-
   display: block;
   object-fit: contain;
-
   border-radius: 1rem;
 }
 
@@ -119,6 +132,10 @@
     width: 100%;
   }
 
+  .vuuh-links {
+    gap: 0.75rem;
+  }
+
   .vuuh-process,
   .vuuh-optimisation {
     padding: 5rem 0;
@@ -133,6 +150,7 @@
   }
 
   .vuuh-hero-image,
+  .vuuh-hero-video,
   .vuuh-optimisation-image {
     border-radius: 0.75rem;
   }

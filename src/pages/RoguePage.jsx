@@ -10,7 +10,7 @@ export default function RoguePage() {
   return (
     <ProjectLayout
       title="Go Rogue"
-      label="Branding · Recommerce · Gruppeprojekt"
+      label="3. semester· Produktoptimering"
       intro="Et subbrand og datteren til La Rouge. Casen arbejde med recommerce og målgruppe forståelse, med fokus på at fremme og styrke La Rouges recommerce initiativ."
       role="Brandstrategi · Konceptudvikling · Visuel identitet"
       collaboration="Gruppeprojekt"
