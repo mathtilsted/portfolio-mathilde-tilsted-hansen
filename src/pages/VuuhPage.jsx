@@ -107,6 +107,24 @@ export default function VuuhPage() {
         </article>
       </section>
 
+      {/* =======================================================
+          HVAD LAVEDE JEG?
+      ===========================================================*/}
+      <section className="project-container vuuh-rolle">
+        <div>
+          <p className="project-label">Hvad lavede jeg?</p>
+          <h2>Min rolle</h2>
+
+          <p>
+            Vuuh var et samarbejde mellem to personer, hvor vi delte arbejdet
+            mellem os. Jeg var med i hele processen fra research og design til
+            udvikling af løsningen. Vi arbejdede tæt sammen om både UX Audit,
+            designvalg og opbygningen af prototypen, så jeg havde en finger med
+            i de fleste dele af projektet.
+          </p>
+        </div>
+      </section>
+
       {/* =====================================================
           PROCES
           ===================================================== */}
@@ -191,7 +209,9 @@ export default function VuuhPage() {
               Information blev prioriteret tydeligere, elementer blev
               simplificeret, og motiondesign blev brugt til at understøtte
               brugerens forståelse af processen frem for blot at fungere som
-              dekoration.
+              dekoration. Et eksempel er produkt modalen som ses til venstre.
+              Ved at justere microcopying og hierarki i teksten, kan vi
+              tydeliggøre for brugeren hvad ideen med et demo-produkt er.
             </p>
           </div>
         </div>

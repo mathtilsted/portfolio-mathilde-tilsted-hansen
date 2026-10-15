@@ -157,7 +157,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(4rem, 10vw, 10rem);
   padding-top: 3rem;
-  padding-bottom: 7rem;
+  padding-bottom: 6rem;
 }
 
 .project-story-item {

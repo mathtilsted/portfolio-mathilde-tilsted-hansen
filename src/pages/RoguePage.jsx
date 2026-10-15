@@ -36,7 +36,7 @@ export default function RoguePage() {
       {/* =====================================================
           PROTOTYPELINK
           ===================================================== */}
-      <div className="project-live project-container">
+      <div className="project-live project-container rogue-links">
         <a
           href="https://www.figma.com/proto/xJ147c7hA2Vpd1IKHds3Sg/La-Rouge---Go-Rogue?node-id=177-2576&viewport=117%2C113%2C0.27&t=f92LTAeiAP3rhhp6-1&scaling=contain&content-scaling=fixed&starting-point-node-id=139%3A1495&page-id=139%3A1494"
           target="_blank"
@@ -45,6 +45,19 @@ export default function RoguePage() {
         >
           Se prototype ↗
         </a>
+
+        <button
+          type="button"
+          className="project-button branddeck-button"
+          onClick={() => {
+            document.getElementById("branddeck")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          Se branddeck ↓
+        </button>
       </div>
 
       {/* =====================================================
@@ -94,6 +107,24 @@ export default function RoguePage() {
         </article>
       </section>
 
+      {/* =======================================================
+          HVAD LAVEDE JEG?
+      ===========================================================*/}
+      <section className="rogue-section project-container rogue-rolle">
+        <div className="rogue-section-heading">
+          <p className="project-label">Hvad lavede jeg?</p>
+          <h2>Min rolle</h2>
+
+          <p>
+            Go Rogue var et gruppeprojekt med tre personer, hvor jeg især
+            arbejdede med brandets tone of voice, farvevalg og branddeck. Jeg
+            havde også særligt fokus på mobilprototypen i Figma, hvor jeg var
+            med til at omsætte vores koncept og visuelle identitet til en
+            digital oplevelse.
+          </p>
+        </div>
+      </section>
+
       {/* =====================================================
           BRANDSTRATEGI MED PROTOTYPEVIDEO
           ===================================================== */}
@@ -141,7 +172,7 @@ export default function RoguePage() {
           KREATIV RETNING
           ===================================================== */}
 
-      <section className="rogue-section project-container">
+      <section id="branddeck" className="rogue-section project-container">
         <div className="rogue-section-heading kreativ-retning">
           <p className="project-label">Kreativ retning</p>
           <h2>Unapolegetically Us</h2>
@@ -162,7 +193,9 @@ export default function RoguePage() {
             endte med at gå med, fordi det skarpere og "vildere" udtryk talte
             bedst ind i brandpersonligheden, hvorimod det branddeck der ses til
             venstre var en af flere variationer der havde tungere afsæt i den
-            oprindelige identitet, men ultimativt gik vi ikke med denne retning.
+            oprindelige identitet, men ultimativt gik vi ikke med denne retning,
+            fordi vi havde lyst til at markere forskellen på mor og datter om
+            man vil.
           </p>
         </div>
 
@@ -203,7 +236,9 @@ export default function RoguePage() {
             For mig har casen været interessant fordi vi fik lov til at udvikle
             på og udfordre et eksisterende og veletableret brand. Det var fedt
             at lege med konceptet og bygge en brandidentitet der potentielt kan
-            bruges af La Rouge i fremtiden.
+            bruges af La Rouge i fremtiden. Det har også været fedt at bygge
+            noget der kan skabe værdi for en tidligere og ny generation af La
+            Rouge shoppere.
           </p>
         </div>
       </section>
