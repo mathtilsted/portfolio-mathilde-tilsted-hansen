@@ -11,7 +11,7 @@ export default function RoguePage() {
     <ProjectLayout
       title="Go Rogue"
       label="3. semester· Produktoptimering"
-      intro="Et subbrand og datteren til La Rouge. Casen arbejde med recommerce og målgruppe forståelse, med fokus på at fremme og styrke La Rouges recommerce initiativ."
+      intro="Et subbrand og datteren til La Rouge. Casen arbejdede med recommerce og målgruppeforståelse, med fokus på at fremme og styrke La Rouges recommerce-initiativ."
       role="Brandstrategi · Konceptudvikling · Visuel identitet"
       collaboration="Gruppeprojekt"
       focus="Recommerce · Målgruppe · Branding"
@@ -57,7 +57,7 @@ export default function RoguePage() {
           <h2>Udfordringen</h2>
 
           <p>
-            La Rouge bad os om at styrke deres recommerce initiativ. De oplever
+            La Rouge bad os om at styrke deres recommerce-initiativ. De oplever
             at kunderne elsker tøjet og at de gerne køber det brugt, men at de
             meget sjældent sender deres tøj tilbage til La Rouge gennem det
             eksisterende koncept de bruger lige nu, hvor man sender tøjet ind og
@@ -80,8 +80,8 @@ export default function RoguePage() {
           <p>
             Vi udviklede Go Rogue som et subbrand, der bygger videre på La
             Rouges eksisterende univers, men taler med en yngre og mere frisk
-            stemme, der opfordre kvinder til at genbruge det tidløse og elegante
-            La Rouge tøj og stå ved deres egen stil og person.
+            stemme, der opfordrer kvinder til at genbruge det tidløse og
+            elegante La Rouge tøj og stå ved deres egen stil og person.
           </p>
 
           <p>
@@ -105,19 +105,19 @@ export default function RoguePage() {
             <h2>Et Branded House</h2>
 
             <p>
-              Vi arbejdede med en branded house tilgang. Go Rogue skulle ikke
+              Vi arbejdede med en branded house-tilgang. Go Rogue skulle ikke
               stå som et uafhængigt brand, men fungere som en forlængelse af La
-              Rouge. Vi arbejde meget med mor-datter forholdet i denne
-              sammenhæng fordi vi så det som en naturlig forlængelse af La
-              Rouge,så forbindelsen til moderbrandets kvalitet og identitet
+              Rouge. Vi arbejdede meget med mor-datter-forholdet i denne
+              sammenhæng, fordi vi så det som en naturlig forlængelse af La
+              Rouge, så forbindelsen til moderbrandets kvalitet og identitet
               stadig var tydelig.
             </p>
 
             <p>
               Det gav os mulighed for at udforske et mere modigt og larmende
               udtryk uden at slippe den eksisterende brandfortælling og
-              kærligheden til kvinder og deres ret til dem selv der ligger bag
-              brandet.
+              kærligheden til kvinder og deres ret til dem selv, som ligger bag
+              brandet La Rouge.
             </p>
           </div>
 
@@ -149,9 +149,9 @@ export default function RoguePage() {
           <p>
             Den visuelle retning blev med afsæt i rødstrømpebevægelsen. Hvordan
             kunne vi tage det eksisterende fællesskab La Rouge havde bygget op
-            omkring deres kerneværdier omkring selvkærlighed og give det et
-            twist der kunne fange opmærksomheden fra en yngre målgruppe der i
-            højere grad shopper recommerce?
+            med deres kerneværdier omkring selvkærlighed og give det et twist
+            der kunne fange opmærksomheden fra en yngre målgruppe der i højere
+            grad shopper recommerce?
           </p>
 
           <p>
@@ -159,7 +159,7 @@ export default function RoguePage() {
             mere kontrastfyldte farver og et udtryk med scener "bag Paris". Vi
             fjernede lidt af det polerede, uden at skille os af med det elegante
             og tidløse udtryk. Herunder ses to branddecks. Til højre er det vi
-            endte med at gå med fordi de skarpere og "vildere" udtryk talte
+            endte med at gå med, fordi det skarpere og "vildere" udtryk talte
             bedst ind i brandpersonligheden, hvorimod det branddeck der ses til
             venstre var en af flere variationer der havde tungere afsæt i den
             oprindelige identitet, men ultimativt gik vi ikke med denne retning.
@@ -189,19 +189,19 @@ export default function RoguePage() {
         <p className="project-label">Refleksion</p>
 
         <div>
-          <h2>Branding med en eksisterende identitet som afsæt</h2>
+          <h2>Branding med et udgangspunkt</h2>
 
           <p>
             Go Rogue gav os mulighed for at arbejde med, hvordan et eksisterende
             brand kan udvikle en ny retning uden at miste forbindelsen til sit
             udgangspunkt. Det krævede både forståelse for La Rouge, en afgrænset
             målgruppe og et koncept, der kunne give recommerce mere opmærksomhed
-            og oplyse brugerene på ny om deres muligheder.
+            og oplyse brugerne på ny om deres muligheder.
           </p>
 
           <p>
             For mig har casen været interessant fordi vi fik lov til at udvikle
-            på og udfordre et eksiseterende og veletableret brand. Det var fedt
+            på og udfordre et eksisterende og veletableret brand. Det var fedt
             at lege med konceptet og bygge en brandidentitet der potentielt kan
             bruges af La Rouge i fremtiden.
           </p>
