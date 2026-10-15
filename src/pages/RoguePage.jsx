@@ -43,7 +43,16 @@ export default function RoguePage() {
           rel="noopener noreferrer"
           className="project-button"
         >
-          Se prototype ↗
+          Se desktop prototype ↗
+        </a>
+
+        <a
+          href="https://www.figma.com/proto/xJ147c7hA2Vpd1IKHds3Sg/La-Rouge---Go-Rogue?node-id=518-9445&viewport=-272%2C331%2C0.2&t=QrvQEjhOXMzKmoNY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=518%3A9445&page-id=43%3A57"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-button"
+        >
+          Se mobil prototype ↗
         </a>
 
         <button
