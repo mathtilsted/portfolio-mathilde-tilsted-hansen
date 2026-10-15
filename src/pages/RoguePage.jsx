@@ -247,7 +247,9 @@ export default function RoguePage() {
             at lege med konceptet og bygge en brandidentitet der potentielt kan
             bruges af La Rouge i fremtiden. Det har også været fedt at bygge
             noget der kan skabe værdi for en tidligere og ny generation af La
-            Rouge shoppere.
+            Rouge shoppere. Værdien for La Rouge i dette subbrand, ligger i at
+            den løsning vi har udviklet, potentielt kan motivere flere brugere
+            til at udnytte recommerce-konceptet.
           </p>
         </div>
       </section>

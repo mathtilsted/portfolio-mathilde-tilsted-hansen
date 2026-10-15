@@ -237,7 +237,9 @@ export default function VuuhPage() {
               Det gav også erfaring med at arbejde inden for rammerne af et
               eksisterende produkt og en rigtig virksomheds løsning, hvor små
               tekniske og visuelle justeringer kan have stor betydning for
-              brugeroplevelsen.
+              brugeroplevelsen. Optimeringen af Vuuhs onboarding kan skabe værdi
+              fordi færre brugere, der falder fra under oprettelsen, og mindre
+              behov for hjælp fra virksomheden.
             </p>
           </div>
 

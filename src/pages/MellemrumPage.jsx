@@ -288,7 +288,9 @@ export default function MellemrumPage() {
               Jeg har fået mere erfaring med Supabase og især authentication
               samt servicemoduler i koden der kan have ansvaret for fetch-kald.
               Det har været super interessant at have noget der ligner
-              backendfokus i et projekt.
+              backendfokus i et projekt. Optimeringerne på Mellemrum kan skabe
+              værdi ved at gøre platformen lettere at bruge og administrere, så
+              den bedre understøtter både deltagere og arrangører.
             </p>
           </div>
 
