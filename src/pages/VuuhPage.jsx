@@ -55,7 +55,7 @@ export default function VuuhPage() {
 
         <a
           className="project-button"
-          href={`${import.meta.env.BASE_URL}public/vuuh-ux-audit.pdf`}
+          href={`${import.meta.env.BASE_URL}vuuh-ux-audit.pdf`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -76,10 +76,10 @@ export default function VuuhPage() {
             Vuuh er en fashion tech-virksomhed, der skaber forbindelse mellem
             webshopejere og brands. Deres løsning gør det muligt automatisk at
             samle produktdata fra forskellige brands, så webshopejeren ikke selv
-            behøver at indtaste dem manuelt. Problemet var, at deres onboarding
-            til det her produkt var så kompliceret at brugerne havde store
-            problemer med at oprette forbindelsen og derfor ikke oplevede
-            hurtigt nok hvorfor løsningen er så smart.
+            behøver at indtaste dem manuelt. Problemet er, at deres onboarding
+            til det her produkt er så kompliceret, at brugerne har store
+            problemer med at oprette forbindelsen og derfor ikke oplever hurtigt
+            nok, hvorfor løsningen er så smart.
           </p>
 
           <p>
@@ -101,10 +101,28 @@ export default function VuuhPage() {
             Vi arbejdede blandt andet med motion design, visuelt hierarki,
             semantik og simplificering af indholdet. Målet var at skabe en
             proces, hvor brugeren lettere kunne forstå næste skridt og komme i
-            gang med produktet selvstændigt. Vi ville vise at man sagtens kan
-            optimere et produkt uden at redesigen hele løsningen.
+            gang med produktet selvstændigt. Vi ville vise, at man sagtens kan
+            optimere et produkt uden at redesigne hele løsningen.
           </p>
         </article>
+      </section>
+
+      {/* =======================================================
+          HVAD LAVEDE JEG?
+      ===========================================================*/}
+      <section className="project-container vuuh-rolle">
+        <div>
+          <p className="project-label">Hvad lavede jeg?</p>
+          <h2>Min rolle</h2>
+
+          <p>
+            Vuuh var et samarbejde mellem to personer, hvor vi delte arbejdet
+            mellem os. Jeg var med i hele processen fra research og design til
+            udvikling af løsningen. Vi arbejdede tæt sammen om både UX Audit,
+            designvalg og opbygningen af prototypen, så jeg havde en finger med
+            i de fleste dele af projektet.
+          </p>
+        </div>
       </section>
 
       {/* =====================================================
@@ -119,9 +137,9 @@ export default function VuuhPage() {
 
             <p>
               Arbejdet i denne case blev delt op i tre store trin, så vi først
-              kunne forstå problemerne i den eksisterende løsning, derefter
-              arbejde med forbedringerne og til sidst vurdere, om ændringerne
-              faktisk fungerede.
+              kunne forstå og identificere problemerne i den eksisterende
+              løsning, derefter arbejde med forbedringer og til sidst vurdere,
+              om ændringerne faktisk fungerede.
             </p>
           </div>
 
@@ -143,8 +161,9 @@ export default function VuuhPage() {
 
               <p>
                 På baggrund af vores observationer arbejdede vi med redesign af
-                udvalgte steps i onboardingen, vi arbejde også frem mod at skære
-                ned på steps, så løsningen ikke føltes lige så tung.
+                udvalgte steps i onboardingen, vi arbejdede også frem mod at
+                skære ned på steps og skift mellem sider, så løsningen ikke
+                føltes lige så tung og uoverskuelig.
               </p>
             </article>
 
@@ -190,7 +209,9 @@ export default function VuuhPage() {
               Information blev prioriteret tydeligere, elementer blev
               simplificeret, og motiondesign blev brugt til at understøtte
               brugerens forståelse af processen frem for blot at fungere som
-              dekoration.
+              dekoration. Et eksempel er produkt modalen som ses til venstre.
+              Ved at justere microcopying og hierarki i teksten, kan vi
+              tydeliggøre for brugeren hvad ideen med et demo-produkt er.
             </p>
           </div>
         </div>
@@ -208,7 +229,7 @@ export default function VuuhPage() {
 
             <p>
               Vuuh-projektet gjorde det tydeligt for mig, at produktoptimering
-              ofte handler om at forstå, hvad der allerede fungerer og hvordan
+              ofte handler om at forstå, hvad der allerede fungerer, og hvordan
               brugeren oplever en løsning, før man begynder at ændre noget.
             </p>
 

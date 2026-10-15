@@ -28,6 +28,26 @@
 }
 
 /* =========================================================
+   LINKS
+   ========================================================= */
+
+.rogue-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#branddeck {
+  scroll-margin-top: 6rem;
+}
+
+.branddeck-button {
+  border: var(--secondary);
+  padding: 0.95rem 1.5rem;
+}
+
+/* =========================================================
    SEKTIONER
    ========================================================= */
 
@@ -66,6 +86,22 @@
 
 .kreativ-retning {
   max-width: 900px;
+}
+
+/* =========================================================
+HVAD LAVEDE JEG? - ROLLE
+===========================================================*/
+
+.rogue-rolle {
+  padding-top: 0;
+  padding-bottom: 6rem;
+}
+
+.rogue-rolle .rogue-section-heading {
+  max-width: 650px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 /* =========================================================
@@ -145,5 +181,9 @@
 
   .rogue-video {
     border-radius: 1rem;
+  }
+
+  .rogue-rolle {
+    padding-bottom: 4rem;
   }
 }

@@ -103,17 +103,17 @@ export default function MellemrumPage() {
 
           <p>
             Mellemrum var en allerede eksisterende løsning, vi fik udleveret
-            hvor opgaven var at videeudvikle produktet så løsningen performede
-            bedre både teknisk og i et accesibility aspekt. Løsningen havde
-            problemer med duplikeret kode, hvilket resulterede i database
-            problemer, når en ændring blev foretaget ét sted i koden og ikke et
-            andet. En del af opgaven var derfor at restrukturere koden, så
-            arkitekturen blev mere overskuelig.
+            hvor opgaven var at videreudvikle produktet så løsningen performede
+            bedre både teknisk og i et accesibility-aspekt. Løsningen havde
+            problemer med duplikeret kode, hvilket resulterede i
+            databaseproblemer, når en ændring blev foretaget ét sted i koden og
+            ikke et andet. En del af opgaven var derfor at restrukturere koden,
+            så arkitekturen blev mere overskuelig.
           </p>
 
           <p>
             Koden skulle være vedligeholdelsesvenlig og nem at gå til for en
-            udvikler der ikke havde set koden før.
+            udvikler, der ikke havde set koden før.
           </p>
         </article>
 
@@ -122,20 +122,20 @@ export default function MellemrumPage() {
           <h2>Løsningen</h2>
 
           <p>
-            Jeg arbejdede med at restrukturere projektet og flytte ansvar ud i
-            mere tydelige dele af applikationen, så jeg undgik duplikeret kode
-            der ville resultere i database problemer hvis en ændring skete ét
-            sted på løsningen og ikke et andet.
+            Jeg arbejdede med at restrukturere projektet og flytte ansvaret for
+            forskellige dele af koden ud i flere moduler, så koden blev nemmere
+            at forstå og vedligeholde. Dette fjernede også den duplikerede kode,
+            som nævnt tidigere.
           </p>
 
           <p>
-            Supabase blev koblet på som database, og løsningen fik et egentligt
-            authentication-system med forskellige brugerroller, der afgør hvor
-            meget en bruger kan tilgå i løsningen. Her er tænkt særligt på hvor
-            meget adgang en almen person har til andres oplysninger på et
-            interface hvor man kan tilmelde sig events og at det kan være
-            problematisk hvis vi har et site hvor alle har alles information
-            uden flere trins verifikation.
+            Jeg brugte Supabase som database, og løsningen fik et egentligt
+            authentication-system med forskellige brugerroller, der afgør, hvor
+            meget information en bruger kan tilgå i løsningen. Her er tænkt
+            særligt på hvor meget adgang en almen person har til andres
+            oplysninger på et interface hvor man kan tilmelde sig events og at
+            det kan være problematisk hvis vi har et site hvor alle har alles
+            information uden flere trins verifikation.
           </p>
         </article>
       </section>
@@ -169,17 +169,20 @@ export default function MellemrumPage() {
             </div>
 
             <p>
-              En stor del af arbejdet lå i selve koden. Projektet blev
-              struktureret mere konsekvent, så komponenter og funktionalitet fik
-              tydeligere ansvar. Det betyder lidt flere komponenter og sider,
-              men at det er blevet tydeligt hvor hvilke ansvar ligger.
+              En stor del af arbejdet lå i selve koden. Jeg ryddede op i koden
+              og strukturerede den mere konsekvent, så komponenter og
+              funktionalitet fik tydeligere ansvar. Selvom jeg har
+              restruktureret meget, har jeg ladet den main CSS fil stå. Det kan
+              være en fordel ikke at overgøre det med opdeling af koden, når det
+              ikke er nødvendigt. Derfor har jeg i stedet tilføjet kommentarer
+              og opdelinger så main filen nemmere kan læses.
             </p>
 
             <p>
-              Jeg arbejdede blandt andet med en service-fil, hvor fetch-kald og
-              kommunikationen med databasen blev samlet. Det gjorde det lettere
-              at genbruge funktionalitet og holde komponenterne mere
-              overskuelige, samtidig med at jeg minimerede den duplikerede kode.
+              Jeg arbejdede også med en service-filer, blandt andet til
+              fetch-kald, så kommunikationen med databasen blev samlet. Det
+              gjorde det lettere at genbruge funktionalitet og holde
+              komponenterne mere overskuelige.
             </p>
           </div>
         </div>
@@ -193,10 +196,17 @@ export default function MellemrumPage() {
         <div className="mellemrum-auth-heading">
           <p className="project-label">Authentication</p>
           <h2>Forskellige brugere, forskellige muligheder</h2>
-
           <p>
-            Jeg byggede et authentication system med Supabase, så løsningen
-            kunne reagere forskelligt alt efter, hvem der brugte den.
+            Jeg byggede et authentication-system med Supabase, så løsningen kan
+            reagere forskelligt alt efter, hvem der bruger den. Der findes to
+            brugere, en almen og en arrangør, de to brugere kan testes ved at
+            bruge følgende login og kode.
+          </p>
+          <p>
+            <strong>Almen bruger:</strong> testbruger@supabase.com - kode:
+            test1test <br />
+            <strong>Arrangør:</strong> testorganizer@supabase.com - kode:
+            test2test
           </p>
         </div>
 
@@ -225,8 +235,7 @@ export default function MellemrumPage() {
             <h3>Arrangør</h3>
             <p>
               Arrangører får adgang til funktioner og indhold, som almindelige
-              brugere ikke kan administrere, fx at se event tilmeldinger på
-              alle.
+              brugere ikke kan administrere, fx at se eventtilmeldinger på alle.
             </p>
           </article>
         </div>
@@ -245,7 +254,7 @@ export default function MellemrumPage() {
             <p>
               Resultatet var ikke et stort visuelt redesign. De fleste af de
               visuelle elementer er bevaret, jeg har dog justeret ting som
-              spacing og andre visuelt støjende elementer så lønsingen er endnu
+              spacing og andre visuelt støjende elementer så løsningen er endnu
               mere tilgængelig. Det er ting en almindelig bruger ikke vil tænke
               over, medmindre de ikke er fikset, så larmer det.
             </p>
@@ -277,9 +286,9 @@ export default function MellemrumPage() {
 
             <p>
               Jeg har fået mere erfaring med Supabase og især authentication
-              samt service moduler i koden der kan have ansvaret for fetch kald.
-              Det har været super interessant at have noget der ligner backend
-              fokus i et projekt.
+              samt servicemoduler i koden der kan have ansvaret for fetch-kald.
+              Det har været super interessant at have noget der ligner
+              backendfokus i et projekt.
             </p>
           </div>
 
@@ -304,7 +313,7 @@ export default function MellemrumPage() {
 
               <li>
                 <span>→</span>
-                Teknisk kvalitet er altafgørende
+                Fejlhåndtering og states
               </li>
             </ul>
           </div>

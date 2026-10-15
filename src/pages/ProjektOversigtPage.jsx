@@ -22,7 +22,7 @@ const projekter = [
     navn: "Vuuh",
     billede: VuuhMappe,
     path: "/projekter/vuuh",
-    preview: ["Onboarding", "UX", "Motiondesign"],
+    preview: ["Onboarding", "UX", "Audit"],
   },
   {
     id: "rogue",
@@ -43,7 +43,7 @@ const projekter = [
     navn: "PubHub",
     billede: PubhubMappe,
     path: "/projekter/pubhub",
-    preview: ["Mobil webapp", "UX/UI", "React"],
+    preview: ["WebApp", "UX/UI", "React"],
   },
 ];
 

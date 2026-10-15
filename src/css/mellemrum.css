@@ -165,8 +165,8 @@
   margin-bottom: 4rem;
 }
 
-.mellemrum-auth-heading > p:last-child {
-  margin-top: 1rem;
+.mellemrum-auth-heading > p {
+  margin-top: 1.5rem;
   max-width: 650px;
 }
 

@@ -98,10 +98,10 @@
 .projekt-dokument {
   position: absolute;
   left: 50%;
-  bottom: 75.5%;
+  bottom: 75%;
   z-index: 1;
   width: 48%;
-  min-height: 130px;
+  height: 150px;
   padding: 1.1rem 1.2rem;
   background: #fffdf8;
   border: 1px solid rgba(0, 0, 0, 0.08);
